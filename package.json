@@ -1,0 +1,24 @@
+{
+  "name": "davidbruant.github.io",
+  "version": "0.0.0",
+  "description": "my own static website/blog ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bin/build.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DavidBruant/davidbruant.github.io.git"
+  },
+  "author": "David Bruant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidBruant/davidbruant.github.io/issues"
+  },
+  "dependencies": {
+    "jsdom": "~0.11.0",
+    "promised-io": "~0.3.4",
+    "request": "~2.36.0"
+  }
+}
