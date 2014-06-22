@@ -7,7 +7,24 @@ Making a static website.
 Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my-blog-uses-my-homegrown-python-static-site-generator/) mostly for fun.
 
 
-## Random thoughts
+## TODO
+
+### Before release
+
+* Add JSON metadata per article
+** writing date
+* Add Google Analytics (and warning in &lt;footer>)
+* Add old articles (and add a note on all Wordpress articles)
+* Add script to redirect to HTTPS
+
+### After first release
 
 * Keep the sources in the repo (`_sources` directory). In the sent HTML, add a link to the source files
-* 
+* Add an `about` page
+* Make a list of article in main page
+* 404 tries a Google Search within the blog
+
+# Licence
+
+Code is shared under the MIT licence
+Content is shared under the CC-BY licence

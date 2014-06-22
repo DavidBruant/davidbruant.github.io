@@ -32,16 +32,39 @@ if (!Array.prototype.find) {
     });
 }
 
+// bad polyfill, but should do the trick
+if(!String.prototype.endsWith){
+    String.prototype.endsWith = function endsWith(str){
+        var target = String(this)
+        return target.lastIndexOf(str) === target.length - str.length;
+    }
+}
+    
+
 // imports
 const path = require('path');
 const resolve = path.resolve;
 const join = path.join;
 
-const all = require("promised-io/promise").all;
+const promise = require("promised-io/promise");
+const Deferred = promise.Deferred;
+const all = promise.all;
 const convertNodeAsyncFunction = require("promised-io/promise").convertNodeAsyncFunction;
 const fs = require("promised-io/fs");
 
 const request = convertNodeAsyncFunction(require('request'));
+const jsdom = require('jsdom');
+
+function makeDocument(htmlFragment){
+    const def = new Deferred();
+    //console.log(typeof htmlFragment, Buffer.isBuffer(htmlFragment));
+    
+    jsdom.env(htmlFragment, function(err, window){
+        if(err) def.reject(err);
+        else def.resolve(window.document);
+    });
+    return def.promise;
+}
 
 // args
 const args = process.argv.slice(2);
@@ -55,43 +78,46 @@ const SOURCES_DIRECTORY = join(MAIN_DIRECTORY, '_sources');
 const BASE_HTML_PATH = join(SOURCES_DIRECTORY, 'base.html');
 const ARTICLES_DIRECTORY = join(SOURCES_DIRECTORY, 'articles');
 
-
-const baseHTMLP = fs.readFile(BASE_HTML_PATH);
-
-baseHTMLP.then(function(b){
-    
-});
+const baseHTMLP = fs.readFile(BASE_HTML_PATH).then(function(baseHTMLBuffer){ return baseHTMLBuffer.toString(); });
 
 fs.readdir(ARTICLES_DIRECTORY).then(function(files){
     
-    const fileContentPs = files.map(function(f){
-        const path = join(ARTICLES_DIRECTORY, f);
-        
-        return fs.readFile(path).then(function(fileContent){
-            console.log(f, 'content\n', fileContent);
-            
-            return request({
-                url: 'https://api.github.com/markdown/raw',
-                method: 'POST',
-                headers:{
-                    'Content-Type': 'text/x-markdown',
-                    'User-Agent': 'https://github.com/DavidBruant/davidbruant.github.io'
-                },
-                body: fileContent
-            }).then(function(response){
-                return response[1]; // second non-error argument of request is the body
-            });
-        })
-    });
-    
-    all.apply(undefined, fileContentPs).then(function(c){
-        console.log('c', c.toString());
-    });
-    
+    files
+        .filter(function(f){ return f.endsWith('.html')}) // TODO remove when back online
+        .forEach(function(f){
+            const path = join(ARTICLES_DIRECTORY, f);
+
+            return fs.readFile(path)
+                .then(function(fileContent){
+                    //console.log(f, 'content\n', fileContent);
+
+                    return fileContent.toString();
+                    // trusting Github markdown service to not XSS my face. 
+                    /*return request({
+                        url: 'https://api.github.com/markdown/raw',
+                        method: 'POST',
+                        headers:{
+                            'Content-Type': 'text/x-markdown',
+                            'User-Agent': 'https://github.com/DavidBruant/davidbruant.github.io'
+                        },
+                        body: fileContent
+                    }).then(function(response){
+                        return response[1]; // second non-error argument of request is the body
+                    });*/
+                })
+                .then(makeDocument)
+                .then(function(articleDoc){
+                    baseHTMLP
+                        .then(makeDocument) // always recreate a fresh doc from HTML string
+                        .then(function(baseDoc){
+                            const baseDocArticle = baseDoc.querySelector('article');
+
+                            //console.log('baseDocArticle', baseDocArticle.outerHTML);
+                            baseDocArticle.innerHTML = articleDoc.body.innerHTML;
+
+                            console.log('result', f, baseDoc.innerHTML);
+                        });
+                })
+        });
 });
-
-
-
-
-
         
