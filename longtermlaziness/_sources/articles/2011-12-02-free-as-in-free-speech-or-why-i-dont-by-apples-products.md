@@ -37,7 +37,7 @@ Apple does not allow you to do what you want with what you buy. If you buy an Ap
 
 As it turns out, I don&#8217;t buy Apple products. Because I want to be in control of my own life. I want to be able to hack my device to use it as a remote control (I don&#8217;t have a TV) or to turn my car off and lock it (I don&#8217;t have a car) and not being told by the company who I bought it from that I am not allowed to. I believe in Creative Commons content that people will be able to share for the purpose of education. I believe in projects like [Mozilla&#8217;s Boot2Gecko][4] with which I&#8217;m sure I&#8217;m never going to be told that I can&#8217;t do what I want. I believe in free software so that I don&#8217;t get fucked later on and am never in doubt of a conspiracy of any sort.
 
- [1]: https://twitter.com/#!/RudeBaguette
+ [1]: https://twitter.com/RudeBaguette
  [2]: http://rudebaguette.com/2011/12/02/if-siri-is-hacked-in-a-french-forest-does-anybody-care/
  [3]: http://www.apple.com/legal/mobileme/en/terms.html
  [4]: https://wiki.mozilla.org/B2G

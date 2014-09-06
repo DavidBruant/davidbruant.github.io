@@ -13,9 +13,10 @@ Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my
 
 * Add JSON metadata per article
 ** writing date
+** meta description
+** title
 * Add Google Analytics (and warning in &lt;footer>)
 * Add old articles (and add a note on all Wordpress articles)
-* Add script to redirect to HTTPS
 
 ### After first release
 

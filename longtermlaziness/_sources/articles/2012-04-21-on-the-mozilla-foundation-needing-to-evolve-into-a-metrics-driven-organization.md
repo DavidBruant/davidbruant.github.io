@@ -30,6 +30,6 @@ I&#8217;m not saying it&#8217;s an easy task, but for sure it is a necessary one
 
  [1]: http://openmatt.org/wp-content/uploads/2012/04/Apr-2012-MoFo-Board-Slides-SHARE.pdf
  [2]: http://www.youtube.com/watch?v=o85Cr61fwaQ&t=10m40s
- [3]: https://twitter.com/#!/ryanmerkley
+ [3]: https://twitter.com/ryanmerkley
  [4]: http://www.youtube.com/watch?v=o85Cr61fwaQ&t=26m15s
  [5]: https://etherpad.mozilla.org/hf2u18lrqJ

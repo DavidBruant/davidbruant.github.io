@@ -29,13 +29,26 @@ categories:</p>
 <h2 id="the-solution">The solution</h2>
 <p>As a reduction of the problem, I will only consider that Modernizer create an object with properties named as features and with boolean values (I purposefully forget the whole html class attribute situation. I’ll mention them at the end).</p>
 <p>So, the solution is: getters!<br>Based on a name and a test function, a property is defined as a getter. When called for the first time, the getter executes the test function, and replaces the accessor property by a data property which value is the result of the test. Hence, the next time the property is called, the value is already there. It is completely transparent to the user which has no idea that once the property called a function and the other times just retrieves a value.</p>
-<p>The clean and standard way to do this is to use ECMAScript 5 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.<br>[sourcecode language="javascript"]<br>Modernizer.addTest = function(name, test){<br>Object.defineProperty(this, name, {get: function(){<br>var b = !!(test());<br>Object.defineProperty(this, name, {value:b});<br>return b;<br>},<br>configurable:true});<br>};<br>[/sourcecode]</p>
+<p>The clean and standard way to do this is to use ECMAScript 5 <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.  </p>
+<pre><code class="lang-js">Modernizer.addTest = function(name, test){  
+    Object.defineProperty(this, name, {
+        get: function(){  
+            var b = !!(test());  
+            Object.defineProperty(this, name, {value:b});  
+                return b;  
+        },  
+        configurable:true
+    });  
+};
+</code></pre>
 <h3 id="wait-a-minute-there-is-an-object-defineproperty-in-ie8">Wait a minute. There is an Object.defineProperty() in IE8</h3>
 <p><a href="http://msdn.microsoft.com/en-us/library/dd229916%28VS.85%29.aspx">Yes, there is</a> and it only works on DOM objects. Moreover, there are some property attribute combinaisons which aren’t quite allowed in IE8. More than that, apparently, it is not possible to redefine a property from an accessor to a data property. Hence I had to delete the existing property to be able to redefine it.</p>
 <h3 id="without-object-defineproperty-">Without Object.defineProperty()</h3>
 <p>Obviously, other browers don’t support Object.defineProperty(). The solution resides in <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/defineGetter">__defineGetter__</a> if it exists and giving up (not doing lazy testing and executing everything) if it doesn’t.</p>
 <h3 id="bonus-get-operator">Bonus: get operator</h3>
-<p>There is another way to define getters in JavaScript which is using the <a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special_Operators/get_Operator">get operator</a>.<br>[sourcecode language="javascript"]<br>var o = {get myfeature(){return true;}};<br>[/sourcecode]</p>
+<p>There is another way to define getters in JavaScript which is using the <a href="https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special_Operators/get_Operator">get operator</a>.  </p>
+<pre><code class="lang-js">var o = {get myfeature(){return true;}};
+</code></pre>
 <p>However, as far as I can tell, all browsers allowing this allow one of the previous solutions, so, there is no need for that. But let’s assume there is for a minute. So the Object.defineProperty doesn’t work, the __defineGetter__ doesn’t either. Does the get operator work?</p>
 <h4 id="how-to-perform-javascript-syntax-feature-detection-">How to perform JavaScript syntax feature detection?</h4>
 <p>This is actually an interesting question. Usually, feature detection uses JavaScript to see if there is such object or such function or executing such function. Here, I don’t need to execute JavaScript. I need to see if some JavaScript syntax is supported. Consequently, I “cannot use JavaScript itself”, because if I do and if the syntax isn’t supported in the tested browser, the interpreter will stop. The only solution I can think of is actually to put the JavaScript code in eval(), wrap it in a try-catch block and see if a SyntaxError is thrown.</p>

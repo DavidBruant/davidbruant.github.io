@@ -9,22 +9,21 @@ categories:
 Helping out with the [test262 test suite][1] (official ECMAScript 5 test suite), I have come to a problem. Based on a given object, find/generate a string which isn&#8217;t a property name of the object.
 
 Here is [the solution][2] I&#8217;ve come up with  
-[sourcecode language="javascript" light="true"]  
+```js
 function unusedPropertyName(o){  
-var ownPropNames = Object.getOwnPropertyNames(o);
+    var ownPropNames = Object.getOwnPropertyNames(o);
 
-var unusedName = ownPropNames.reduce(  
-function(prev, curr, i){  
-var A = &#8216;a&#8217;, B = &#8216;b&#8217;;  
-var l = curr[i];  
-l = (l=== undefined || l !== A) ? A : B;
+    var unusedName = ownPropNames.reduce(function(prev, curr, i){  
+        var A = &#8216;a&#8217;, B = &#8216;b&#8217;;  
+        var l = curr[i];  
+        l = (l=== undefined || l !== A) ? A : B;
 
-return prev + l;  
-}, &#8221;);
+        return prev + l;  
+    }, &#8221;);
 
-return unusedName;  
+    return unusedName;  
 }  
-[/sourcecode]
+```
 
 The idea is to list all property names. Then, create a string which has one letter that differs from each property name. This idea is inpired by [Cantor&#8217;s diagonal argument][3].
 

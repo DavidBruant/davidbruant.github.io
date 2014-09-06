@@ -19,7 +19,7 @@ I think that JS is a sum of a lot of technologies and that web developers should
 Besides that, the event programming paradigm is not easy to understand. Unlike &#8220;C programming&#8221; where you have a &#8220;main&#8221; function and a &#8220;return&#8221; at the end, JavaScript isn&#8217;t continuously executed. There is a bit of execution at the beginning for initialization purposes and after that it&#8217;s all user (click/keypress) or network (XMLHttpRequest events) or clock ([settimeout][13]) driven which could be all summarized as &#8220;events&#8221; (even if the clock &#8220;events&#8221; aren&#8217;t DOM events).  
 The DOM event mechanism is well explained in [one picture][14].
 
- [1]: http://twitter.com/#!/pipstar
+ [1]: http://twitter.com/pipstar
  [2]: https://www.drumbeat.org/p2pu-webcraft
  [3]: http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf
  [4]: https://developer.mozilla.org/en/JavaScript/Guide/Working_with_Objects

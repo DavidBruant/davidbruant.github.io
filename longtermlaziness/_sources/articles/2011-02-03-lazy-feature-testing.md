@@ -22,16 +22,18 @@ So, the solution is: getters!
 Based on a name and a test function, a property is defined as a getter. When called for the first time, the getter executes the test function, and replaces the accessor property by a data property which value is the result of the test. Hence, the next time the property is called, the value is already there. It is completely transparent to the user which has no idea that once the property called a function and the other times just retrieves a value.
 
 The clean and standard way to do this is to use ECMAScript 5 [Object.defineProperty()][2].  
-[sourcecode language="javascript"]  
+```js
 Modernizer.addTest = function(name, test){  
-Object.defineProperty(this, name, {get: function(){  
-var b = !!(test());  
-Object.defineProperty(this, name, {value:b});  
-return b;  
-},  
-configurable:true});  
+    Object.defineProperty(this, name, {
+        get: function(){  
+            var b = !!(test());  
+            Object.defineProperty(this, name, {value:b});  
+                return b;  
+        },  
+        configurable:true
+    });  
 };  
-[/sourcecode]
+```
 
 ### Wait a minute. There is an Object.defineProperty() in IE8
 
@@ -44,9 +46,9 @@ Obviously, other browers don&#8217;t support Object.defineProperty(). The soluti
 ### Bonus: get operator
 
 There is another way to define getters in JavaScript which is using the [get operator][5].  
-[sourcecode language="javascript"]  
+```js
 var o = {get myfeature(){return true;}};  
-[/sourcecode]
+```
 
 However, as far as I can tell, all browsers allowing this allow one of the previous solutions, so, there is no need for that. But let&#8217;s assume there is for a minute. So the Object.defineProperty doesn&#8217;t work, the \_\_defineGetter\_\_ doesn&#8217;t either. Does the get operator work?
 
