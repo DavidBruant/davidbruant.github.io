@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'Case study #2 undefined initialization'
+author: David Bruant
+layout: post
+permalink: /?p=63
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p><a href="http://tobyho.com/">airportyh</a> and I are currently working on an ES3-based implementation of ES5 array extras. As such, we are trying to conform as much as we can to the chapter 15.4.4 <a href="http://es5conform.codeplex.com/">ES5 conformance suite</a>.<br>With this suite comes a testing library sth.js. After throwing this library into <a href="http://www.jslint.com/">jslint</a>. I saw that there are variable initializations to <code>undefined</code>. This is bad for two reasons.<br>I explain what to do with object properties in a third part.</p>
+<h3 id="if-you-don-8217-t-want-to-define-it-don-8217-t-do-it">If you don’t want to define it, don’t do it</h3>
+<p>By default, the value of a variable that is not initialized is <code>undefined</code><br>[sourcecode language="javascript" light="on"]<br>var a;<br>alert(a); // alerts "undefined"<br>[/sourcecode]<br>There is no trap, no ambiguity, no inconsistency. This behavior exists since the big bang.</p>
+<h3 id="-undefined-8216-s-value-may-not-be-undefined-"><code>undefined</code>‘s value may not be <code>undefined</code></h3>
+<p>[sourcecode language="javascript" light="on"]<br>var undefined = 5; // No error, no mistake, no joke.<br>var a = undefined;<br>alert(a); // alerts ’5′<br>[/sourcecode]<br>Quite scary. In the weirdest cases where the code you write is wrapped (to be made private, for instance), it could be in an environment where undefined is overridden. </p>
+<h3 id="getting-rid-of-an-object-property">Getting rid of an object property</h3>
+<p>Once again, assigning <code>undefined</code> is not the good idea.<br>Two solutions : if you want to keep the property in the object, but get rid of the value, assign to <code>null</code> (you cannot do the previous assignment trick with <code>null</code>). If you want to remove the property from the object, use <code>delete</code> on this property.</p>
+<p>Note : <code>delete</code> removes a property from an object. It doesn’t “delete” an object from the memory. I will write an article about <code>delete</code> sooner or later</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>My conclusion is simple : never initialize to undefined. There is no reason for it and it might be dangerous.</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

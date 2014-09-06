@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Object-oriented JavaScript</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Long-term laziness</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Object-oriented JavaScript</h2>
+<p class="meta">05 Apr 2010</p>
+
+<div class="post">
+<p>This article assumes that you already have a good idea of what object-oriented programming is and experience in JavaScript programming.</p>
+
+<p>Before writing the 103683rd blog article/web page about object-oriented JavaScript (more than 1,640,000 on Google at this date), let&#8217;s list couple of good resources about this topic which influenced this article :</p>
+
+<ul>
+<li>  <a href="https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript">Mozilla Developer Center. Introduction to Object-Oriented JavaScript</a></li>
+<li>  <a href="http://articles.sitepoint.com/article/oriented-programming-1">Old, but good article</a></li>
+<li>  <a href="http://mckoss.com/jscript/object.htm">Another good article</a></li>
+<li>  <a href="http://t-templier.developpez.com/tutoriel/javascript/javascript-poo1/">Good beginning too (in French)</a> </li>
+</ul>
+
+<h3>What is an object ?</h3>
+
+<h4>How do we want to use objects ?</h4>
+
+<p>From the object-oriented programming perspective, an object has a state (described by several attributes) and a behavior (described by several methods/functions). From an external point of view, an object can be manipulated through the visible parts of the object.</p>
+
+<p>When defining an object, one natural question is : what should be visible from the outside ? The answer to this question depends one the way you want outsiders to use your object, what service(s) your object is supposed to provide.</p>
+
+<p>Usually, for maintenability purposes, objects should only provide public (available from outside the object) methods and no public attributes. Private (usable only inside the object) attributes are used to describe the object state and private methods are used for modularity purposes. Forbidding public attributes can be justified rigourously. This is not the point of this article.</p>
+
+<p>Several objects &#8220;following the same pattern&#8221; are usually defined through a class. An object defined through a class is said to be an instance of the class. In most object-oriented languages, instanciations are done through the <code>new</code> operator :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]myObj = new className();[/sourcecode]<br>
+In this case, a special public method called constructor is usually called to initialize the object state.</p>
+
+<p>Let&#8217;s sum this up. About objects, I expect to be able to :</p>
+
+<ul>
+<li>  Create objects (private attributes, public/private methods)</li>
+<li>  A class mecanism with constructors</li>
+</ul>
+
+<p>These are my current high-level expectations of object-oriented programming. Of course, object-oriented programming is richer than what I have described and I am forgetting inheritance on purpose for the moment. I will discuss this in another article.</p>
+
+<h4>ECMAScript potential</h4>
+
+<p>Here is the ECMAScript 5 definition of an object :<br>
+&#8220;An ECMAScript object is a collection of properties each with zero or more attributes that determine how each property can be used (&#8230;). Properties are containers that hold other objects, primitive values, or functions. (&#8230;) A function that is associated with an object via a property is a method.&#8221;<br>
+For the purpose of this article, the ECMAScript &#8220;properties&#8221; are what I earlier called attribute and ECMAScript &#8220;attributes&#8221; are something I will describe in another article.</p>
+
+<h3>Filling the gap</h3>
+
+<p>Let&#8217;s see several ways of defining objects in JavaScript and judge how they can fit our aformentioned high-level expectations of object-oriented programming.</p>
+
+<h4>&#8220;JSON&#8221; way</h4>
+
+<p>One way to define object is to define it in an inlined way. Example :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+var o = {prop1 : 25,<br>
+prop2 : &quot;blabla&quot;,<br>
+method1 : function(){alert(this.prop1 + this.prop2.toString());}<br>
+};<br>
+[/sourcecode]</p>
+
+<p>However, with this approach, everything is public. There is no way to define private properties describing the state of this object and shared by the public methods.</p>
+
+<h4>Dynamic construction</h4>
+
+<p>JavaScript allows to dynamically add attributes and methods to the objects.<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+var o = {}; // Creates an empty object<br>
+o.prop1 = 25;<br>
+o.prop2 = &quot;blabla&quot;;<br>
+o.method1 = function(){alert(this.prop2 + this.prop1.toString());};<br>
+[/sourcecode]<br>
+Same conclusion, everything is public. It is worse than the previous solution in the sense that each attribute/method requires the execution of one instruction while with the previous solution, the object is created once for all and there is only one assignment.</p>
+
+<h4>Some privacy, please !</h4>
+
+<p>As seen in the <a href="2010/04/03/function/">previous article</a>, creating an anonymous function called once allows privacy. As a consequence, we have a pattern to create objects with private attributes:<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+var o = (function(){<br>
+var privateAttribute; /* Defines a private attribute that can be used in public/private functions thanks to JavaScript closures */</p>
+
+<p>function privateMethod(){<br>
+};</p>
+
+<p>return {<br>
+publicMethod1 : function(){<br>
+},</p>
+
+<p>publicMethod2 : function(){<br>
+}<br>
+};<br>
+})();<br>
+[/sourcecode]</p>
+
+<p>Private attributes only (unless you intentionally declare a public one in the returned object), public and private methods. The requirements for the object are fulfilled. By the way, this is an implementation of the <a href="http://en.wikipedia.org/wiki/Singleton_pattern">singleton design pattern</a>.</p>
+
+<h4>JavaScript style classes</h4>
+
+<p>Despite the fact that the <code>class</code> keyword is a reserved one in ECMAScript, there is currently no direct way to create classes as it is possible in C++ or Java. However, ECMAScript permits the use of &#8220;constructors&#8221;. Those are functions defined like any other function. The difference resides in the usage :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+function f(){<br>
+}</p>
+
+<p>f(); /* calls the f function */</p>
+
+<p>function myClass(){<br>
+/* Let&#8217;s manipulate the &quot;this&quot; object. Add attributes/methods to it */<br>
+this.method = function(){};<br>
+}</p>
+
+<p>var o = new myClass(); /* Using the new operator changes the semantic of myClass to be a constructor returning the &quot;this&quot; object */<br>
+o.method();<br>
+[/sourcecode]</p>
+
+<p>As a consequence, a pattern to create objects from &#8220;classes&#8221; emerges :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+function myClass(a){<br>
+var privateAttribute = a;</p>
+
+<p>function privateMethod(){<br>
+alert(privateAttribute);<br>
+};</p>
+
+<p>this.publicMethod = function(){privateMethod();};<br>
+})();</p>
+
+<p>var o1 = new myClass(&quot;azerty&quot;);<br>
+var o2 = new myClass(&quot;qwerty&quot;);</p>
+
+<p>o1.publicMethod(); // alerts &quot;azerty&quot;<br>
+o2.publicMethod(); // alerts &quot;qwerty&quot;<br>
+/* o1.privateMethod is undefined as well as o1.attribute */<br>
+[/sourcecode]</p>
+
+<p>Public/private methods, private attributes, everything is here, but&#8230;</p>
+
+<h4>The constructor ambiguity</h4>
+
+<p>In Java or C++, the constructor is a function of the class called at instanciation time. As a function, local variables (such as a loop counter) can be declared in it and are well distinguished from private attributes. Without extra care, this is not the case for JavaScript. This is due to the confusion between JavaScript &#8220;class&#8221; definition which is done through a so-called &#8220;constructor&#8221; and the notion of constructor in the Java or C++ sense.<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+function myClass(s, n){<br>
+var myString;</p>
+
+<p>this.getMyString = function(){return myString};</p>
+
+<p>/* let&#8217;s construct the string composed of n repetitions of the s string */</p>
+
+<p>var i; // loop counter, of course<br>
+myString = &quot;&quot;;</p>
+
+<p>for(i = 0 ; i &lt; n ; i++){<br>
+myString += s;<br>
+}<br>
+}<br>
+[/sourcecode]</p>
+
+<p>In this example, we can see that <code>myString</code> initialisation is done inside of the JavaScript constructor, but not inside an actual function with local variable definition. As a result, <code>i</code> is defined in the same way that <code>myString</code> while their semantics are different. The former was here temporarly for initialization and doesn&#8217;t reflect the object intern state while the latter does.</p>
+
+<h5>Anonymous constructor</h5>
+
+<p>Here is a solution to separate local variables of a constructor function and private attributes.<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;true&quot;]<br>
+function myClass(s, n){<br>
+var myString;</p>
+
+<p>this.getMyString = function(){return myString};</p>
+
+<p>/* let&#8217;s construct the string composed of n repetitions of the s string */<br>
+(function(){<br>
+var i; /* loop counter.<br>
+Available only within the scope of the anonymous function */<br>
+myString = &quot;&quot;;<br>
+for(i = 0 ; i &lt; n ; i++){<br>
+myString += s;<br>
+}</p>
+
+<p>alert(this.getMyString());<br>
+}).call(this);<br>
+}<br>
+[/sourcecode]</p>
+
+<p>The constructor in the Java/C++ sense is the anonymous function. One little issue is that without any addition, inside the anonymous function, the <code>this</code> keyword doesn&#8217;t refer to the object we are creating. As a consequence, public methods are not available. The <code>.call(this)</code> calls the anonymous function and imposes that the <code>this</code> keyword inside of the function refers to the object in parameter. In this case, <code>this</code> which is the object we are creating.</p>
+
+<p>We have objects with private attributes, public and private methods. We have &#8220;classes&#8221; and constructors. That&#8217;s it for the moment.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

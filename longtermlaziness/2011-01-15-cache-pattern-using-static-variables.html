@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: Cache pattern using static variables
+author: David Bruant
+layout: post
+permalink: /?p=99
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<h2 id="motivation">Motivation</h2>
+<p>I’ve recently been writing some PHP. At some point, I wrote a function which was taking a string as input, <a href="http://www.php.net/manual/en/function.preg-replace.php">applying several regexp</a> to replace some patterns by something else and returning the result. Input string weren’t very long and throught the lifetime of the program, this function could be called several times with the exact same input. So it got me thinking. If I have already computed this function for some input, why should I bother computing it again? I shoudn’t and so implement a cache.</p>
+<h2 id="pattern">Pattern</h2>
+<p>There aren’t thousands of ways to implement a cache, but some are better than others. The function I was working on was actually a method of an object. I could have used a private attribute. I haven’t. I have rather chosen to use a <a href="http://en.wikipedia.org/wiki/Static_variable">static variable</a>. I have rarely seen a static variable used because very few context seem really suited for it; but I think this is one of them. Using a static variable here has the advantage that it is accessible only within the function. Consequently, nothing can mess with it and this is garanteed <strong>by design</strong>.</p>
+<p>Here is the structure of the cache (written like as a somewhat language agnostic program assuming that it supports static variables):<br>[sourcecode language="javascript" light="on"]<br>function f(input){<br>static cache;<br>if(input in cache) // looking if this input already has a cache entry.<br>return cache[input];</p>
+<p>output = myHeavyComputation(input);</p>
+<p>cache[input] = output; // Adding an entry to the cache to hopefully save computation next time<br>return output;<br>}<br>[/sourcecode]</p>
+<p>It goes almost without saying that this works only for <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a>. </p>
+<h2 id="applying-this-pattern-to-javascript">Applying this pattern to JavaScript</h2>
+<p>No one ignores that even though the <em>static</em> keyword is reserved in ECMAScript, it isn’t used in the language.<br>But closures can help us out to deal with this issue:<br>[sourcecode language="javascript" light="on"]<br>var f = (function(){<br>var cache;</p>
+<p>return function (input){<br>if(input in cache)<br>return cache[input];</p>
+<p>output = myHeavyComputation(input);</p>
+<p>cache[input] = output;<br>return output;<br>}<br>})<br>[/sourcecode] </p>
+<h2 id="adding-a-cache-to-a-function-without-rewriting-it">Adding a cache to a function without rewriting it</h2>
+<p>Obviously, the approach of adding a bit of code at the beginning and at the end may not be easy if you want to add a cache to a function of a library or any code your don’t necessarily control especially if this one is minified.</p>
+<p>Here is a function to transform a function into the same function with a cache:<br>[sourcecode language="javascript" light="on"]<br>function MakeFunctionWithCache(f){<br>var cache = {};<br>return function(input){<br>if(input in cache)<br>return cache[input];</p>
+<p>output = f.apply(null, arguments);</p>
+<p>cache[input] = output;<br>return output;<br>}<br>}<br>[/sourcecode]<br>Let’s see how and if it works with an example. </p>
+<h3 id="improving-the-fibonacci-naive-algorithm">Improving the Fibonacci, naive algorithm</h3>
+<p>We’re going to see the difference between the naive Fibonacci with and without cache.<br>[sourcecode language="javascript" light="on"]<br>var count = 0;</p>
+<p>function fibonacci(i){<br>count++;</p>
+<p>return (i===0 || i===1) ?<br>1:<br>fibonacci(i-1) + fibonacci(i-2);<br>}</p>
+<p>// comment the line below to disable the cache<br>fibonacci = MakeFunctionWithCache(fibonacci);</p>
+<p>console.log(fibonacci(25));<br>console.log(count);<br>[/sourcecode]</p>
+<p>The counter is here to count the number of actual fibonacci function calls. Results are 26 calls with cache against 242785 without. Basically, with the cache once one fibonacci value has been computed, it is in the cache. Consequently, any later call to the function will be “captured” by the cache, so, the actual call to the function (<code>f.apply(null, arguments);</code> in the <code>MakeFunctionWithCache</code> returned function) does not occur (neither do the recursive calls, hence the performance improvement). </p>
+<p>Without running the code, you may be worried that the recursive call inside the fibonacci function definition aren’t “going through the cache”. They are: when the fibonacci function is called, the <code>fibonacci</code> recursive calls do not refer to the function which has been defined as <code>fibonacci</code>, but to the “thing” that is named <code>fibonacci</code> at the time of the call. Since we have replaced the <code>fibonacci</code> variable with the version with the cache, this is the one that is called. </p>
+<h2 id="conclusions-and-improvement-tracks">Conclusions and improvement tracks</h2>
+<p>We have seen a cache pattern which is almost language agnostic. I have then showed how to add a cache to a <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a> without touching the function itself. There are obviously restriction and limitations. It is unlikely to work if we’re dealing with a non-pure function. If the input space is too wide, the space vs time trade-off may not be worth it. If the function isn’t called with the same input several times throughout the program lifetime, a cache is useless. If the function is a method of a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/freeze">frozen</a> object, my method cannot be applied. </p>
+<p>However, in contexts where a cache can help, this can be useful. One of the main advantage is the separation of concerns. If you want to do tricky things with your cache (remove some entries after a certain amount of time if they haven’t been used, for instance), you don’t have to work on the function you’re adding a cache too. You just have to work on <code>MakeFunctionWithCache</code>. This is also helpful if you have several functions you want add a cache to: there is only one place to maintain if you want to improve the cache mecanism.</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'Array.forEach() – Introduction'
+author: David Bruant
+layout: post
+permalink: /?p=35
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>One of the most fantastic feature of JavaScript is that functions are considered as first-class objects. A first consequence of this is that it allows functional programming. One usage of functional programming is to manipulate arrays easily.</p>
+<p>ECMAScript 5 has standardized some methods that existed for a while in Firefox :</p>
+<ul>
+<li>every</li>
+<li>some</li>
+<li>forEach</li>
+<li>map</li>
+<li>filter</li>
+<li>reduce</li>
+<li>reduceRight</li>
+</ul>
+<p>Each of these methods can be used instead of a common pattern of imperative programming. For example, the <code>.forEach()</code> method can be used when you are writing the following code.<br>[sourcecode language="javascript" light="on"]<br>// Let’s assume that ‘a’ is an array and ‘f’ a function previously declared<br>var i, l;<br>for(i=0, l=a.length ; i&lt;l; i++){<br>f(a[i], i, a); // the order of the arguments is the one used in ES5<br>}<br>[/sourcecode]</p>
+<p>With .forEach :</p>
+<p>[sourcecode language="javascript" light="on"]<br>// Let’s assume that ‘a’ is an array and ‘f’ a function previously declared<br>a.forEach(f);<br>[/sourcecode]</p>
+<p>Somehow, each of the “Array extras” is an hidden loop.<br>Each method has a compulsory argument which is the function (“callback function”) to be called on each array element and an optional argument which is an object used as the <code>this</code> value of the function used as first argument.<br>Expect for <code>reduce</code> and <code>reduceRight</code>, the function used as an argument can have between 1 and 3 arguments with already defined semantics. The first argument is the element of the array, the second argument is its index and the third, the array being traversed.</p>
+<p>Among the advantages of those methods we can find :</p>
+<ul>
+<li>Smaller code</li>
+<li>Better abstraction (no need to read all the code to understand that the same treatment is applied to each element)</li>
+<li>No need for a loop counter. It seems minor, but it means that this JavaScript variable doesn’t need to be allocated and then garbage-collected at the end of its life-time. This should result to better performance.</li>
+</ul>
+<p>We will see in a next article that forEach and the other Array methods may not be limited to arrays.<br>In another article about these methods, I will go further in the idea of “better abstraction” and the different advantages this better abstraction can provide in term of performance.<br>In a last article, I will provide some code to use at the beginning of an application to be able to use these methods even in an ECMAScript 3 but not 5 compliant environment (<a href="http://kangax.github.com/es5-compat-table/">like IE all versions, even 9pre</a>)</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

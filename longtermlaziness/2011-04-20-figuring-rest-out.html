@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: Figuring REST out
+author: David Bruant
+layout: post
+permalink: /?p=136
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the first of a series that will talk about web architecture. I’ll discuss REST, HTTP, software engineering in the context of applications in a network. As much as I can, I’ll try to relate what I have learned and understood to nowadays web.</p>
+<h2 id="background">Background</h2>
+<p>My experience with the web (from the tech side) has started with manually editing automatically generated HTML pages. Then, I have copy-pasted a small JS snippet to automatically insert the “last modified” date.<br>Afterward, I’ve has a class on “XML and web technologies”. Then, I’ve been involved with <a href="http://vocamus.net/dave/?p=1172">professionals</a> and other students on a project with web technologies and especially client-side technologies. Throughout the project, we have taken right in the face a bunch of new words/expressions like “Ajax”, “Drag’n'Drop” (not obvious for non-English speakers), “REST”, “SOAP”, “Servlet”, “cloud” and so many others. All apply in very different areas of IT and it took some time for us to figure that out. The one “word” we’ve been most bullshitted on is probably “REST”.</p>
+<p>I have recently had the occasion to study the excellent <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Dissertation of Roy Fielding on REST</a>. Just to make sure I’m not misunderstood: he is not “discussing” REST; he invented it and is explaining the rationale and design decisions. Even if I highly encourage any web developer to take a couple of hours to read the entire thing, here are a couple of take-away points I find particularly noteworthy as they re-question what we now take for granted or take a different view in the 2011 web.</p>
+<h2 id="restarting-fresh">Restarting Fresh</h2>
+<p>To understand how to think about “Architectural Styles and the Design of Network-based Software Architectures”, you have to forget all what you know about computers and the web. Forget about mobile or tablet web, forget Facebook or Twitter, forget Google Document or Etherpad, forget wikis, forget blogs, forget server-side generated content, forget web browsers, forget HTML documents, forget HTTP. Get to a point where you have computers, wires to connect them and a protocol so that one computer can send a message any other.<br>What is a good network-based software architecture? “Good” referring to an attempt to maximize a couple of characteristics including performance, scalability and modifiability (see <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/net_app_arch.htm#sec_2_3">2.3 Architectural Properties of Key Interest</a> for full list and detailed explanations). This is the question REST is addressing.</p>
+<h2 id="what-is-rest-">What is REST?</h2>
+<p><strong>REST is an architectural style</strong>. According to Roy Fielding, an architecture style is:</p>
+<blockquote>
+<p>An architectural style is a coordinated set of architectural constraints that restricts the roles/features of architectural elements and the allowed relationships among those elements within any architecture that conforms to that style.</p>
+</blockquote>
+<p>Refer to <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/software_arch.htm">chapter one</a> if you don’t feel comfortable with any of the words in this definition.<br>REST is not a file format. REST is not what you use when you’re not using a known file format. REST is not the HTTP protocol, it’s not even a network protocol. It’s an architectural style.</p>
+<p>REST stands for “REpresentational State Transfer”:</p>
+<blockquote>
+<p>The name “Representational State Transfer” is intended to evoke an image of how a well-designed Web application behaves: a network of web pages (a virtual state-machine), where the user progresses through the application by selecting links (state transitions), resulting in the next page (representing the next state of the application) being transferred to the user and rendered for their use.</p>
+</blockquote>
+<p><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm#sec_6_1">(source)</a><br>The view was implemented by web browsers until the ability to dynamically retrieve content came into the game. This changed the game, by providing the ability to change the content of a web page without changing the URL (without taking a transition, changing state). While providing a new kind of user experience, this was annoying by its lack of interaction with the back/forward buttons in the web browser: the web application having itself an internal state, user may be tempted to click on the back/forward buttons to navigate through the web application state and not the “web browser state” sort of say. This issue has recently found a technical solution with the introduction of the <a href="http://diveintohtml5.org/history.html">history API</a>.</p>
+<h2 id="deriving-rest">Deriving REST</h2>
+<p>REST is made architectural constraints. In that section, I’ll discuss the one I find relevant. This maps the <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1">corresponding section in Fielding’s Dissertation</a>.</p>
+<h3 id="-client-server-8-"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_2">Client-Server</a></h3>
+<p>This is the first constraint and the one I find the most controversial.<br>The <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_4_1">quoted section</a> explores what “client-server” means in the literature. Client is considered as a “triggering process”, a component that “sends a request”, while the server is described as “receiving the request and either reject or respond to it”; a “reactive process”. This abstraction is interesting in the fact that clients and servers roles are bound to one interaction. What I mean is that the same computer could change role. This actually occurs in Comet-based applications, where what we usually call “client” (the web browser) is actually listening to messages coming from the “server”, becoming itself a server according to the previous definition.</p>
+<p>However, in that section, “client” is associated with “user interface” and “server” to “storage” and this association is actually dangerous in a way, because for instance, crawlers are client in the previous sense (sending resquests) but do not have a user interface.</p>
+<p>The ambiguity between the different views and definitions of what “client” and “server” means who need to be bug further.</p>
+<h3 id="stateless">Stateless</h3>
+<p>Oftentimes, one can hear things like “my web application is RESTful so it’s stateless”. This is obviously ridiculous. A stateless application means… well… that the application doesn’t have a state which is pointless for non-trivial applications. In REST, <strong>what is stateless is not the application</strong> you build on top of the network (even reduced to one client and one server). What is stateless is <strong>each interaction</strong>. The point is that each request can be <em>understood</em> even considered outside of its applicative context. One direct application of that is the ability to create caches. If one cannot, only based on the requests, assume that the same request will result in the same response, then it is impossible to cache it. But if a request can be understood out of its context, then in some cases, you could cache it.</p>
+<h3 id="code-on-demand">Code on demand</h3>
+<p>The key take-away is:</p>
+<blockquote>
+<p>This simplifies clients by reducing the number of features required to be pre-implemented. Allowing features to be downloaded after deployment improves system extensibility.</p>
+</blockquote>
+<p>I’ll write another article on how this related to actual web development and practical limitations of code on demand without stronger constraints.</p>
+<h2 id="experience-and-evaluation">Experience and evaluation</h2>
+<p>The dissertation discusses the experience gathered through HTTP design and how different aspects of the web as it is conforms (or not) to the REST architectural style.</p>
+<h3 id="http">HTTP</h3>
+<p>One interesting point I have read on HTTP is that there is no syntactic distinction between representation meta-data (Content-Type, Content-Length…) and message control information (Referer, Expire…) because they are both transmitted as HTTP headers.</p>
+<h3 id="cookies">Cookies</h3>
+<p>Cookies aren’t part of HTTP1.1 but were later added by Netscape. About them Roy Fielding writes:</p>
+<blockquote>
+<p>Cookies also violate REST because they allow data to be passed without sufficiently identifying its semantics, thus becoming a concern for both security and privacy. The combination of cookies with the Referer [sic] header field makes it possible to track a user as they browse between sites.</p>
+</blockquote>
+<p>I’ll admit that I don’t really understand the causal link between partial semantics and the security/privacy issue yet. Nevertheless, I fully understand the privacy issue.<br>Another quote:</p>
+<blockquote>
+<p>The same functionality should have been accomplished via anonymous authentication and true client-side state. A state mechanism that involves preferences can be more efficiently implemented using judicious use of context-setting URI rather than cookies, where judicious means one URI per state rather than an unbounded number of URI due to the embedding of a user-id. Likewise, the use of cookies to identify a user-specific “shopping basket” within a server-side database could be more efficiently implemented by defining the semantics of shopping items within the hypermedia data formats, allowing the user agent to select and store those items within their own client-side shopping basket, complete with a URI to be used for check-out when the client is ready to purchase.</p>
+</blockquote>
+<p>A lot of things are said here. I’ll study them in a later post.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This article was intended to be an overview of REST. I hope usual ambiguity of misunderstandings are now clarify. Once again, I highly encourage you to read the <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">entire Dissertation</a>. I’ll expand on some subtopics in the next few days. Stay tuned!</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

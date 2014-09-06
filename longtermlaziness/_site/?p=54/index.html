@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Array.forEach &#8211; The genericity potential</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Long-term laziness</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Array.forEach &#8211; The genericity potential</h2>
+<p class="meta">20 Apr 2010</p>
+
+<div class="post">
+<p>In the <a href="/2010/04/19/array-foreach-introduction/">previous article</a> we discovered the .forEach method and the others Array methods normalized by ECMAScript 5. </p>
+
+<h3><code>.forEach()</code> natively out of the DOM</h3>
+
+<p>This is interesting, but it seems to be limited. Indeed, unless you are writing some mathematic library in JavaScript, you usually don&#8217;t manipulate Array, but rather Array-like objects such as <a href="http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html#ID-75708506">HTMLCollection</a> or <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/core.html#ID-536297177">NodeList</a> you got from <code>document.getElementsByTagName(&#39;a&#39;)</code>, <code>querySelectorAll(&#39;.tab&#39;)</code> or <code>table.rows</code>.<br>
+Sadly, non of these interfaces is an ECMAScript Array. (see ECMAScript bindings for <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/ecma-script-binding.html">DOM Core Level 3</a> and <a href="http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/ecma-script-binding.html">DOM HTML</a>. Actually, the word &#8220;Array&#8221; doesn&#8217;t appear a single time in any of these documents.</p>
+
+<p>A natural consequence is that the following code raises an error :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+var cells = document.getElementsByTagName(&#8216;td&#8217;);<br>
+cells.forEach(function(e,i,a){<br>
+e.style.backgroundColor = randomColorString();<br>
+// randomColorString has been previously defined<br>
+});<br>
+[/sourcecode]</p>
+
+<p>This is quite sad but that&#8217;s another debate.</p>
+
+<h3>ECMAScript 5&#8242;s good idea</h3>
+
+<p>About the <code>forEach</code> method and other Array methods, the specification states the following :</p>
+
+<blockquote>
+<p>NOTE : The <code>forEach</code> function is intentionally generic; it does not require that its<code>this</code> value be an Array object. Therefore it can be transferred to other kinds of objects for use as a method. Whether the <code>forEach</code> function can be applied successfully to a host object is implementation-dependent. </p>
+</blockquote>
+
+<p>After a closer look at the <code>forEach</code> specification, it turns out that this method could be used on any object with a <code>length</code> property and having properties with 0..(length-1) as identifiers. This last condition is not necessary, but corresponds to <code>forEach</code> semantics.</p>
+
+<h4>Let&#8217;s try !</h4>
+
+<p>getElementsByTagName is <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=14869">not standard-compliant on Firefox</a>, but even with the following code inserted before the above one :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+NodeList.prototype.forEach = Array.prototype.forEach; // For standard-compliant browsers<br>
+HTMLCollection.prototype.forEach = Array.prototype.forEach; // For Firefox which consider that getElementsByTagName returns an HTMLCollection<br>
+[/sourcecode]<br>
+The previous background-color randomizing code works. (Note : It didn&#8217;t on Firefox 3.5, but does on Firefox 3.6). I have also tested on Opera 10.61 and Chrome 5</p>
+
+<p>Fantastic idea from the TC39 ECMA committee (people who wrote ES5) to have the array extra methods generic to make them transferable to other objects.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

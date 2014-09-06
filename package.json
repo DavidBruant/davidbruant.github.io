@@ -1,7 +1,7 @@
 {
   "name": "davidbruant.github.io",
   "version": "0.0.0",
-  "description": "my own static website/blog ",
+  "description": "my own static website/blog generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "jsdom": "~0.11.0",
-    "promised-io": "~0.3.4",
-    "request": "~2.36.0"
+    "request": "~2.36.0",
+    "marked": "~0.3.2",
+    "es6-promise": "~1.0.0"
   }
 }

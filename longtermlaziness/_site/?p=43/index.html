@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Case study #1</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Long-term laziness</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Case study #1</h2>
+<p class="meta">16 Apr 2010</p>
+
+<div class="post">
+<p>This article will be the first of a long serie I hope.<br>
+One of the purpose of this blog is education through example. Each time I find a good example of a problem solved in a way that I think I could improve, I will provide the code, examine it and show how I would the problem and justifying why I think it is better.</p>
+
+<p>I encourage you to debate the open questions I could raise and I encourage you to submit me some code you find interesting.</p>
+
+<p>This first case study comes from a code I have found in a website (variable names and strings have been changed).</p>
+
+<p>[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+var v = new (function () {<br>
+this.a = &quot;Hello &quot;;<br>
+this.b = &quot;world !&quot;;<br>
+/* &#8230;<br>
+** More than 1250 assignments like this !<br>
+<em>\</em> &#8230; */<br>
+this.y = &quot;foo&quot;;<br>
+this.z = &quot;bar&quot;;<br>
+})();<br>
+[/sourcecode]</p>
+
+<h3>Reading the code</h3>
+
+<p>A variable receives something. This something seems to be a new instance of the result of a function called once. It is not.<br>
+It turns out that when you remove the final <code>()</code>, the result is exactly the same. When you replace the final <code>)()</code> (take the value of what is between parenthesis and call it if it&#8217;s a function) by <code>())</code> (call the function and return the value returned by the function), Opera and Firefox explain that the result of the anonymous function call is not a constructor. Indeed, nothing is returned ! Not even <code>this</code>. In this case, the default returned value is <code>undefined</code>.</p>
+
+<p>Finally, this code means that a constructor is called. This constructor is the anonymous function between parenthesis. The final <code>()</code> is interpreted as an empty (and useless) expression.</p>
+
+<h3>What problem are we solving, by the way ?</h3>
+
+<p>This code is called once at the beginning. It aims at initializing an object.</p>
+
+<p>To do this I would just have created an object in the &#8220;JSON way&#8221; :<br>
+[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+var v = {<br>
+a : &quot;Hello &quot;,<br>
+b : &quot;world !&quot;,<br>
+/* &#8230; */<br>
+y : &quot;foo&quot;,<br>
+z : &quot;bar&quot;<br>
+};<br>
+[/sourcecode]</p>
+
+<p>My guess is that because I just have a unique assignment, my initialization should be faster than the 1200+ instructions of the previous constructor. Another advantage of my solution is that I got rid of the 1200+ &#8220;<code>this.</code>&#8221; which saves 6000+ characters !</p>
+
+<h3>Experiment</h3>
+
+<p>After putting my idea and the original one in two separate loops and comparing the times of 100, 1000 or 2000 run, my implementation turns out to be between 2 and 3 times faster. This &#8220;huge&#8221; range may be due to the high usage of strings and consequently the garbage collector which is known to be actively used on Firefox (where I ran my experiments) and whose behavior cannot be accurately predicted. </p>
+
+<p><em>Note :</em> I have not rewritten 1200 lines of code manually. I replaced all &#8220;;&#8221; by &#8220;,&#8221; and got rid of all &#8220;this.&#8221;. Some errors occurred due to the fact that some &#8220;this.&#8221; were in the right-hand side. Those must be kept. They refer to the value of the property of the object in construction.</p>
+
+<h3>Conclusion</h3>
+
+<p>Smaller code, no useless code, faster code. My solution seems to be better in all aspects.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

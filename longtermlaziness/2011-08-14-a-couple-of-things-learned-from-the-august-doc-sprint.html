@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: A couple of things learned from the August Doc Sprint
+author: David Bruant
+layout: post
+permalink: /?p=245
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>This week-end was a <a href="https://wiki.mozilla.org/MDN/Doc_sprints/2011August">MDN doc sprint</a>. I haven’t had the time to do a lot, but some of the interactions have been really useful and i’d like to share a couple of things i’ve learned.</p>
+<h2 id="setimmediate">setImmediate</h2>
+<p>On the <a href="http://etherpad.mozilla.org:9000/docsprint2011August">Doc Sprint Etherpad</a>, I have noticed that Jonathan Wilsson (McGurk) added pages for <a href="https://developer.mozilla.org/en/DOM/window.setImmediate">setImmediate</a> and <a href="https://developer.mozilla.org/en/DOM/window.clearImmediate">clearImmediate</a>. These <a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/setImmediate/Overview.html">not-yet-specified functions</a> aim at being an efficient replacement to setTimeout(0) (which is clamped to 4ms for historical reasons) and its <a href="http://jsperf.com/postmessage">hack-ish postMessage based replacement</a>.</p>
+<p>In a way, this is a good news, but it’s a bit overlapping with what <a href="http://wiki.ecmascript.org/doku.php?id=strawman:concurrency"><span title="ECMAScript technical commitee in charge of the next version of ECMAScript">TC39</span> has in mind for concurrency</a>. <a href="https://mail.mozilla.org/pipermail/es-discuss/2011-March/013213.html">In an es-discuss e-mail</a>, Mark Miller sounded enthusiastic with the idea of <a href="http://wiki.ecmascript.org/doku.php?id=strawman:concurrency#q.delay">making Q.delay part of the default upcoming concurrency API</a>. This would make 2 features for the same purpose. As stated in the es-discuss quoted thread i started, it would make more sense to bring <code>setTimeout</code> to ECMAScript rather than letting it be part of a web standard since timing issue aren’t really specific to the web. As a matter of fact <a href="http://nodejs.org/docs/v0.0.1/api.html#timers">Node.js uses the same API</a>.</p>
+<h2 id="textcontent-vs-innertext">textContent VS innerText</h2>
+<p>I have improved the style for <a href="https://developer.mozilla.org/En/DOM/Node.textContent">Node.textContent</a> and have read with great interest the notes which state some difference with Microsoft’s <code>innerText</code>. One being that <code>innerText</code> cannot retrieve the text from <script> and <style> elements. Well&#8230; That is the explanation of why <a href="http://selectivizr.com/">Selectivizr</a> explains that &#8220;Styles defined in <style> tags won&#8217;t be parsed.&#8221; (in old IE, of course).</p>
+<h2 id="innerhtml-counter-intuitive-performance">innerHTML counter-intuitive performance</h2>
+<p>I&#8217;ve added a <a href="https://developer.mozilla.org/en/DOM/element.innerHTML#Security_consideration">security consideration section to the innerHTML page</a>. It was the occasion to re-read the page and re-find <a href="http://www.quirksmode.org/dom/innerhtml.html">Quircksmode performance test</a>. And even in modern Firefoxes and Chrome, innerHTML keeps being (2-3 times) faster than creating DOM elements in memory and appending them. I have to admit that this is counter-intuitive for me (innerHTML requires parsing and creation of a document fragment while DOM elements manipulation doesn&#8217;t require the parsing). The best explanation i can come up with is that innerHTML is one line of JavaScript while the several creations and appending required to do the same operations require roundtrips between native code and JavaScript code. I&#8217;m looking forward to see <a href="https://github.com/andreasgal/dom.js/">dom.js</a> being finished and hopefully integrated in browsers to re-test its performance against a native innerHTML.</p>
+</body></html></script></p></article>
+        <footer></footer>
+    </body>
+</html>

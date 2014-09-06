@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Case study #3</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Long-term laziness</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>Case study #3</h2>
+<p class="meta">11 May 2010</p>
+
+<div class="post">
+<p>I looked at a random website JS code and discovered the following</p>
+
+<p>[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+/*\<em>\</em> Part 1 ***/<br>
+function get(id) { return document.getElementById(id); }<br>
+function getByTagName(tag) { return document.getElementsByTagName(tag); }</p>
+
+<p>/*\<em>\</em> Part 2 **<em>/<br>
+function getByClassName(clsName) {<br>
+var retVal = new Array();<br>
+var elements = document.getElementsByTagName(&quot;</em>&quot;);<br>
+for(var i = 0;i &lt; elements.length;i++){<br>
+if(elements[i].className.indexOf(&quot; &quot;) &gt;= 0){<br>
+var classes = elements[i].className.split(&quot; &quot;);<br>
+for(var j = 0;j &lt; classes.length;j++){<br>
+if(classes[j] == clsName)<br>
+retVal.push(elements[i]);<br>
+}<br>
+}<br>
+else if(elements[i].className == clsName)<br>
+retVal.push(elements[i]);<br>
+}<br>
+return retVal;<br>
+}</p>
+
+<p>/*\<em>\</em> Part 3 ***/<br>
+function exists(o) {<br>
+try {<br>
+if((typeof(o) !== &quot;undefined&quot;)&amp;&amp;(o!=undefined)&amp;&amp;(o!=null)&amp;&amp;(o!=&quot;null&quot;)) { return true; } else { return false; }<br>
+} catch(error){ return false; }<br>
+}</p>
+
+<p>/*\<em>\</em> Part 4 ***/<br>
+function getInnerHTML(id) { return document.getElementById(id).innerHTML; }<br>
+function setInnerHTML(id, d) { var e = get(id); if (e != null) { e.innerHTML = d; } }<br>
+function getClassName(id) { return document.getElementById(id).className; }<br>
+function setClassName(id, c) { var e = get(id);if (e != null) { e.className = c; } }<br>
+function getStyleAttr(id,p) { var e = get(id);if(e != null) { return e.style[p]; } }<br>
+function setStyleAttr(id,p,v) { var e = get(id);if(e != null) { e.style[p] = v; } }<br>
+function changeCLS(id,cls) { setClassName(id,cls); }<br>
+function formatURL(url){ var formattedURL = unescape(url);window.location = formattedURL;}</p>
+
+<p>/*\<em>\</em> Part 5 ***/<br>
+function show(id) {<br>
+var display = (arguments.length &gt; 1) ? arguments<a href="http://www.w3.org/TR/CSS2/visuren.html#display-prop">1</a> : &quot;block&quot;;<br>
+if (typeof(id) === &quot;string&quot; ) {<br>
+var e = get(id);<br>
+if (e != null) {<br>
+setStyleAttr(id,&quot;display&quot;,display);<br>
+}<br>
+} else {<br>
+for (var i=0, j=id.length; i<j; i++) {  
+var e = get(id[i]);  
+if (e != null) {  
+setStyleAttr(e.id,"display",display);  
+}  
+}  
+}  
+}  
+function hide(id) {  
+var display = (arguments.length > 1) ? arguments<a href="http://www.w3.org/TR/CSS2/visuren.html#display-prop">1</a> : &quot;none&quot;;<br>
+if (typeof(id) === &quot;string&quot; ) {<br>
+var e = get(id);<br>
+if (e != null) {<br>
+setStyleAttr(id,&quot;display&quot;,display);<br>
+}<br>
+} else {<br>
+for (var i=0, j=id.length; i&lt;j; i++) {<br>
+var e = get(id[i]);<br>
+if (e != null) {<br>
+setStyleAttr(e.id,&quot;display&quot;,display);<br>
+}<br>
+}<br>
+}<br>
+}</p>
+
+<p>/*\<em>\</em> Part 6 ***/<br>
+function showInline(id) { show(id,&quot;inline&quot;); }<br>
+function hideInline(id) { hide(id,&quot;hidden&quot;); }<br>
+function displayInline(id) { show(id,&quot;inline&quot;); }<br>
+function hideInline(id) { hide(id,&quot;hidden&quot;); }<br>
+function toggle(id) {<br>
+if(get(id)!=null)<br>
+{<br>
+switch(getStyleAttr(id,&quot;display&quot;))<br>
+{<br>
+case &quot;block&quot;:<br>
+hide(id);<br>
+break;<br>
+case &quot;inline&quot;:<br>
+hideInline(id);<br>
+break;<br>
+case &quot;none&quot;:<br>
+show(id);<br>
+break;<br>
+case &quot;hidden&quot;:<br>
+displayInline(id);<br>
+break;<br>
+default:<br>
+show(id);<br>
+hide(id);<br>
+break;<br>
+}<br>
+}<br>
+}<br>
+function showDiv(id) { show(id); }<br>
+function hideDiv(id) { hide(id); }</p>
+
+<p>/*\<em>\</em> Part 7 ***/<br>
+function elementHide(id) { document.getElementById(id).style.visibility=&#8217;hidden&#8217;; }<br>
+function elementShow(id) { document.getElementById(id).style.visibility=&#8217;visible&#8217;; }<br>
+[/sourcecode]</p>
+
+<h3>Part 1</h3>
+
+<p>The two first functions could be replaced by the following : </p>
+
+<p>[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+var get = document.getElementById;<br>
+var getByTagName = document.getElementsByTagName;<br>
+[/sourcecode]</p>
+
+<p>I would not recommend to use &#8220;get&#8221; as a function name, because it is a very common name that could be used for thousands of purposes.<br>
+Otherwise, my method would be probably lighter, because <code>get</code> and <code>getByTagName</code> are variables storing references. No new function needs to be stored in memory.</p>
+
+<h3>Part 2</h3>
+
+<p>While <code>new Array();</code> is fine, writing <code>[]</code> does exactly the same thing and is shorter.</p>
+
+<p>In the first loop, <code>elements.length</code> is evaluated at each iteration while we can see from the code that it cannot change. As a consequence, it could be cached for performance purpose. To go further, I would actually recommend to use <code>.forEach</code> instead of a loop, because it is quite clear that some &#8220;behavior&#8221; is expected &#8220;for each&#8221; element and &#8220;for each&#8221; class name.</p>
+
+<h3>Part 3</h3>
+
+<p>The first test (<code>typeof(o) !== &quot;undefined&quot;</code>) is the only unambiguous way to test whether some variable is defined or not. As such, the second test (<code>o!=undefined</code>) is weird unless the intention is to test against an overridden value of <code>undefined</code> which I wouldn&#8217;t recommend. Testing against <code>null</code> is fine if it&#8217;s what is expected from the function. However the test against <code>&quot;null&quot;</code> seems to be somewhat arbitrary and I seriously hope that your name is not Null, because it might be the cause of a problem sometimes.</p>
+
+<p>As far as I know, none of the <code>if</code> statement, the <code>typeof</code> operator or the comparisons can throw an error. As a consequence, wrapping in a try/catch is quite weird.</p>
+
+<h3>Part 4</h3>
+
+<p>A bunch of shorthand method. This is a matter of taste but I am not a big fan as long as it&#8217;s not to cover browsers irregularities as it could be with <code>textContent</code> (W3C) and <code>innerText</code> (IE-specific) which is not even the case.</p>
+
+<p><code>formatURL</code> don&#8217;t really need two instructions. More fundamentally, it does a redirection which is not obvious to understand from the name of the function.</p>
+
+<h3>Part 5</h3>
+
+<p>Code duplication is never a good idea. I would factorize. Moreover, a call to <code>hide(&quot;someId&quot;, &quot;block&quot;)</code> doesn&#8217;t hide anything. As such, the name is not really good.</p>
+
+<h3>Part 6</h3>
+
+<p><code>function hideInline(id) { hide(id,&quot;hidden&quot;); }</code> is simply written twice. That&#8217;s not actually the worse part. &#8220;hidden&#8221; is not a correct value for the <a href="http://www.w3.org/TR/CSS2/visuren.html#display-prop">display style property</a> (the one filled by the <code>hide</code> function)</p>
+
+<p><code>showInline</code> and <code>displayInline</code> are the exact same function.</p>
+
+<p><code>showDiv</code> and <code>hideDiv</code> don&#8217;t act on divs exclusively. There is just no point for them to exist.</p>
+
+<h3>Part 7</h3>
+
+<p>In <code>show</code> and <code>hide</code>, the idea of checking if the result of <code>document.getElementById(id)</code> is null was a good one. The <code>elementShow</code> and <code>elementHide</code> functions may throw an error because of not doing this. Moreover, the fact of setting the &#8220;visibility&#8221; property instead of &#8220;display&#8221; this time and using the name function names (show/hide) is confusing.<br>
+A good factorization of <code>show</code> and <code>hide</code> could have parametrized the property and the default value, allowing to easily create functions to set &#8220;display&#8221; and &#8220;visibility&#8221; to their different (and respective !) values.</p>
+
+<p>[sourcecode language=&quot;javascript&quot; light=&quot;on&quot;]<br>
+function stylePropertySetter(prop, defaultValue){<br>
+return function(id){<br>
+var value = (arguments.length &gt; 1) ? arguments<a href="http://www.w3.org/TR/CSS2/visuren.html#display-prop">1</a> : defaultValue;<br>
+if (typeof(id) === &quot;string&quot; ) {<br>
+var e = get(id);<br>
+if (e != null) {<br>
+setStyleAttr(id, prop, value);<br>
+}<br>
+} else {<br>
+for (var i=0, j=id.length; i&lt;j; i++) {<br>
+var e = get(id[i]);<br>
+if (e != null) {<br>
+setStyleAttr(e.id, prop, value);<br>
+}<br>
+}<br>
+}<br>
+};<br>
+}</p>
+
+<p>var hide = stylePropertySetter(&quot;display&quot;, &quot;none&quot;);<br>
+[/sourcecode]</p>
+
+<h3>Conclusion</h3>
+
+<p>A lot of mistakes have been made. Some are just a matter of taste, some can crash your application, some may make the development phase trickier because of weird function names.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

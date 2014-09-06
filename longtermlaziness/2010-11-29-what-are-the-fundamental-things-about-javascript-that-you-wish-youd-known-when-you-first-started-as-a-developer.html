@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'What are the fundamental things about JavaScript that you wish you’d known when you first started as a developer?'
+author: David Bruant
+layout: post
+permalink: /?p=96
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>This is a question I have been asked by the amazing <a href="http://twitter.com/#!/pipstar">Pippa Buchanan</a> from the <a href="https://www.drumbeat.org/p2pu-webcraft">P2PU school of webcraft</a>. Here is my answer :</p>
+<p>I think that JS is a sum of a lot of technologies and that web developers should very early be aware of the differences between them:<br>1) <a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">ECMAScript</a>: That’s the core language JavaScript is based on. That’s “just a programming language”. It defines the JavaScript native types. This include <a href="https://developer.mozilla.org/en/JavaScript/Guide/Working_with_Objects">Objects</a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Arrays</a> and <a href="https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope">functions</a><br>2) The document object inherits form a lot of different interfaces:  </p>
+<ul>
+<li><a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-1950641247">Node</a> which is “just here” for the tree structure (ok, well, a bit more). This interface is common with <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-745549614">Elements</a> and contains parentNode, cloneNode…  </li>
+<li><a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#i-Document">Document</a> which contains .createElement, .getElementById. This interface is the one used by the <a href="http://www.w3.org/TR/2010/CR-XMLHttpRequest-20100803/#the-responsexml-attribute">responseXML</a> attribute of XMLHttpRequest. This is common with XML-based documents.  </li>
+<li><a href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-26809268">HTMLDocument</a>. It adds a bunch of HTML-specific things like .body, .links or the .write method (this last one should be avoided, but that’s another story)  </li>
+<li>HTML5 redefines the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/dom.html#documents-in-the-dom">HTMLDocument</a> interface and add for instance .getElementsByClassName()<br>3) Events<br>Besides that, the event programming paradigm is not easy to understand. Unlike “C programming” where you have a “main” function and a “return” at the end, JavaScript isn’t continuously executed. There is a bit of execution at the beginning for initialization purposes and after that it’s all user (click/keypress) or network (XMLHttpRequest events) or clock (<a href="https://developer.mozilla.org/en/Window.setTimeout">settimeout</a>) driven which could be all summarized as “events” (even if the clock “events” aren’t DOM events).<br>The DOM event mechanism is well explained in <a href="http://www.w3.org/TR/DOM-Level-3-Events/#event-flow">one picture</a>.</li>
+</ul>
+</article>
+        <footer></footer>
+    </body>
+</html>

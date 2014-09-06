@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: A post you wish to read before considering using MongoDB for your next app
+author: David Bruant
+layout: post
+permalink: /?p=324
+geo_public:</p>
+<ul>
+<li>0
+categories:</li>
+<li>Uncategorized</li>
+</ul>
+<hr>
+<p>This post details lessons learned from a 8 months experience with MongoDB. Although I’m writing this article alone, my experience of MongoDB was in the context of teamwork, so I’ll be using “us” often in this article.</p>
+<p>In this blog post, I’ll be sharing experience with MongoDB that you can only get when working with it for quite some time. It will also contains elements of understanding of upcoming MongoDB improvements as well as general thoughts on data modeling.</p>
+<p>I’ll be mostly focusing on downsides, but keep in mind that I’m only sharing my own experience which may not apply to your case. Also, I haven’t been in the situation of working with all the features of MongoDB. Especially, I have never used sharding and all other scalability-related features, so I have no opinion whatsoever on these.</p>
+<h2 id="quick-intro-to-mongodb">Quick intro to MongoDB</h2>
+<h3 id="core-concepts">Core concepts</h3>
+<p>In MongoDB, a <strong>database</strong> is composed of <strong>collections</strong> (somehow the equivalent of tables of those who are used to SQL). A collection contains <strong>documents</strong> which are JSON objects (with some additions), this means that a document can represent objects in the naive JavaScript sense (mapping between string and values) and even arrays, but also nested objects (when values are themselves objects or arrays).</p>
+<p>Among the document values, you have the classic strings, numbers, booleans, but also ObjectIDs. Each document in a collection is uniquely identified by an ObjectID and you can store a reference to the document as a value using this ObjectID which is nothing more than an object wrapper around a unique string.</p>
+<p>That’s about it for the core concepts. In a nutshell, it means that when you model your data, you have to think in terms of tree-shapes entities that you’ll put in collections. Cross-collection references are possible using ObjectIDs (there is a DBRef thing which isn’t strictly necessary and is just a built-in structure bundling an ObjectID and a collection name).</p>
+<h3 id="queries">Queries</h3>
+<p><a href="http://www.mongodb.org/display/DOCS/Querying">MongoDB has its</a> <a href="http://www.mongodb.org/display/DOCS/Advanced+Queries">own query system</a>. It does the job for the most part with a couple of limitations. One good point is that you can query over data nested deep and get deep data if you need without the need to pull the entire document.</p>
+<p>One minor limitation is very specific (occurs when you have nested arrays) and is <a href="https://jira.mongodb.org/browse/SERVER-831">planned to be fixed</a>. Another minor limitation is that since the query language relies on dots, dots can’t be used in object keys. This is usually not a problem except when you want to use urls as keys as it has been my case. It has to be noted that apparently, when using the <a href="http://www.mongodb.org/display/DOCS/Updating">update primitives (like $push)</a>, dot-key’d objects can be inserted anyway, putting your database in a quite inconsistent state (and that’s how I discovered the dot restriction :-s Needless to say the error message was rather cryptic).</p>
+<p>The second limitation is more fundamental: any query you do is performed on a single collection. In a nutshell, there is no equivalent to the SQL JOIN. This has a very important consequence for any application written on top which is that whenever you need data from different collections using the ID values in one to reach some objects in another, you need to do several round trips between your application and your database. That’s fine-ish if they’re on the same server; that’s an outrageous constraint when they are on different servers, because it means network latency is imposed by a database design choice.</p>
+<p><a href="http://docs.mongodb.org/manual/applications/database-references/">MongoDB justifies</a> that there is no need for joins because data are denormalized in MongoDB. I have to disagree with that. First off, data modeling is hard and people make mistake. Sometimes, what should have been one collection is two. Changing a data model is a perious task and having to pay a systematic performance cost for that is unacceptable. Then, from experience, it seems that all applications data model cannot be represented as trees. Some are graphs, true graphs. And when it’s the case, I don’t see why Mongo would impose a performance cost (either in round-trip or data duplication), that’s just ridiculous.</p>
+<p><strong>That reason alone makes that I don’t recommend Mongo</strong>. Although sold for being flexible, the inability to make multi-collection queries makes Mongo quite inflexible. This got me thinking that <strong>from now on, I will be looking at databases that enable to do any query in one round-trip</strong>.</p>
+<h2 id="the-no-schema-fantasy-and-reality">The no-schema fantasy and reality</h2>
+<h3 id="data-in-the-database">Data in the database</h3>
+<p>MongoDB as one champion of the NoSQL movement claims that you don’t need a schema for your data. It is true from a technical standpoint that MongoDB doesn’t enforce a model. Reality of use and maintainability make that within the same collection, you tend to structure objects roughly the same way. Mongo allows optional fields where SQL doesn’t, but that’s pretty much where the difference stops in practice.</p>
+<p>I have to share that in one case, there was one field for which we had decided to do no validation over, because we knew that the data supposed to be stored there would change over time. It did happen and having the freedom to store whatever we needed in this field at “no cost” really was a life-saving feature in our context.</p>
+<p>Experience in storing objects from code without model quickly leads to a maintenance issue, because since you don’t have a model, you start wondering “do we already have a field X in the collection Y?”, or “how is structured field Z, b.t.dubs?” which inevitably forces you to write a schema documentation to compensate the lack of enforced schema.</p>
+<p>Once you have acknowledged that you do need a form of schema anyhow, an interesting question is where to set the bar of strictness. Imposing a schema at the database level is a development burden that devs using SQL experience the hard way. Reality is that the data model of an application changes. Maybe because the need changes, maybe because the current design is imperfect. The data model does change and the cost of this reality is too high in SQL. No schema or documentation schema induce too high of a cognitive burden on the developer though.</p>
+<p>A middleground we have found was to use <a href="http://mongoosejs.com/">Mongoose</a> which enables to programmatically define a model in a fairly readable and somewhat declarative way. Documentation can easily be added as comments to the schema declaration and checks on data integrity can be performed at runtime. I have a good share of rants against Mongoose specifically, but for the most part, it does the 80% part of the job that you need to move on safely and conveniently with your communication with the database.</p>
+<h3 id="when-the-world-around-the-database-changes">When the world around the database changes</h3>
+<p>So you have an application and a database. Your application necessarily relies on assertion regarding your database; names of collections, field names, value types, value ranges, nesting structure shape, etc. At some point, the application you write on top of the database will need to see the database model change. in SQL, it systematically means to do an “ALTER table” or equivalent operation. Interestingly, in Mongo, some classes of assertion changes will require no change to the database whatsoever. For example, if you add a field to new documents in a collection, you don’t need to add it to all existing documents. Depending on the case, you can ignore the missing field or deal with it at the application level.</p>
+<p>But of course, for other classes of changes, you’ll need to write a script to reorganise it. To the best of my knowledge, there is no way to send a script to the database so that it reorganises itself in situ. You need to pull the data, remodel it and re-push it. Needless to say that it feels really dirty. I hope I have missed something.</p>
+<p>Regardless, it seems that the problem is somewhat equivalent in SQL. Data model change is part of the development flow and I wish it was treated as a first-class use case in database designs. I’m not an expert in that field. If I’m plain wrong, feel free to share your knowledge in the comments.</p>
+<h2 id="the-map-reduce-eldorado">The Map-Reduce Eldorado</h2>
+<p>Map reduce promises huge performance gains under the condition of writing code in a certain way (I’m giving a practical definition, not a formal one here). Be aware it’s not a silver bullet applicable to any problem.</p>
+<p>I have found the API more complicated than necessary, but once you understand it, you’re good to go; <a href="http://www.mongodb.org/display/DOCS/MapReduce#MapReduce-MapFunction">I let you judge by yourself</a>, but at least, the map, reduce and finalize functions can be written in JS… I mean… sort of… which brings me to:</p>
+<h3 id="third-world-javascript">Third-world JavaScript</h3>
+<p>The JS engine is SpiderMonkey 1.7 (the one shipped along with Firefox 2 for the curious). It means you have no Object.keys, only Array#forEach as array extra, etc. It fills like writing grandma’s JS when you actually know the language and the goodness added in ES5.</p>
+<p>In theory, all map and reduce calls could be done in parallel independently; that’s the reason you need to write your code with some discipline. In practice, on one MongoDB install, all operations occur in sequence because of SpiderMonkey I have read somewhere. That and SpiderMonkey 1.7 pure performance, of course…</p>
+<p>Good news, there is a plan to <a href="https://jira.mongodb.org/browse/SERVER-2407">switch to V8</a> and that should solve all JS-related problems. Bad news, it’s unclear when the switch will be effective.</p>
+<h3 id="debugging">Debugging</h3>
+<p>The debugging experience is very painful. There is no proper debugger, no console.log. The best tool you have is conditionally throwing, because the only thing you can get back from a MapReduce operation is the final data or the first uncaught error (which stops the operation). That’s annoying when your map or reduce or finalize function gets above 30 lines. I came to a point where I wrote a small browser-based emulator and pulled data out of the database to test my MapReduce code in an environment where I could debug it (I probably should open source that actually…).</p>
+<h2 id="-8230-and-a-couple-of-noobish-design-mistakes">… and a couple of noobish design mistakes</h2>
+<p>Points here are not major drawbacks. They are just some WTF I came across</p>
+<h3 id="can-8217-t-rename-a-database">Can’t rename a database</h3>
+<p>Self-explanatory title. No need to explain why it feels such a stupid feature that should have been implemented as part of Mongo 0.0.1. Are we really at Mongo 2.2 and still can’t rename a database? <a href="https://jira.mongodb.org/browse/SERVER-701">To track the bug</a>.</p>
+<h3 id="global-lock">Global lock</h3>
+<p><a href="https://blog.serverdensity.com/goodbye-global-lock-mongodb-2-0-vs-2-2/">Until Mongo 2.0 included, there is a global MongoDB lock</a>. It means that write (or write+read) operations on completely unrelated database on the same install can’t be performed concurrently. I’m sorry, but this is plain stupid.</p>
+<p>As per Mongo 2.2, there is a per-database lock, which means that operations on independent collections within the same collection can’t be done concurrently. Same issue than before at a different level (the one that matter when you have only one database). <a href="https://jira.mongodb.org/browse/SERVER-1240">They are working on that issue</a> to have locks at finer-grained entities. I have no info as to when this will happen, but they seem committed to fix the problem.</p>
+<h3 id="safe-off-by-default">Safe off by default</h3>
+<p>I have read in some blog posts that safe mode is off by default. I haven’t experienced data loss, so I have no clue of what is the danger in being in “unsafe mode”. It can be changed anyway, but it really is not a good default value it seems.</p>
+<h2 id="additional-readings">Additional readings</h2>
+<p>Some insightful readings. Informations in these posts partially overlap with one another and with what I have said already.</p>
+<ul>
+<li><p><a href="http://www.quora.com/MongoDB/How-much-credibility-does-the-post-Dont-use-MongoDB-have">http://www.quora.com/MongoDB/How-much-credibility-does-the-post-Dont-use-MongoDB-have</a> </p>
+<ul>
+<li><p><a href="http://architects.dzone.com/articles/why-i-said-goodbye-mongodb">http://architects.dzone.com/articles/why-i-said-goodbye-mongodb</a> </p>
+<ul>
+<li><p><a href="http://blog.engineering.kiip.me/post/20988881092/a-year-with-mongodb">http://blog.engineering.kiip.me/post/20988881092/a-year-with-mongodb</a> </p>
+<ul>
+<li><p><a href="http://www.zopyx.de/blog/goodbye-mongodb">http://www.zopyx.de/blog/goodbye-mongodb</a> </p></li></ul> <p></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>MongoDB has some major design mistakes in it. Its developer experience is overall much better than the SQL one, but I still feel dissatisfied by both and wouldn’t recommend any for now. Sadly, I don’t know any database software I would recommend. Likely, I’ll be interested in exploring Neo4j for a next experience. I’m open to suggestions, of course.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+</article>
+        <footer></footer>
+    </body>
+</html>

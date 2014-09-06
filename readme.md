@@ -23,6 +23,10 @@ Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my
 * Add an `about` page
 * Make a list of article in main page
 * 404 tries a Google Search within the blog
+* Twitter cards
+* Facebook sharing metadata thingy
+* Ajouter date de dernière modification basée sur commits Git
+* Ajouter remerciements aux contributeurs sur cet article (~"git blame")
 
 # Licence
 

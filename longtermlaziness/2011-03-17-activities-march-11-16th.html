@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'Activities – March 11-16th'
+author: David Bruant
+layout: post
+permalink: /?p=132
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>The idea of blogging on a daily basis is too restrictive. From now on, I’ll blog once in a while on my activities.</p>
+<ul>
+<li><p>March 11th 
+I’ve been planning on participating to the <a href="http://hacks.mozilla.org/2011/03/wiki-wednesday-march-9-2011/">March 9th Wiki Wednesday</a>. The “The DOM and JavaScript” page sounded like an interesting thing to work on. I have finally ended up writing completly something else. The URL may change, so I’ll give it as soon as it’s done. The main point of my page is to give an overview of JavaScript technologies. When talking about browser scripting, people talk about “JavaScript and the DOM” but that’s a mistake. There are a lot lot more technologies, but sometimes, it’s not really obvious since they are all (DOM, HTMLDOM, events) accessible on the exact same object through inheritance which gives the impression that everything is flat. I’ll try to finish a first draft of this page very soon.</p>
+<p>I’ve also been trolling on es-discuss on for-in loops enumeration order.</p>
+</li>
+<li><p>March 13th 
+Spent part of the day watching node.js-related videos ( <a href="http://www.yuiblog.com/blog/2010/05/20/video-dahl/"><a href="http://hacks.mozilla.org/2011/03/wiki-wednesday-march-9-2011/">1</a></a> <a href="http://www.youtube.com/watch?v=F6k8lTrAE2g&amp;feature=youtube_gdata"><a href="http://www.yuiblog.com/blog/2010/05/20/video-dahl/">2</a></a> <a href="http://jsconfeu.blip.tv/file/4306320/"><a href="http://www.youtube.com/watch?v=F6k8lTrAE2g&amp;feature=youtube_gdata">3</a></a> ). Very interesting. It’s interesting how the project takes very low-level considerations (order of scale of memory access, hard drive read, network) and uses these as a baseline of a somewhat high-level framework (evented IO). 
+One good result to keep in mind is that in order to create a highly concurrent web server, an event mechanism achieves better than creating threads on-the-fly. (POSIX) threads consume memory and there is a scheduling cost. Small, maybe, but non-zero nonetheless. On the other hand, having one thread registering to events and responding to them and one (or more, but a constant and small number) thread multiplexing I/O and dispatching events highly reduces memory consumption and almost doesn’t suffer from scheduling. But the bigger win isn’t here. It’s architectural; it’s at the asynchronous system.</p>
+<p>Most server-side programming languages do synchronous I/O. This means that while performing a synchronous disk read, your thread sits idle. That’s the reason why other threads are created to achieve concurrency. The node.js evented all-asynchronous architecture allow to use threads as much as possible so that the memory you’ve “paid” for at creation doesn’t need to be repaid in order to achieve more concurrency.</p></li> <p></p>
+<ul>
+<li><p>March 14th 
+Mostly research on some project. I’ve also been following and answering to the for-in loop iteration order discussion. The issue is that for ECMAScript objects (things like {}, not arrays), when people initialize their objects through the object-literal syntax (“JSON” sort of say), there is one information that the ECMAScript engine forget: the key order. This is true in the spec but partially false in reality since most implementation respect this order and provide it in the for-in loop… with the exception that index-like keys (numbers below 2<sup>32</sup>) are provided first. Discussion still on-going. I have raised 2 interesting points to the discussion. First, when people use objects as “dictionary”, then there is no reason for which numeric keys would be treated in a different manner. Take, for example, a music album stored <a href="https://mail.mozilla.org/pipermail/es-discuss/2011-March/013036.html">by song title as keys</a>. Second point, the for-in order is used in other parts of the spec. I actually think it should be considered as an <a href="https://bugs.ecmascript.org/show_bug.cgi?id=73">internal method and listed as such</a>.</p>
+</li>
+<li><p>March 15th 
+A decent amount of time has been spent working on a <a href="https://github.com/DavidBruant/PropStackObjects">proxy example</a> in order to <a href="https://mail.mozilla.org/pipermail/es-discuss/2011-March/013117.html">make a point on the open issue of the proxy proposal</a>. Tom Van Cutsem replied, but the mail server of my e-mail address went down before I had a chance to reply myself.</p>
+</li>
+<li><p>March 16th 
+Meeting my “research team” and went to a presentation on Rascal, a meta-programming language.</p></li></ul><p></p>
+
+</ul>
+
+
+</article>
+        <footer></footer>
+    </body>
+</html>

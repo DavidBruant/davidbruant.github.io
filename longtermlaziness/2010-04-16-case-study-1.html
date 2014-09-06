@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'Case study #1'
+author: David Bruant
+layout: post
+permalink: /?p=43
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>This article will be the first of a long serie I hope.<br>One of the purpose of this blog is education through example. Each time I find a good example of a problem solved in a way that I think I could improve, I will provide the code, examine it and show how I would the problem and justifying why I think it is better.</p>
+<p>I encourage you to debate the open questions I could raise and I encourage you to submit me some code you find interesting.</p>
+<p>This first case study comes from a code I have found in a website (variable names and strings have been changed).</p>
+<p>[sourcecode language="javascript" light="on"]<br>var v = new (function () {<br>this.a = "Hello ";<br>this.b = "world !";<br>/<em> …<br>** More than 1250 assignments like this !  
+</em>* … */<br>this.y = "foo";<br>this.z = "bar";<br>})();<br>[/sourcecode]</p>
+<h3 id="reading-the-code">Reading the code</h3>
+<p>A variable receives something. This something seems to be a new instance of the result of a function called once. It is not.<br>It turns out that when you remove the final <code>()</code>, the result is exactly the same. When you replace the final <code>)()</code> (take the value of what is between parenthesis and call it if it’s a function) by <code>())</code> (call the function and return the value returned by the function), Opera and Firefox explain that the result of the anonymous function call is not a constructor. Indeed, nothing is returned ! Not even <code>this</code>. In this case, the default returned value is <code>undefined</code>.</p>
+<p>Finally, this code means that a constructor is called. This constructor is the anonymous function between parenthesis. The final <code>()</code> is interpreted as an empty (and useless) expression.</p>
+<h3 id="what-problem-are-we-solving-by-the-way-">What problem are we solving, by the way ?</h3>
+<p>This code is called once at the beginning. It aims at initializing an object.</p>
+<p>To do this I would just have created an object in the “JSON way” :<br>[sourcecode language="javascript" light="on"]<br>var v = {<br>a : "Hello ",<br>b : "world !",<br>/* … */<br>y : "foo",<br>z : "bar"<br>};<br>[/sourcecode]</p>
+<p>My guess is that because I just have a unique assignment, my initialization should be faster than the 1200+ instructions of the previous constructor. Another advantage of my solution is that I got rid of the 1200+ “<code>this.</code>” which saves 6000+ characters !</p>
+<h3 id="experiment">Experiment</h3>
+<p>After putting my idea and the original one in two separate loops and comparing the times of 100, 1000 or 2000 run, my implementation turns out to be between 2 and 3 times faster. This “huge” range may be due to the high usage of strings and consequently the garbage collector which is known to be actively used on Firefox (where I ran my experiments) and whose behavior cannot be accurately predicted. </p>
+<p><em>Note :</em> I have not rewritten 1200 lines of code manually. I replaced all “;” by “,” and got rid of all “this.”. Some errors occurred due to the fact that some “this.” were in the right-hand side. Those must be kept. They refer to the value of the property of the object in construction.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Smaller code, no useless code, faster code. My solution seems to be better in all aspects.</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

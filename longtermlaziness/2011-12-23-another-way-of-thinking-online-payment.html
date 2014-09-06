@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: Another way of thinking online payment
+author: David Bruant
+layout: post
+permalink: /?p=286
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>I was <a href="http://benlog.com/articles/2011/12/21/encryption-is-mostly-not-magic/">reading an interesting post about encryption</a> and it made me feel a need to respond on what is said about credit cards.</p>
+<h2 id="capabili-what-">Capabili-what?</h2>
+<p>Very soon after I joined <a href="https://mail.mozilla.org/pipermail/es-discuss/">es-discuss</a>, I read some messages by Mark S. Miller. Soon enough, I watched <a href="http://www.infoq.com/presentations/From-E-to-EcmaScript">his infoQ talk</a>. This talk introduces the notion of <strong>object capabilities</strong>. This talk and this concept blew my mind. “Modularity increases my security?”. And he also shows the problem (and a solution) of distributed secure currency. Any “smart” idea I’ll write in this post are actually more or less already in this part of the talk.</p>
+<p>Unrelatedly, I watched a talk by <a href="http://youtu.be/47Ceot8yqeI">Douglas Crockford</a> which suggested people to go watch <a href="http://www.youtube.com/watch?v=eL5o4PFuxTY&amp;feature=results_main&amp;playnext=1&amp;list=PL20A37C5081563951">The Lazy Programmer’s Guide to Secure Computing</a> by Marc Stiegler which strongly emphasis POLA. <a href="http://longtermlaziness.wordpress.com/2011/07/18/open-e-mail-to-my-lazy-friend-marc-stiegler/">I did</a> and took the same sort of mind-blowing shower. I will learn later that Marc Stiegler and Mark Miller have been working together.</p>
+<p>This led me to start reading <a href="http://erights.org/talks/thesis/index.html">Mark Miller’s thesis</a> (haven’t finished yet, but still working on it) and to <a href="http://video.google.com/videoplay?docid=-7179100659758053865">watch</a> <a href="http://video.google.com/videoplay?docid=-8527120258517176598">some</a> <a href="http://video.google.com/videoplay?docid=8799856896828158583">other</a> <a href="http://www.youtube.com/watch?v=vrbmMPlCp3U">talks</a>. It also led me to read about <a href="http://www.skyhunter.com/marcs/petnames/IntroPetNames.html">petnames</a>, <a href="http://www.hpl.hp.com/techreports/2009/HPL-2009-169.html">rich sharing</a>, <a href="http://www.hpl.hp.com/personal/Alan_Karp/site_password/">website passwords</a>, <a href="http://web-send.org/introducer/">web introducer</a> and <a href="http://www.combex.com/papers/darpa-report/html/index.html">many</a> <a href="http://www.youtube.com/watch?v=oBqeDYETXME">other</a> <a href="http://www.cis.upenn.edu/~KeyKOS/ConfusedDeputy.html">interesting</a> <a href="http://www.infoq.com/presentations/Security-vs-Security-Architecture">things</a>.</p>
+<p>There are years of serious research poorly summurized in the links above. I highly encourage to read and watch all of this, but I admit it takes a lot of time to.</p>
+<h2 id="thousands-of-credit-cards-numbers-stolen-during-the-sony-playstation-network-hack">Thousands of credit cards numbers stolen during the Sony Playstation network hack</h2>
+<p>People have given their credit card number to Sony. Sony got hacked. People were annoyed. Who is to blame? Sony for its flawed security? Let’s take another look at the problem.</p>
+<h3 id="i-want-to-pay-8230-">I want to pay…</h3>
+<p>I want to pay online. I want to buy one item once or pay regularly (like in a monthly payment to Sony). What option am I given? Giving my credit card number. And this is a terrible idea!</p>
+<h3 id="-8230-but-not-to-give-my-credit-card-number-">…but not to give my credit card number!?</h3>
+<p>When I send my credit card number and any “secret” written on the card, I do not allow for a <strong>one-time payment</strong> (or regular) to <strong>one company</strong> for a <strong>given amount of money I choose</strong>. Rather, I give the authority to anyone reading my info to do a payment of <strong>any amount</strong> directed <strong>to anyone</strong>, <strong>anytime</strong>. And that’s a source of insecurity.</p>
+<h2 id="another-way-of-thinking-online-payment">Another way of thinking online payment</h2>
+<p>Here is how payment <em>could</em> happen: I go to my bank website, I have a form where I choose the amount I want to pay, who I want to pay to and to which frequency (one time, once a month, etc.). The two last fields are optional. In exchange, the bank gives me a secret (a URL for instance). I share this secret with who I want to pay. End of story.</p>
+<p>Of course, this is just an example crafted in 2 minutes that could probably be improved.</p>
+<h3 id="-8220-oh-fuck-sony-is-getting-hacked-again-8221-">“Oh fuck! Sony is getting hacked again!”</h3>
+<p>So, In my imaginary world, Sony (or anyone, it’s not about Sony as you’ve understood) does not have access to my credit card number, but only to a secret allowing a payment only to it at a frequency that I chose and to an amount that I chose as well. Sony gets hacked? <strong>WHATEVER!</strong></p>
+<p>We could imagine extensions where I could tell my bank “such secret has been compromised. Please stop paying through it”, “regenerate a secret for the same parameters”, etc.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As Ben Adida mentions in <a href="http://benlog.com/articles/2011/12/21/encryption-is-mostly-not-magic/">his blog post</a>, encryption is not the final answer to security. His analysis of how encryption may get in the way of social features is interesting.</p>
+<p>I wrote this post to show that security without encryption can exist, even for payments. Object capabilities seems to have a huge misknown and underused potential to achieve this form of security.</p>
+<p>In the particular case I described, it’s not here because it requires cooperation from banks. I’m looking forward to see banks implementing this!</p>
+<p> *[POLA]: Principle Of Least Authority</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

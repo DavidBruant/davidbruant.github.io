@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <style> 
+            *{
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        </style>
+        
+        <title> TITLE </title>    
+    </head>
+    
+    <body>
+        <header></header>
+        <article><hr>
+<p>title: 'Generating a string which isn’t a property name of a given object'
+author: David Bruant
+layout: post
+permalink: /?p=120
+categories:</p>
+<h2 id="-uncategorized">  - Uncategorized</h2>
+<p>Helping out with the <a href="http://test262.ecmascript.org/">test262 test suite</a> (official ECMAScript 5 test suite), I have come to a problem. Based on a given object, find/generate a string which isn’t a property name of the object.</p>
+<p>Here is <a href="https://bugs.ecmascript.org/show_bug.cgi?id=33#c5">the solution</a> I’ve come up with<br>[sourcecode language="javascript" light="true"]<br>function unusedPropertyName(o){<br>var ownPropNames = Object.getOwnPropertyNames(o);</p>
+<p>var unusedName = ownPropNames.reduce(<br>function(prev, curr, i){<br>var A = ‘a’, B = ‘b’;<br>var l = curr[i];<br>l = (l=== undefined || l !== A) ? A : B;</p>
+<p>return prev + l;<br>}, ”);</p>
+<p>return unusedName;<br>}<br>[/sourcecode]</p>
+<p>The idea is to list all property names. Then, create a string which has one letter that differs from each property name. This idea is inpired by <a href="http://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor’s diagonal argument</a>.</p>
+<p>I found it was an interesting use of Array.prototype.reduce and was worth sharing.</p>
+</article>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>What are the fundamental things about JavaScript that you wish you&#8217;d known when you first started as a developer?</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Long-term laziness</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>What are the fundamental things about JavaScript that you wish you&#8217;d known when you first started as a developer?</h2>
+<p class="meta">29 Nov 2010</p>
+
+<div class="post">
+<p>This is a question I have been asked by the amazing <a href="http://twitter.com/#!/pipstar">Pippa Buchanan</a> from the <a href="https://www.drumbeat.org/p2pu-webcraft">P2PU school of webcraft</a>. Here is my answer :</p>
+
+<p>I think that JS is a sum of a lot of technologies and that web developers should very early be aware of the differences between them:<br>
+1) <a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">ECMAScript</a>: That&#8217;s the core language JavaScript is based on. That&#8217;s &#8220;just a programming language&#8221;. It defines the JavaScript native types. This include <a href="https://developer.mozilla.org/en/JavaScript/Guide/Working_with_Objects">Objects</a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Arrays</a> and <a href="https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope">functions</a><br>
+2) The document object inherits form a lot of different interfaces:<br>
+* <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-1950641247">Node</a> which is &#8220;just here&#8221; for the tree structure (ok, well, a bit more). This interface is common with <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-745549614">Elements</a> and contains parentNode, cloneNode&#8230;<br>
+* <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#i-Document">Document</a> which contains .createElement, .getElementById. This interface is the one used by the <a href="http://www.w3.org/TR/2010/CR-XMLHttpRequest-20100803/#the-responsexml-attribute">responseXML</a> attribute of XMLHttpRequest. This is common with XML-based documents.<br>
+* <a href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-26809268">HTMLDocument</a>. It adds a bunch of HTML-specific things like .body, .links or the .write method (this last one should be avoided, but that&#8217;s another story)<br>
+* HTML5 redefines the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/dom.html#documents-in-the-dom">HTMLDocument</a> interface and add for instance .getElementsByClassName()<br>
+3) Events<br>
+Besides that, the event programming paradigm is not easy to understand. Unlike &#8220;C programming&#8221; where you have a &#8220;main&#8221; function and a &#8220;return&#8221; at the end, JavaScript isn&#8217;t continuously executed. There is a bit of execution at the beginning for initialization purposes and after that it&#8217;s all user (click/keypress) or network (XMLHttpRequest events) or clock (<a href="https://developer.mozilla.org/en/Window.setTimeout">settimeout</a>) driven which could be all summarized as &#8220;events&#8221; (even if the clock &#8220;events&#8221; aren&#8217;t DOM events).<br>
+The DOM event mechanism is well explained in <a href="http://www.w3.org/TR/DOM-Level-3-Events/#event-flow">one picture</a>.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
