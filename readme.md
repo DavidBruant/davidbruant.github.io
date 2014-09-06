@@ -17,6 +17,7 @@ Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my
 ** title
 * Add Google Analytics (and warning in &lt;footer>)
 * Add old articles (and add a note on all Wordpress articles)
+* rough "archives"/list page
 
 ### After first release
 
@@ -28,6 +29,7 @@ Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my
 * Facebook sharing metadata thingy
 * Ajouter date de dernière modification basée sur commits Git
 * Ajouter remerciements aux contributeurs sur cet article (~"git blame")
+* Set up a watcher so that when base.html or one of the .md files changes, the html files are re-generated
 
 # Licence
 

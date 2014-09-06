@@ -1,0 +1,17 @@
+{
+    "2010-10-10-participating-to-the-first-mozilla-doc-sprint.md": {
+        "title": "Participating to the first Mozilla DocSprint",
+        "writing date": "2010-10-10",
+        "meta": {
+            "description": "On October 2010, Mozilla organized its first \"documentation sprint\". It was a fun event, I learned a lot"
+        }
+    },
+    "2010-11-29-what-are-the-fundamental-things-about-javascript-that-you-wish-youd-known-when-you-first-started-as-a-developer.md": {
+        "title": "What are the fundamental things about JavaScript that you wish you had known when you first started as a developer",
+        "writing date": "2010-11-29",
+        "meta": {
+            "description": "Answering a question from Pippa Bachanan. I wish I knew more about where the JavaScript APIs came from and how they relate to one another."
+        }
+    }
+
+}

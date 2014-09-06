@@ -1,47 +1,5 @@
 "use strict";
 
-// Array.prototype.find polyfill
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find#Polyfill
-if (!Array.prototype.find) {
-    Object.defineProperty(Array.prototype, 'find', {
-        enumerable: false,
-        configurable: true,
-        writable: true,
-        value: function(predicate) {
-            if (this == null) {
-                throw new TypeError('Array.prototype.find called on null or undefined');
-            }
-            if (typeof predicate !== 'function') {
-                throw new TypeError('predicate must be a function');
-            }
-            var list = Object(this);
-            var length = list.length >>> 0;
-            var thisArg = arguments[1];
-            var value;
-
-            for (var i = 0; i < length; i++) {
-                if (i in list) {
-                    value = list[i];
-                    if (predicate.call(thisArg, value, i, list)) {
-                        return value;
-                    }
-                }
-            }
-            return undefined;
-        }
-    });
-}
-
-// bad polyfill, but should do the trick
-if(!String.prototype.endsWith){
-    String.prototype.endsWith = function endsWith(str){
-        var target = String(this)
-        return target.lastIndexOf(str) === target.length - str.length;
-    }
-}
-    
-
-// imports
 var fs = require("fs");
 var path = require('path');
 var resolve = path.resolve;
@@ -75,6 +33,7 @@ var SOURCES_DIRECTORY = join(MAIN_DIRECTORY, '_sources');
 
 var BASE_HTML_PATH = join(SOURCES_DIRECTORY, 'base.html');
 var ARTICLES_DIRECTORY = join(SOURCES_DIRECTORY, 'articles');
+var ARTICLES_METADATA_PATH = join(ARTICLES_DIRECTORY, 'metadata.json');
 
 var baseHTMLP = new Promise(function(resolve, reject){
     fs.readFile(BASE_HTML_PATH, function(err, baseHTMLBuffer){
@@ -83,39 +42,81 @@ var baseHTMLP = new Promise(function(resolve, reject){
     });
 });
 
+var articlesMetadataP = new Promise(function(resolve, reject){
+    fs.readFile(ARTICLES_METADATA_PATH, function(err, metadataBuffer){
+        if(err) reject(err);
+        else resolve(JSON.parse(metadataBuffer.toString()));
+    });
+});
+
+/*
+    TODO: 
+    3. Check if the .md file already has an h1. If it does, report conflict and stop for this file
+*/
 
 fs.readdir(ARTICLES_DIRECTORY, function(err, files){
+    // TODO use robust ~fs.extension function instead of endsWith
+    files = files.filter(function(f){ return path.extname(f) === '.md'; })
     
-    files
-        .filter(function(f){ return f.endsWith('.md'); })
-        .forEach(function(f){
+    articlesMetadataP = articlesMetadataP.then(function(articlesMetadata){
+        var metadataFiles = Object.keys(articlesMetadata);
+        
+        /*var metadataFilesNotFound = metadataFiles.filter(function(f){
+            return files.indexOf(f) === -1;
+        });
+        
+        if(metadataFilesNotFound.length >= 1)
+            throw new Error('metadataFilesNotFound\n'+metadataFilesNotFound.join('\n'));
+        
+        var existingFilesWithoutMetadata = files.filter(function(f){
+            return metadataFiles.indexOf(f) === -1;
+        });
+        
+        if(existingFilesWithoutMetadata.length >= 1)
+            throw new Error('existingFilesWithoutMetadata\n'+existingFilesWithoutMetadata.join('\n'));
+        */
+        return articlesMetadata;
+            
+    }).catch(function(err){
+        console.error('Mismatch between metadata and source files', err);
+    });
+    
+    articlesMetadataP.then(function(articlesMetadata){
+        files.forEach(function(f){
+            var articleMetadata = articlesMetadata[f];
+            
             var path = join(ARTICLES_DIRECTORY, f);
 
             fs.readFile(path, function(err, fileContent){
                 if(err) throw err;
-                
+
                 var html = marked(fileContent.toString());
 
                 //console.log(f, html.length, typeof html);
-                
+
                 // always recreate a fresh doc from HTML string for baseHTML
                 Promise.all([makeDocument(html), baseHTMLP.then(makeDocument)])
                     .then(function(results){
                         var articleDoc = results[0], baseDoc = results[1];
-                        
+
                         var baseDocArticle = baseDoc.querySelector('article');
 
                         //console.log('baseDocArticle', baseDocArticle.outerHTML);
                         baseDocArticle.innerHTML = articleDoc.body.innerHTML;
-                        
+
+                /*
+                    See if there is an <h1> in articleDoc.body. If it differs from articleMetadata.title, throw
+                    Feed the head > title with the title and add an h1 if there isn't one
+                */
+
                         var path = join(MAIN_DIRECTORY, f.replace('.md', '.html'))
-                        
-                        fs.writeFile(path, baseDoc.innerHTML, function(err){
-                            if(err) throw err;
-                        })
+
+                        fs.writeFile(path, baseDoc.innerHTML, function(err){ if(err) throw err; });
                     }).catch(function(err){ console.error(err) } );
-                
-            })
+
+            });
         });
+    })
+    
 });
         
