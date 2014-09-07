@@ -1,11 +1,4 @@
----
-title: 'What are the fundamental things about JavaScript that you wish you&#8217;d known when you first started as a developer?'
-author: David Bruant
-layout: post
-permalink: /?p=96
-categories:
-  - Uncategorized
----
+
 This is a question I have been asked by the amazing [Pippa Buchanan][1] from the [P2PU school of webcraft][2]. Here is my answer :
 
 I think that JS is a sum of a lot of technologies and that web developers should very early be aware of the differences between them:  

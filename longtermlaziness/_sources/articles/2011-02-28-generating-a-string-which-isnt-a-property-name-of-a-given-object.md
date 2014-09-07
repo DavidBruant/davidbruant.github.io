@@ -1,11 +1,4 @@
----
-title: 'Generating a string which isn&#8217;t a property name of a given object'
-author: David Bruant
-layout: post
-permalink: /?p=120
-categories:
-  - Uncategorized
----
+
 Helping out with the [test262 test suite][1] (official ECMAScript 5 test suite), I have come to a problem. Based on a given object, find/generate a string which isn&#8217;t a property name of the object.
 
 Here is [the solution][2] I&#8217;ve come up with  

@@ -30,6 +30,7 @@ Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my
 * Ajouter date de dernière modification basée sur commits Git
 * Ajouter remerciements aux contributeurs sur cet article (~"git blame")
 * Set up a watcher so that when base.html or one of the .md files changes, the html files are re-generated
+* Add a[href="#"] for h1/h2/h3, etc. when there is an id.
 
 # Licence
 

@@ -1,346 +1,328 @@
 {
     "2010-10-10-participating-to-the-first-mozilla-doc-sprint.md": {
         "title": "Participating to the first Mozilla DocSprint",
-        "writing date": "2010-10-10",
+        "writing-date": "2010-10-10",
         "meta": {
             "description": "On October 2010, Mozilla organized its first \"documentation sprint\". It was a fun event, I learned a lot"
         }
     },
     "2010-11-29-what-are-the-fundamental-things-about-javascript-that-you-wish-youd-known-when-you-first-started-as-a-developer.md": {
-        "title": "What are the fundamental things about JavaScript that you wish you had known when you first started as a developer",
-        "writing date": "2010-11-29",
+        "title": "What are the fundamental things about JavaScript that you wish you&#8217;d known when you first started as a developer?",
+        "writing-date": "2010-11-29",
         "meta": {
             "description": "Answering a question from Pippa Bachanan. I wish I knew more about where the JavaScript APIs came from and how they relate to one another."
         }
     },
     "2011-01-15-cache-pattern-using-static-variables.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "Cache pattern using static variables",
+        "writing-date": "2011-01-15",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     },
     "2011-02-03-lazy-feature-testing.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "Lazy feature testing",
+        "writing-date": "2011-02-03",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     },
     "2011-02-03-what-i-know-of-mozillas-identity-and-the-join-mozilla-program.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     },
     "2011-02-28-generating-a-string-which-isnt-a-property-name-of-a-given-object.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "Generating a string which isn&#8217;t a property name of a given object",
+        "writing-date": "2011-02-28",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-03-10-road-to-productivity-introduction-so-far.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-03-11-road-to-productivity-march-10th.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-03-17-activities-march-11-16th.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-04-20-figuring-rest-out.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-05-04-non-application-to-the-school-of-webcraft-product-manager-position.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-05-26-parts-of-my-element.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-06-26-cincinnati-part-1-open-help-conference.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-07-18-open-e-mail-to-my-lazy-friend-marc-stiegler.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-08-14-a-couple-of-things-learned-from-the-august-doc-sprint.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-09-23-kingjsdoc.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-10-18-on-education-credentials.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-11-02-dont-let-human-beings-do-shit-work.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-11-22-a-day-in-life.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-12-02-free-as-in-free-speech-or-why-i-dont-by-apples-products.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-12-07-a-response-to-how-google-is-quietly-killing-firefox.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2011-12-23-another-way-of-thinking-online-payment.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-01-15-what-my-phd-would-have-been-on.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-03-14-web-technologies-are-implementation-and-content-driven.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-03-26-discriminiating-those-who-discriminate.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-04-05-proteger-une-idee.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-04-21-on-the-mozilla-foundation-needing-to-evolve-into-a-metrics-driven-organization.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-07-22-the-web-performance-story.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2012-08-24-a-post-you-wish-to-read-before-considering-using-mongodb-for-your-next-app.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2013-10-08-the-w3c-is-a-restaurant.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "The W3C is a restaurant",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2013-12-05-building-in-bordeaux.md": {
         "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2013-12-16-sans-serveur.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "Sans Serveur",
+        "writing-date": "2013-12-16",
         "meta": {
             "description": "TODO"
         },
         "data": {
-            "key": "value"
+            
         }
     },
     "2014-01-11-real-tools.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "Real tools",
+        "writing-date": "2014-01-11",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     },
     "2014-01-28-lapres-long-terme.md": {
-        "title": "TODO",
-        "writing date": "YYYY-MM-DD",
+        "title": "L'après long terme",
+        "writing-date": "2014-01-28",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     },
     "commandline-less static website.md": {
         "title": "Commandline-less static website",
-        "writing date": "YYYY-MM-DD",
+        "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
-        },
-        "data": {
-            "key": "value"
         }
     }
 }

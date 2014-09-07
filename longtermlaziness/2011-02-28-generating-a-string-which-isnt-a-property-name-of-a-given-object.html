@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"><meta name="description" content="TODO">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width; initial-scale:1;">
         
         <style data-from="https://github.com/DavidBruant/Better-CSS-defaults/blob/master/better-defaults.css"> 
             /*
@@ -74,19 +77,18 @@
             }
         </style>
         
-        <title>TODO - longtermlaziness blog</title>    
+        <link rel="stylesheet" href="css/default.css">
+        
+        <title>Generating a string which isn&amp;#8217;t a property name of a given object - longtermlaziness blog</title>    
     </head>
     
     <body>
-        <header></header>
-        <article><h1>TODO</h1><hr>
-<p>title: 'Generating a string which isn’t a property name of a given object'
-author: David Bruant
-layout: post
-permalink: /?p=120
-categories:</p>
-<h2 id="-uncategorized">  - Uncategorized</h2>
-<p>Helping out with the <a href="http://test262.ecmascript.org/">test262 test suite</a> (official ECMAScript 5 test suite), I have come to a problem. Based on a given object, find/generate a string which isn’t a property name of the object.</p>
+        <header>
+            <h1><a href="/">Long term laziness</a></h1>
+            <h2>A blog by <a href="https://twitter.com/DavidBruant">David Bruant</a></h2>
+        </header>
+        <main>
+            <article><h1>Generating a string which isn&amp;#8217;t a property name of a given object</h1><p>Helping out with the <a href="http://test262.ecmascript.org/">test262 test suite</a> (official ECMAScript 5 test suite), I have come to a problem. Based on a given object, find/generate a string which isn’t a property name of the object.</p>
 <p>Here is <a href="https://bugs.ecmascript.org/show_bug.cgi?id=33#c5">the solution</a> I’ve come up with  </p>
 <pre><code class="lang-js">function unusedPropertyName(o){  
     var ownPropNames = Object.getOwnPropertyNames(o);
@@ -104,7 +106,25 @@ categories:</p>
 </code></pre>
 <p>The idea is to list all property names. Then, create a string which has one letter that differs from each property name. This idea is inpired by <a href="http://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor’s diagonal argument</a>.</p>
 <p>I found it was an interesting use of Array.prototype.reduce and was worth sharing.</p>
-</article>
-        <footer></footer>
+<aside class="table-layout">
+    <div>
+        <span>by</span>
+        <span data-generator-author=""></span>
+    </div>
+    <div>
+        <span>on</span>
+        <span>2011-02-28</span>
+    </div>
+</aside></article>
+        </main>
+        <footer>
+            <p>
+                on <a href="https://twitter.com/DavidBruant">Twitter</a>,
+                on <a href="https://github.com/DavidBruant">Github</a>.
+            </p>
+            <p>
+                <a href="https://github.com/DavidBruant/davidbruant.github.io">Sources of this handcrafted blog can be found on github</a>
+            </p>
+        </footer>
     </body>
 </html>

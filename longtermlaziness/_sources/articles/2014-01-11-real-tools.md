@@ -1,12 +1,5 @@
----
-title: Real tools
-author: David Bruant
-layout: post
-permalink: /?p=343
-categories:
-  - Uncategorized
----
-So, I was <a href="https://twitter.com/clochix/status/421615336350171136" rel="noreferrer">discussing</a> with <a href="https://twitter.com/clochix" rel="noreferrer">@Clochix</a> on the future of mobile/apps/the web, what are the costs for developers today to target as much platforms as possible, etc.  
+
+So, I was <a href="https://twitter.com/clochix/status/421615336350171136" rel="noreferrer">discussing</a> with <a href="https://twitter.com/clochix" rel="noreferrer">Clochix</a> on the future of mobile/apps/the web, what are the costs for developers today to target as much platforms as possible, etc.  
 And then <a href="https://twitter.com/glaurent/status/421629936718585856" rel="noreferrer">someone popped up</a> in the discussion (and that&#8217;s cool, that&#8217;s the reason we&#8217;re having these discussions on Twitter), to comment on HTML5 tooling: (translation is mine)
 
 > devs prefer coding with real tools and users prefer real apps.
@@ -15,8 +8,7 @@ Clochix <a href="https://twitter.com/clochix/status/421630725201227776" rel="nor
 
 I feel this topic deserves a broader coverage, so I&#8217;d like to talk about my favorite tools to build web applications and software in general. So here is my list of real tools I use as a real developer in no particular order.
 
-## <a name="my-brain" class="anchor" href="#my-brain"><span class="octicon octicon-link"></span></a>  
-<a name="my-brain" href="#my-brain" rel="noreferrer"></a>My brain
+## My brain
 
 So I like this tool my brain is. It&#8217;s an amazing tool to think abstractly, model data, combine ideas. Our brains develop habits which make us faster and better at what we do over time usually. We have to be careful about forgetting our habits when they get in the way of moving forward, though.
 
@@ -29,8 +21,7 @@ My brain helps me remembering this vocabulary. Since my brain is very limited in
 
 This sounds like an obvious one, but I see too often devs rushing to their computers when a walk would probably be more effective.
 
-## <a name="voice-email-and-patience" class="anchor" href="#voice-email-and-patience"><span class="octicon octicon-link"></span></a>  
-<a name="voice-email-and-patience" href="#voice-email-and-patience" rel="noreferrer"></a>Voice, email and patience
+## Voice, email and patience
 
 The vast majorit&#8230;. well&#8230; all the time, I build software for someone else&#8217;s need. I must translate their intent into code. My main task is to get their intent out of their brain. If I fail at this task, the code I write is most likely a waste of time.  
 Among other difficulties, most of the time, people don&#8217;t know what they want. Even if they do, they most often lack the proper vocabulary to express it. It&#8217;s a frustrating situation, but one we have to deal with just all the time.
@@ -48,8 +39,7 @@ I quite intentionally plan to master this art. Much more seriously than I plan t
 Aw maaaan, this is my favorite actually. In my second year of software engineering school, I got involved in a project with a group of students and we had a room assigned for us. It had a whiteboard. Team design discussions in front of a whiteboard are just the best!  
 I miss whiteboards&#8230; I miss a team too, but that&#8217;s another topic, which leads me to&#8230;
 
-## <a name="a-team" class="anchor" href="#a-team"><span class="octicon octicon-link"></span></a>  
-<a name="a-team" href="#a-team" rel="noreferrer"></a>A team
+## A team
 
 Not sure how ethical it is to consider a team a tool, but moving on&#8230;  
 Other people are amazing at seeing errors you make because they most often think from a different perspective. No later than a couple of weeks ago, I thought of a project and just discussing it over lunch with <a href="https://twitter.com/oncletom" rel="noreferrer">Thomas Parisot</a> made me realize it was much more easier to do it as a Chrome extension than something with a server (<a href="http://esquisses.clochix.net/2014/12/15/gloubiboulga/" rel="noreferrer">Clochix would be proud</a>). Bim! Saved hours messing around with server settings and going back and forth between browser APIs and Node APIs, just like that, over lunch.
@@ -58,8 +48,7 @@ A team is good for code review, for keeping things moving when you&#8217;re not 
 
 Teams are good.
 
-## <a name="conclusive-note" class="anchor" href="#conclusive-note"><span class="octicon octicon-link"></span></a>  
-<a name="conclusive-note" href="#conclusive-note" rel="noreferrer"></a>Conclusive note
+## Conclusive note
 
 Tools like SDKs, frameworks, I can Google about them and given a few hours, I&#8217;ll know what to pick. In a few hours, I can find one excellent way to customize my CLI and I bet you the code to do it is even open source.
 

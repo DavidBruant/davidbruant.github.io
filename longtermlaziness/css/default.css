@@ -1,0 +1,124 @@
+html{
+    font-size: 17px;
+}
+
+body{
+    background-color: #666;
+}
+
+header, main, footer{
+    margin: 0 auto;
+    background-color: white; /* for uber-old browsers that wouldn't have hsl colors */
+}
+
+main{
+    max-width: 40em;
+}
+header, footer{
+    max-width: 45em;
+}
+
+/*
+    HEADER
+*/
+header{
+    background-color: hsl(240, 40%, 70%);
+    box-shadow: 0 0 1em 1em hsl(240, 40%, 70%);
+    padding: 1vh 1em;
+    margin-bottom: 4em;
+    
+    border-radius: 0 0 1em 1em;
+}
+
+header h1{
+    font-size: 1.5em;
+    margin: 0.4em 0;
+}
+header h2{
+    color: #555;
+    font-size: 0.9em;
+    margin: 0.2em 0;
+}
+
+
+/*
+    MAIN
+*/
+main{
+    background-color: hsl(120, 40%, 70%);
+    box-shadow: 0 0 1em 1em hsl(120, 40%, 70%);
+    padding: 1em;
+}
+
+article h1{
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 0.2em;
+}
+article h2{
+    font-size: 1.4em;
+}
+article h3{
+    font-size: 1.2em;
+}
+article h4{
+    font-size: 1.1em;
+}
+
+article p{
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+article blockquote{
+    background-color: #BBB;
+    border: 2px inset #777;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    
+    position: relative;
+}
+
+article blockquote::before, article blockquote::after{
+    color: #EEE;
+    
+    position: absolute;
+    display: block;
+    
+    padding: 0.1em;
+    font-size: 1.3em;
+}
+
+article blockquote::before{
+    content: "«";
+    
+    top: 0;
+    left: 0;
+}
+
+article blockquote::after{
+    content: "»";
+    
+    bottom: 0;
+    right: 0;
+}
+
+article blockquote p{
+    margin: 0;
+    padding 0;
+    font-family: Helvetica;
+}
+
+
+/*
+    FOOTER
+*/
+footer{
+    background-color: hsl(0, 40%, 70%);
+    box-shadow: 0 0 1em 1em hsl(0, 40%, 70%);
+    padding: 1vh 1em;
+    margin-top: 4em;
+    
+    border-radius: 1em 1em 0 0;
+}

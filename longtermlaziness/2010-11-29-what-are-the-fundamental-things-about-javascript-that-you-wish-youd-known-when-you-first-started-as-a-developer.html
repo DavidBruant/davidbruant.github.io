@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"><meta name="description" content="Answering a question from Pippa Bachanan. I wish I knew more about where the JavaScript APIs came from and how they relate to one another.">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width; initial-scale:1;">
         
         <style data-from="https://github.com/DavidBruant/Better-CSS-defaults/blob/master/better-defaults.css"> 
             /*
@@ -74,19 +77,18 @@
             }
         </style>
         
-        <title>What are the fundamental things about JavaScript that you wish you had known when you first started as a developer - longtermlaziness blog</title>    
+        <link rel="stylesheet" href="css/default.css">
+        
+        <title>What are the fundamental things about JavaScript that you wish you&amp;#8217;d known when you first started as a developer? - longtermlaziness blog</title>    
     </head>
     
     <body>
-        <header></header>
-        <article><h1>What are the fundamental things about JavaScript that you wish you had known when you first started as a developer</h1><hr>
-<p>title: 'What are the fundamental things about JavaScript that you wish you’d known when you first started as a developer?'
-author: David Bruant
-layout: post
-permalink: /?p=96
-categories:</p>
-<h2 id="-uncategorized">  - Uncategorized</h2>
-<p>This is a question I have been asked by the amazing <a href="http://twitter.com/pipstar">Pippa Buchanan</a> from the <a href="https://www.drumbeat.org/p2pu-webcraft">P2PU school of webcraft</a>. Here is my answer :</p>
+        <header>
+            <h1><a href="/">Long term laziness</a></h1>
+            <h2>A blog by <a href="https://twitter.com/DavidBruant">David Bruant</a></h2>
+        </header>
+        <main>
+            <article><h1>What are the fundamental things about JavaScript that you wish you&amp;#8217;d known when you first started as a developer?</h1><p>This is a question I have been asked by the amazing <a href="http://twitter.com/pipstar">Pippa Buchanan</a> from the <a href="https://www.drumbeat.org/p2pu-webcraft">P2PU school of webcraft</a>. Here is my answer :</p>
 <p>I think that JS is a sum of a lot of technologies and that web developers should very early be aware of the differences between them:<br>1) <a href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">ECMAScript</a>: That’s the core language JavaScript is based on. That’s “just a programming language”. It defines the JavaScript native types. This include <a href="https://developer.mozilla.org/en/JavaScript/Guide/Working_with_Objects">Objects</a>, <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Arrays</a> and <a href="https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope">functions</a><br>2) The document object inherits form a lot of different interfaces:  </p>
 <ul>
 <li><a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-1950641247">Node</a> which is “just here” for the tree structure (ok, well, a bit more). This interface is common with <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-745549614">Elements</a> and contains parentNode, cloneNode…  </li>
@@ -94,7 +96,25 @@ categories:</p>
 <li><a href="http://www.w3.org/TR/DOM-Level-2-HTML/html.html#ID-26809268">HTMLDocument</a>. It adds a bunch of HTML-specific things like .body, .links or the .write method (this last one should be avoided, but that’s another story)  </li>
 <li>HTML5 redefines the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/dom.html#documents-in-the-dom">HTMLDocument</a> interface and add for instance .getElementsByClassName()<br>3) Events<br>Besides that, the event programming paradigm is not easy to understand. Unlike “C programming” where you have a “main” function and a “return” at the end, JavaScript isn’t continuously executed. There is a bit of execution at the beginning for initialization purposes and after that it’s all user (click/keypress) or network (XMLHttpRequest events) or clock (<a href="https://developer.mozilla.org/en/Window.setTimeout">settimeout</a>) driven which could be all summarized as “events” (even if the clock “events” aren’t DOM events).<br>The DOM event mechanism is well explained in <a href="http://www.w3.org/TR/DOM-Level-3-Events/#event-flow">one picture</a>.</li>
 </ul>
-</article>
-        <footer></footer>
+<aside class="table-layout">
+    <div>
+        <span>by</span>
+        <span data-generator-author=""></span>
+    </div>
+    <div>
+        <span>on</span>
+        <span>2010-11-29</span>
+    </div>
+</aside></article>
+        </main>
+        <footer>
+            <p>
+                on <a href="https://twitter.com/DavidBruant">Twitter</a>,
+                on <a href="https://github.com/DavidBruant">Github</a>.
+            </p>
+            <p>
+                <a href="https://github.com/DavidBruant/davidbruant.github.io">Sources of this handcrafted blog can be found on github</a>
+            </p>
+        </footer>
     </body>
 </html>

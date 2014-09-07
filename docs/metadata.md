@@ -6,7 +6,7 @@ Values are objects like:
 
 {
     "title": string
-    "writing date": datetime-formatted string
+    "writing-date": datetime-formatted string
     "meta": {
         "name": "content"
     },
@@ -24,6 +24,13 @@ If absent, the title in the metadata is used as `h1` and for `<title>`.
 
 ## rest
 
-If not provided, "writing date" is the date and time of when the html version first appeared in the repo
-meta are meant to fill &lt;meta> elements
-data are meant to fill data attributes of any element
+If not provided, "writing-date" is the date and time of when the html version first appeared in the repo
+
+## Meta
+
+meta are meant to fill &lt;meta> elements in the &lt;head>
+
+## data
+
+data are meant to fill data attributes of any element. `value` will be used as textContent of elements with attribute
+`data-generator-key`

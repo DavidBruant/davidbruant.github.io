@@ -1,11 +1,4 @@
----
-title: The W3C is a restaurant
-author: David Bruant
-layout: post
-permalink: /?p=334
-categories:
-  - Uncategorized
----
+
 A fantasy lives in the head of a large number of people about the role of the W3C in the web ecosystem. This fantasy is that the W3C would decide what gets in the web platform and what doesn&#8217;t, or even that the W3C would set a vision for the web. This is completely false.
 
 ## History of an API

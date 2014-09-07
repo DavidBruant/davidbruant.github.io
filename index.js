@@ -35,14 +35,25 @@ console.log('MAIN_DIRECTORY', MAIN_DIRECTORY);
 var SOURCES_DIRECTORY = join(MAIN_DIRECTORY, '_sources');
 
 var BASE_HTML_PATH = join(SOURCES_DIRECTORY, 'base.html');
+var DETAILS_HTML_PATH = join(SOURCES_DIRECTORY, 'details.html');
 var ARTICLES_DIRECTORY = join(SOURCES_DIRECTORY, 'articles');
 
 var ARTICLES_METADATA_PATH = join(ARTICLES_DIRECTORY, 'metadata.json');
+
+var GENERATOR_DATA_ATTRIBUTE_PREFIX = 'data-generator-';
+
 
 var baseHTMLP = new Promise(function(resolve, reject){
     fs.readFile(BASE_HTML_PATH, function(err, baseHTMLBuffer){
         if(err) reject(err);
         else resolve(baseHTMLBuffer.toString());
+    });
+});
+
+var detailsHTMLP = new Promise(function(resolve, reject){
+    fs.readFile(DETAILS_HTML_PATH, function(err, buffer){
+        if(err) reject(err);
+        else resolve(buffer.toString());
     });
 });
 
@@ -54,15 +65,15 @@ var articlesMetadataP = new Promise(function(resolve, reject){
 });
 
 
+
+
 var metadataTemplate = {
     "title": "TODO",
     "writing date": "YYYY-MM-DD",
     "meta": {
         "description": "TODO"
     },
-    "data": {
-        "key": "value"
-    }
+    "data": {}
 };
 
 function makeMetadataEntries(keys){
@@ -113,16 +124,16 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
 
                 var html = marked(fileContent.toString());
 
-                //console.log(f, html.length, typeof html);
-
                 // always recreate a fresh doc from HTML string for baseHTML
-                Promise.all([makeDocument(html), baseHTMLP.then(makeDocument)])
+                Promise.all([makeDocument(html), baseHTMLP.then(makeDocument), detailsHTMLP.then(makeDocument)])
                     .then(function(results){
-                        var articleDoc = results[0], finalDocument = results[1];
+                        var articleDoc = results[0],
+                            finalDocument = results[1],
+                            detailsDoc = results[2];
 
                         var finalDocumentArticle = finalDocument.querySelector('article');
-
-                        //console.log('baseDocArticle', baseDocArticle.outerHTML);
+                        
+                        // Add article body to document
                         finalDocumentArticle.innerHTML = articleDoc.body.innerHTML;
                         
                         var finalArticleTitle;  
@@ -142,12 +153,63 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
                         
                         finalDocument.title = finalArticleTitle + ' - ' + blogTitle + ' blog';
                         
+                        // Add h1 if missing
                         if(!h1){
                             h1 = finalDocument.createElement('h1');
                             h1.textContent = finalArticleTitle;
                             
                             finalDocumentArticle.insertBefore(h1, finalDocumentArticle.firstChild);
                         }
+                        
+                        // Add details
+                        finalDocumentArticle.innerHTML += detailsDoc.body.innerHTML;
+                        
+                        
+                        // Process <meta>s
+                        var metaCharset = finalDocument.querySelector('head meta[charset]');
+                        if(!metaCharset)
+                            throw new Error('You really should add <meta charset="utf-8"> right after the opening <head>')
+                            
+                        if(!articleMetadata.meta)
+                            articleMetadata.meta = {};
+                        
+                        Object.keys(articleMetadata.meta).forEach(function(k){
+                            var v = articleMetadata.meta[k];
+                            if(k === 'description' && v === 'TODO')
+                                console.warn(f, 'meta description TODO')
+                            
+                            var meta = finalDocument.createElement('meta');
+                            meta.setAttribute('name', k);
+                            meta.setAttribute('content', v);
+                            
+                            // should be insertAfter
+                            finalDocument.head.insertBefore(meta, metaCharset.nextSibling);
+                        });
+                        
+                        // Process data
+                        if(!articleMetadata.data)
+                            articleMetadata.data = {};
+                        
+                        if(articleMetadata.data['writing-date'])
+                            console.warn(f, "There is already a value for data['writing-date']")
+                        
+                        articleMetadata.data['writing-date'] = articleMetadata['writing-date'];
+                        
+                        Object.keys(articleMetadata.data).forEach(function(k){
+                            var v = articleMetadata.data[k];
+                            var dataAttribute = GENERATOR_DATA_ATTRIBUTE_PREFIX + k;
+                            var elems = finalDocument.querySelectorAll('['+dataAttribute+']');
+                            if(elems.length === 0)
+                                console.warn(f, "no element with attribute", dataAttribute);
+
+                            [].forEach.call(elems, function(e){
+                                e.textContent = v;
+                                e.removeAttribute(dataAttribute); // cleanup attribute so it doesn't appear client-side
+                            });
+                        });
+                        
+                        // find a way to warn about the fact that some GENERATOR_DATA_ATTRIBUTE_PREFIX attributes are not filled if any
+                        
 
                         var path = join(MAIN_DIRECTORY, f.replace('.md', '.html'))
 

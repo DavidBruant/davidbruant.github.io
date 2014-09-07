@@ -1,11 +1,4 @@
----
-title: 'L&#8217;après long terme'
-author: David Bruant
-layout: post
-permalink: /?p=348
-categories:
-  - Uncategorized
----
+
 Ca va devenir une habitude de [répondre à Clochix][1]
 
 Un passage en particulier m’a interpellé :

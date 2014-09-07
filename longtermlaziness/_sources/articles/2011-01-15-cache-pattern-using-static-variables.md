@@ -1,11 +1,3 @@
----
-title: Cache pattern using static variables
-author: David Bruant
-layout: post
-permalink: /?p=99
-categories:
-  - Uncategorized
----
 ## Motivation
 
 I&#8217;ve recently been writing some PHP. At some point, I wrote a function which was taking a string as input, [applying several regexp][1] to replace some patterns by something else and returning the result. Input string weren&#8217;t very long and throught the lifetime of the program, this function could be called several times with the exact same input. So it got me thinking. If I have already computed this function for some input, why should I bother computing it again? I shoudn&#8217;t and so implement a cache.

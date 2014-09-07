@@ -1,13 +1,3 @@
----
-title: Sans Serveur
-author: David Bruant
-layout: post
-permalink: /?p=341
-categories:
-  - Uncategorized
----
-<div class="se-section-delimiter">
-</div>
 
 Réponse à certains morceaux de cette [merveilleuse pièce][1] par [Clochix][2].
 
@@ -60,7 +50,7 @@ Mais je m’éloigne aussi.
 Même si l’humanité entière ne veut pas d’un internet a-centré, est-ce une raison suffisante pour ne pas y travailler ?  
 Continuons. Même si ce n’est que pour la minorité pour qui c’est important.
 
- [1]: http://esquisses.clochix.net/2014/12/15/gloubiboulga/
+ [1]: http://esquisses.clochix.net/2013/12/15/gloubiboulga/
  [2]: https://twitter.com/clochix
  [3]: http://www.erights.org/talks/skynet/
  [4]: https://www.youtube.com/watch?v=pMhH6IKBrVo

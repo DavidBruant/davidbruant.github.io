@@ -1,11 +1,4 @@
----
-title: Participating to the first Mozilla Doc Sprint
-author: David Bruant
-layout: post
-permalink: /?p=94
-categories:
-  - Uncategorized
----
+
 Hey Lazies !
 
 I&#8217;ve been participating to the first [Mozilla documentation sprint][1] ever this week-end.  
@@ -14,7 +7,7 @@ Instead of blogging about couple of stuff I&#8217;ve been working on/learning/do
 *   [ECMAScript 5 strict mode][2]
 *   [Object.defineProperty][3]
 
-It doesn&#8217;t sounds a lot, but now, both pages are quite complete with examples and stuff.
+It doesn&#8217;t sound a lot, but now, both pages are quite complete with examples and stuff.
 
 Thanks to Moz folks for the week-end!
 
