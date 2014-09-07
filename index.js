@@ -26,6 +26,9 @@ var args = process.argv.slice(2);
 if(!args[0])
     throw new Error('Need a path to a directory where a blog is to be built as argument');
 
+var blogTitle = path.basename(args[0]);
+console.log('Generating blog', blogTitle);
+
 
 var MAIN_DIRECTORY = resolve(process.cwd(), args[0]);
 console.log('MAIN_DIRECTORY', MAIN_DIRECTORY);
@@ -33,6 +36,7 @@ var SOURCES_DIRECTORY = join(MAIN_DIRECTORY, '_sources');
 
 var BASE_HTML_PATH = join(SOURCES_DIRECTORY, 'base.html');
 var ARTICLES_DIRECTORY = join(SOURCES_DIRECTORY, 'articles');
+
 var ARTICLES_METADATA_PATH = join(ARTICLES_DIRECTORY, 'metadata.json');
 
 var baseHTMLP = new Promise(function(resolve, reject){
@@ -49,10 +53,25 @@ var articlesMetadataP = new Promise(function(resolve, reject){
     });
 });
 
-/*
-    TODO: 
-    3. Check if the .md file already has an h1. If it does, report conflict and stop for this file
-*/
+
+var metadataTemplate = {
+    "title": "TODO",
+    "writing date": "YYYY-MM-DD",
+    "meta": {
+        "description": "TODO"
+    },
+    "data": {
+        "key": "value"
+    }
+};
+
+function makeMetadataEntries(keys){
+    return JSON.stringify(keys.reduce(function(acc, k){
+        acc[k] = metadataTemplate;
+        return acc;
+    }, {}), null, 4)
+}
+
 
 fs.readdir(ARTICLES_DIRECTORY, function(err, files){
     // TODO use robust ~fs.extension function instead of endsWith
@@ -61,7 +80,7 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
     articlesMetadataP = articlesMetadataP.then(function(articlesMetadata){
         var metadataFiles = Object.keys(articlesMetadata);
         
-        /*var metadataFilesNotFound = metadataFiles.filter(function(f){
+        var metadataFilesNotFound = metadataFiles.filter(function(f){
             return files.indexOf(f) === -1;
         });
         
@@ -73,12 +92,14 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
         });
         
         if(existingFilesWithoutMetadata.length >= 1)
-            throw new Error('existingFilesWithoutMetadata\n'+existingFilesWithoutMetadata.join('\n'));
-        */
+            throw new Error('existingFilesWithoutMetadata\n'+existingFilesWithoutMetadata.join('\n')+
+                           '\n\nHere is some help:\n'+makeMetadataEntries(existingFilesWithoutMetadata));
+        
         return articlesMetadata;
             
     }).catch(function(err){
         console.error('Mismatch between metadata and source files', err);
+        throw err;
     });
     
     articlesMetadataP.then(function(articlesMetadata){
@@ -97,22 +118,42 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
                 // always recreate a fresh doc from HTML string for baseHTML
                 Promise.all([makeDocument(html), baseHTMLP.then(makeDocument)])
                     .then(function(results){
-                        var articleDoc = results[0], baseDoc = results[1];
+                        var articleDoc = results[0], finalDocument = results[1];
 
-                        var baseDocArticle = baseDoc.querySelector('article');
+                        var finalDocumentArticle = finalDocument.querySelector('article');
 
                         //console.log('baseDocArticle', baseDocArticle.outerHTML);
-                        baseDocArticle.innerHTML = articleDoc.body.innerHTML;
-
-                /*
-                    See if there is an <h1> in articleDoc.body. If it differs from articleMetadata.title, throw
-                    Feed the head > title with the title and add an h1 if there isn't one
-                */
+                        finalDocumentArticle.innerHTML = articleDoc.body.innerHTML;
+                        
+                        var finalArticleTitle;  
+                        var metadataTitle = articleMetadata.title;
+                        var h1 = finalDocumentArticle.querySelector('h1');
+                        
+                        if(h1 === null && !metadataTitle)
+                            throw new Error('No <h1> in article nor any title in metadata for '+f);
+                        
+                        if(h1 && metadataTitle && h1.textContent !== metadataTitle)
+                            throw new Error('Title mismatch for '+f+'\n'+h1.textContent+'\n'+metadataTitle);
+                        
+                        if(metadataTitle === 'TODO')
+                            console.warn('For article', f, 'metadata.title is', 'TODO');
+                        
+                        finalArticleTitle = h1 !== null ? h1.textContent : metadataTitle;
+                        
+                        finalDocument.title = finalArticleTitle + ' - ' + blogTitle + ' blog';
+                        
+                        if(!h1){
+                            h1 = finalDocument.createElement('h1');
+                            h1.textContent = finalArticleTitle;
+                            
+                            finalDocumentArticle.insertBefore(h1, finalDocumentArticle.firstChild);
+                        }
 
                         var path = join(MAIN_DIRECTORY, f.replace('.md', '.html'))
 
-                        fs.writeFile(path, baseDoc.innerHTML, function(err){ if(err) throw err; });
-                    }).catch(function(err){ console.error(err) } );
+                        fs.writeFile(path, finalDocument.innerHTML, function(err){ if(err) throw err; });
+                    })
+                    .catch(function(err){ console.error(err) } );
 
             });
         });

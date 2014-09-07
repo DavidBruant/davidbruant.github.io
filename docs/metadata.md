@@ -19,7 +19,8 @@ All fields are optional.
 
 ## title
 
-The title in the Markdown file (h1, with `#`) takes precedence. If absent, the title in the metadata is used as `h1` and for `<title>`. If no title in either markdown file or metadata, then the filename is used
+The title in the Markdown file (h1, with `#`) takes precedence.
+If absent, the title in the metadata is used as `h1` and for `<title>`.
 
 ## rest
 
