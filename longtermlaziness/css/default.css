@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: #666;
+    background-color: #CCC;
 }
 
 header, main, footer{
@@ -22,8 +22,8 @@ header, footer{
     HEADER
 */
 header{
-    background-color: hsl(240, 40%, 70%);
-    box-shadow: 0 0 1em 1em hsl(240, 40%, 70%);
+    background-color: hsl(120, 20%, 70%);
+    box-shadow: 0 0 1em 1em hsl(120, 20%, 70%);
     padding: 1vh 1em;
     margin-bottom: 4em;
     
@@ -34,10 +34,15 @@ header h1{
     font-size: 1.5em;
     margin: 0.4em 0;
 }
+header h1 a{
+    text-decoration: none;
+    color: inherit;
+}
 header h2{
     color: #555;
     font-size: 0.9em;
     margin: 0.2em 0;
+    text-indent: 2em;
 }
 
 
@@ -45,8 +50,8 @@ header h2{
     MAIN
 */
 main{
-    background-color: hsl(120, 40%, 70%);
-    box-shadow: 0 0 1em 1em hsl(120, 40%, 70%);
+    background-color: hsl(120, 50%, 70%);
+    box-shadow: 0 0 1em 1em hsl(120, 50%, 70%);
     padding: 1em;
 }
 
@@ -72,16 +77,19 @@ article p{
 }
 
 article blockquote{
-    background-color: #BBB;
-    border: 2px inset #777;
+    background-color: rgb(201, 232, 201);
+    background-color: rgba(255, 255, 255, 0.5);
+    
     padding: 0.5em;
     margin: 0.5em 0;
     
     position: relative;
+    
+    border-radius: 1em;
 }
 
 article blockquote::before, article blockquote::after{
-    color: #EEE;
+    color: #222;
     
     position: absolute;
     display: block;
@@ -110,13 +118,30 @@ article blockquote p{
     font-family: Helvetica;
 }
 
+.details{
+
+}
+
+.details > *{
+    display: inline-block;
+    padding-right: 2em; 
+}
+
+.details > * > *:nth-of-type(1){
+    text-transform: uppercase;
+    color: #888;
+}
+.details > * > *:nth-of-type(2){
+    text-transform: uppercase;
+    color: #666;
+}
 
 /*
     FOOTER
 */
 footer{
-    background-color: hsl(0, 40%, 70%);
-    box-shadow: 0 0 1em 1em hsl(0, 40%, 70%);
+    background-color: hsl(120, 20%, 70%);
+    box-shadow: 0 0 1em 1em hsl(120, 20%, 70%);
     padding: 1vh 1em;
     margin-top: 4em;
     

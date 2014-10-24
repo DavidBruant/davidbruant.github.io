@@ -103,16 +103,17 @@ categories:</p>
 <p>I have improved the style for <a href="https://developer.mozilla.org/En/DOM/Node.textContent">Node.textContent</a> and have read with great interest the notes which state some difference with Microsoft’s <code>innerText</code>. One being that <code>innerText</code> cannot retrieve the text from <script> and <style> elements. Well&#8230; That is the explanation of why <a href="http://selectivizr.com/">Selectivizr</a> explains that &#8220;Styles defined in <style> tags won&#8217;t be parsed.&#8221; (in old IE, of course).</p>
 <h2 id="innerhtml-counter-intuitive-performance">innerHTML counter-intuitive performance</h2>
 <p>I&#8217;ve added a <a href="https://developer.mozilla.org/en/DOM/element.innerHTML#Security_consideration">security consideration section to the innerHTML page</a>. It was the occasion to re-read the page and re-find <a href="http://www.quirksmode.org/dom/innerhtml.html">Quircksmode performance test</a>. And even in modern Firefoxes and Chrome, innerHTML keeps being (2-3 times) faster than creating DOM elements in memory and appending them. I have to admit that this is counter-intuitive for me (innerHTML requires parsing and creation of a document fragment while DOM elements manipulation doesn&#8217;t require the parsing). The best explanation i can come up with is that innerHTML is one line of JavaScript while the several creations and appending required to do the same operations require roundtrips between native code and JavaScript code. I&#8217;m looking forward to see <a href="https://github.com/andreasgal/dom.js/">dom.js</a> being finished and hopefully integrated in browsers to re-test its performance against a native innerHTML.</p>
-</body></html></script></p><aside class="table-layout">
-    <div>
-        <span>by</span>
-        <span data-generator-author=""></span>
-    </div>
+</body></html></script></p><hr>
+<div class="details">
     <div>
         <span>on</span>
         <span>YYYY-MM-DD</span>
     </div>
-</aside></article>
+    <div>
+        <span>by</span>
+        <span data-generator-author=""></span>
+    </div>
+</div></article>
         </main>
         <footer>
             <p>

@@ -159,16 +159,17 @@ console.log(count);
 <h2 id="conclusions-and-improvement-tracks">Conclusions and improvement tracks</h2>
 <p>We have seen a cache pattern which is almost language agnostic. I have then showed how to add a cache to a <a href="http://en.wikipedia.org/wiki/Pure_function">pure functions</a> without touching the function itself. There are obviously restriction and limitations. It is unlikely to work if we’re dealing with a non-pure function. If the input space is too wide, the space vs time trade-off may not be worth it. If the function isn’t called with the same input several times throughout the program lifetime, a cache is useless. If the function is a method of a <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/freeze">frozen</a> object, my method cannot be applied. </p>
 <p>However, in contexts where a cache can help, this can be useful. One of the main advantage is the separation of concerns. If you want to do tricky things with your cache (remove some entries after a certain amount of time if they haven’t been used, for instance), you don’t have to work on the function you’re adding a cache too. You just have to work on <code>makeFunctionWithCache</code>. This is also helpful if you have several functions you want add a cache to: there is only one place to maintain if you want to improve the cache mecanism.</p>
-<aside class="table-layout">
-    <div>
-        <span>by</span>
-        <span data-generator-author=""></span>
-    </div>
+<hr>
+<div class="details">
     <div>
         <span>on</span>
         <span>2011-01-15</span>
     </div>
-</aside></article>
+    <div>
+        <span>by</span>
+        <span data-generator-author=""></span>
+    </div>
+</div></article>
         </main>
         <footer>
             <p>
