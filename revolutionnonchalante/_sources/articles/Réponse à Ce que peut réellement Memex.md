@@ -15,7 +15,7 @@ La [DARPA](http://en.wikipedia.org/wiki/DARPA) a récemment [dévoilé un projet
 Pour trouver ces groupes, Memex explore le [deep web](http://en.wikipedia.org/wiki/Deep_Web)... et puis aussi le [dark net](http://en.wikipedia.org/wiki/Darknet_(file_sharing). Ces 2 notions sont assez différentes.
 Le deep web, c'est juste les pages que Google (et les autres moteurs de recherche) ne font pas remonter dans leur résultats. Soit parce que le site a demandé à ce que la page ne ressorte pas, soit parce que le moteur de recherche pense que cette page n'a pas vraiment de valeur.
 
-La DARPA ne donne pas de détails sur la manière dont Memex est construit techniquement. L'ironie voudra que je sois en train de travailler sur un projet équivalent : [My Web Intelligence](https://github.com/MyWebIntelligence/MyWebIntelligence)
+La DARPA ne donne pas de détails sur la manière dont Memex est construit techniquement. L'ironie voudra que je sois en train de travailler sur un projet équivalent : [My Web Intelligence](http://fr.slideshare.net/alakel/my-web-intelligence-une-plateforme-open-source-au-service-des-humanits-digitales) ([github](https://github.com/MyWebIntelligence/MyWebIntelligence))
 Donc, j'ai une vague idée de l'effort nécessaire pour construire Memex :-)
 
 Diplomatie Digitale a essayé d'expliquer ce dont Memex est capable, mais leur article mérite quelques précisions.
@@ -102,18 +102,13 @@ La valeur de Memex n'est pas dans les briques utilisées, mais dans l'habile com
 Côté hardware, la seule chose qui demande un peu de puissance de calcul, c'est le traitement d'images et encore. Aucun besoin de serveurs ou de supercalculateurs !
 C'est d'ailleurs [écrit dans leur description](http://www.darpa.mil/newsevents/releases/2014/02/09.aspx) : "The program plans to use **commodity hardware** and emphasize **creating and leveraging open source technology** and architecture." (emphase ajoutée)
 
-Aussi, dans les grandes lignes, on va faire la même chose à l'occasion du projet My Web Intelligence et nous n'avons pas les moyens de se payer des dizaines de serveurs et encore moins des supercalculateurs. L'ordinateur portable sur lequel j'écris cet article est et restera largement suffisant pour faire tourner le projet.
+Aussi, dans les grandes lignes, on va faire la même chose à l'occasion du projet My Web Intelligence. L'ordinateur portable sur lequel j'écris cet article est et restera largement suffisant pour faire tourner le projet.
 
-
-Une des raisons pour lesquelles Memex et My Web Intelligence n'ont pas besoin de dizaines de serveurs et de supercalculateur, c'est que leur objectif n'est pas celui de Google. Google doit "tout" connaître pour pouvoir répondre de manière pertinente à la question poser. Ca demande beaucoup de traitement et d'espace de calcul de tout connaître en surface.
-Memex et MyWI proposent l'exploration en profondeur d'un territoire très petit (lié à une thématique, à un besoin particulier). On pourrait aller chercher tout le web, mais c'est beaucoup de travail pour rien. Autant aller chercher une poignée de milliers de pages, bien les analyser, les montrer à l'utilisateur et à sa demande seulement aller explorer (en temps réel) plus en détail un certain recoin. Ce côté "à la demande" est ce qui permet de ne pas avoir besoin d'énormément de ressources matériel.
 
 
 > De fait, un outil comme Memex ne sera pas exploitable dans le privé avant un certain temps, si tant est que cela arrive un jour.
 
 My Web Intelligence, environ juin 2015 si tout se passe bien. Open source licence MIT. C'est déjà open source, mais pas dans un état utilisable.
-
-My Web Intelligence se différencie de Memex dans le sens où il est plus générique (donc moins utile si le problème à résoudre est spécifiquement de trouver les traffics d'être humains, mais il est sûrement mieux adapté que Memex sur beaucoup d'autres problèmes).
 
 
 ## Conclusions
@@ -123,7 +118,7 @@ My Web Intelligence se différencie de Memex dans le sens où il est plus géné
 L'existence de Memex ne constitue pas une prouesse technologique ou technique. Il s'agit d'un assemblage intelligent de briques (la plupart sûrement open source) qui existent déjà. Il y a une innovation d'usage, mais pas technique.
 Memex tourne sur du matériel normal. On peut sûrement l'installer sur un serveur qui coûte 9€/mois et en tirer toute la valeur.
 
-Le projet My Web Intelligence a beaucoup en commun avec Memex et est open source et sera sûrement en béta cet été si tout se passe bien.
+Le projet My Web Intelligence a beaucoup en commun avec Memex et est open source et sera installable en qualité béta cet été si tout se passe bien.
 
 
 
