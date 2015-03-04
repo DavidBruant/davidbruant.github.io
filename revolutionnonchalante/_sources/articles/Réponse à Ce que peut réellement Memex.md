@@ -15,7 +15,7 @@ La [DARPA](http://en.wikipedia.org/wiki/DARPA) a récemment [dévoilé un projet
 Pour trouver ces groupes, Memex explore le [deep web](http://en.wikipedia.org/wiki/Deep_Web)... et puis aussi le [dark net](http://en.wikipedia.org/wiki/Darknet_(file_sharing). Ces 2 notions sont assez différentes.
 Le deep web, c'est juste les pages que Google (et les autres moteurs de recherche) ne font pas remonter dans leur résultats. Soit parce que le site a demandé à ce que la page ne ressorte pas, soit parce que le moteur de recherche pense que cette page n'a pas vraiment de valeur.
 
-La DARPA ne donne pas de détails sur la manière dont Memex est construit techniquement. L'ironie voudra que je sois en train de travailler sur un projet équivalent : [My Web Intelligence](http://fr.slideshare.net/alakel/my-web-intelligence-une-plateforme-open-source-au-service-des-humanits-digitales) ([github](https://github.com/MyWebIntelligence/MyWebIntelligence))
+La DARPA ne donne pas de détails sur la manière dont Memex est construit techniquement. L'ironie voudra que je sois en train de travailler sur le code open source d'un projet équivalent : [My Web Intelligence](https://github.com/MyWebIntelligence/MyWebIntelligence)
 Donc, j'ai une vague idée de l'effort nécessaire pour construire Memex :-)
 
 Diplomatie Digitale a essayé d'expliquer ce dont Memex est capable, mais leur article mérite quelques précisions.
@@ -83,7 +83,7 @@ Aussi, "recherche de données, visualisation et traitement.", c'est à peu près
 
 > L’arrivée de ce super-moteur dans deux ans (pour l’instant, il demeure en phase bêta) pose néanmoins plusieurs questions, notamment de loi et de sécurité.
 
-Ah merde, My Web Intelligence est déjà open source (mais pas encore fini, pas même en béta, on verra ça vers juin) :-p
+Ah merde, My Web Intelligence est déjà open source (mais pas encore fini, le code sera en qualité béta vers juin) :-p
 
 
 > Pour autant, le cas de Memex est différent car il flotte sur un vide juridique : celui-ci ne part pas à la recherche de données qui appartiennent à une entreprise mais va explorer les données non-propriétaires (nom, adresse, numéro de téléphone…) et ce sans mandat, tant que ces données sont disponibles de façon publique, c’est-à-dire non protégées par un mot de passe.
@@ -108,7 +108,7 @@ Aussi, dans les grandes lignes, on va faire la même chose à l'occasion du proj
 
 > De fait, un outil comme Memex ne sera pas exploitable dans le privé avant un certain temps, si tant est que cela arrive un jour.
 
-My Web Intelligence, environ juin 2015 si tout se passe bien. Open source licence MIT. C'est déjà open source, mais pas dans un état utilisable.
+Le code de My Web Intelligence ne sera pas au niveau de Memex, mais pourra permettre la construction d'un outil avec beaucoup de caractéristiques semblables vers juin 2015 si tout se passe bien. Ce code est open source licence MIT.
 
 
 ## Conclusions
