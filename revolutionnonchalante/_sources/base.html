@@ -1,21 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         
-        <style> 
-            *{
+        <meta name="viewport" content="width=device-width; initial-scale:1;">
+        
+        <style data-from="https://github.com/DavidBruant/Better-CSS-defaults/blob/master/better-defaults.css"> 
+            /*
+              http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+            */
+            *, *:before, *:after {
                 box-sizing: border-box;
-                -moz-box-sizing: border-box;
+                /* if you really care about older browsers, add prefixed versions at your own risks */
+            }
+
+            /*
+              Repeating the background mostly makes sense in the <body>. Otherwise, people usually want the image and preferably its center (not the top-right corner)
+            */
+            *:not(body) {
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            /*
+              Makes the hidden attribute works even when an element is styled display: flex
+              http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
+            */
+            [hidden] {
+                display: none !important;
+            }
+
+
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+
+            /*
+              In applications, there can be lists but HTML lists have bullet points and a bunch of useless styling attributes 
+            */
+            ul, ol, menu {
+                margin: 0;
+                padding: 0;
+
+            }
+
+            ul, menu {
+                list-style: none;
+            }
+
+            li {
+                margin: 0;
+                padding: 0;
+            }
+
+
+
+            /*
+              fairly classic thing to do
+            */
+            .table-layout {
+                display: table;
+            }
+            .table-layout > * {
+                display: table-row;
+            }
+            .table-layout > * > *{
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            * {
+                border-collapse: collapse;
             }
         </style>
         
-        <title> TITLE </title>    
+        <link rel="stylesheet" href="css/default.css">
+        
+        <title></title>    
     </head>
     
     <body>
-        <header></header>
-        <article> </article>
-        <footer></footer>
+        <header>
+            <h1><a href="/">Révolution Nonchalante</a></h1>
+            <h2>Un blog de <a href="https://twitter.com/DavidBruant">David Bruant</a></h2>
+        </header>
+        <main>
+            <article>
+            </article>
+        </main>
+        <footer>
+            <p>
+                Sur <a href="https://twitter.com/DavidBruant">Twitter</a>,
+                Sur <a href="https://github.com/DavidBruant">Github</a>.
+            </p>
+            <p>
+                <a href="https://github.com/DavidBruant/davidbruant.github.io">Les sources de ce blog fait à la main sur Github</a>
+            </p>
+        </footer>
     </body>
 </html>

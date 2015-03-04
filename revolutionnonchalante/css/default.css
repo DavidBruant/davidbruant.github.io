@@ -1,0 +1,148 @@
+html{
+    font-size: 18px;
+}
+
+body{
+    background-color: #555;
+    min-height: 100vh;
+}
+
+header, main, footer{
+    margin: 0 auto;
+    background-color: white; /* for uber-old browsers that wouldn't have hsl colors */
+}
+
+main{
+    max-width: 45em;
+}
+header, footer{
+    max-width: 50em;
+}
+
+/*
+    HEADER
+*/
+header{
+    background-color: hsl(0, 0%, 75%);
+    padding: 1vh 1em;
+    margin-bottom: 4em;
+    
+    border-radius: 0 0 1em 1em;
+
+}
+
+header h1{
+    font-size: 1.5em;
+    margin: 0.4em 0;
+}
+header h1 a{
+    text-decoration: none;
+    color: inherit;
+}
+header h2{
+    color: #555;
+    font-size: 0.9em;
+    margin: 0.2em 0;
+    text-indent: 2em;
+}
+
+
+/*
+    MAIN
+*/
+main{
+    background-color: hsl(0, 0%, 90%);
+    padding: 1em;
+}
+
+article h1{
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 0.2em;
+}
+article h2{
+    font-size: 1.4em;
+}
+article h3{
+    font-size: 1.2em;
+}
+article h4{
+    font-size: 1.1em;
+}
+
+article p{
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+article blockquote{
+    background-color: rgb(201, 232, 201);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    padding: 0.5em;
+    margin: 0.5em 0;
+    
+    position: relative;
+    
+    border-radius: 1em;
+}
+
+article blockquote::before, article blockquote::after{
+    color: #222;
+    
+    position: absolute;
+    display: block;
+    
+    padding: 0.1em;
+    font-size: 1.3em;
+}
+
+article blockquote::before{
+    content: "«";
+    
+    top: 0;
+    left: 0;
+}
+
+article blockquote::after{
+    content: "»";
+    
+    bottom: 0;
+    right: 0;
+}
+
+article blockquote p{
+    margin: 0;
+    padding 0;
+    font-family: Helvetica;
+}
+
+.details{
+
+}
+
+.details > *{
+    display: inline-block;
+    padding-right: 2em; 
+}
+
+.details > * > *:nth-of-type(1){
+    text-transform: uppercase;
+    color: #888;
+}
+.details > * > *:nth-of-type(2){
+    text-transform: uppercase;
+    color: #666;
+}
+
+/*
+    FOOTER
+*/
+footer{
+    background-color: hsl(0, 0%, 75%);
+    padding: 1vh 1em;
+    margin-top: 4em;
+    
+    border-radius: 1em 1em 0 0;
+}

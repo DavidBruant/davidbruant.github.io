@@ -38,7 +38,7 @@ var BASE_HTML_PATH = join(SOURCES_DIRECTORY, 'base.html');
 var DETAILS_HTML_PATH = join(SOURCES_DIRECTORY, 'details.html');
 var ARTICLES_DIRECTORY = join(SOURCES_DIRECTORY, 'articles');
 
-var ARTICLES_METADATA_PATH = join(ARTICLES_DIRECTORY, 'metadata.json');
+var ARTICLES_METADATA_PATH = join(SOURCES_DIRECTORY, 'metadata.json');
 
 var GENERATOR_DATA_ATTRIBUTE_PREFIX = 'data-generator-';
 
@@ -103,7 +103,7 @@ fs.readdir(ARTICLES_DIRECTORY, function(err, files){
         });
         
         if(existingFilesWithoutMetadata.length >= 1)
-            throw new Error('existingFilesWithoutMetadata\n'+existingFilesWithoutMetadata.join('\n')+
+            console.warn('existingFilesWithoutMetadata\n'+existingFilesWithoutMetadata.join('\n')+
                            '\n\nHere is some help:\n'+makeMetadataEntries(existingFilesWithoutMetadata));
         
         return articlesMetadata;
