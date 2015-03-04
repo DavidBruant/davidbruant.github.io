@@ -116,7 +116,7 @@ My Web Intelligence, environ juin 2015 si tout se passe bien. Open source licenc
 My Web Intelligence se différencie de Memex dans le sens où il est plus générique (donc moins utile si le problème à résoudre est spécifiquement de trouver les traffics d'être humains, mais il est sûrement mieux adapté que Memex sur beaucoup d'autres problèmes).
 
 
-# Conclusions
+## Conclusions
 
 `robots.txt` est juste une indication pour les moteurs de recherche, mais toute personne qui n'écrit pas un moteur de recherche peut et va sûrement ignorer cette convention.
 
