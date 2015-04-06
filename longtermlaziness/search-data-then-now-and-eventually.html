@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"><meta name="description" content="Response to Andreas Gal and explorations of what could come after search engines as we know them.">
+        
+        <meta name="viewport" content="width=device-width; initial-scale:1;">
+        
+        <style data-from="https://github.com/DavidBruant/Better-CSS-defaults/blob/master/better-defaults.css"> 
+            /*
+              http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+            */
+            *, *:before, *:after {
+                box-sizing: border-box;
+                /* if you really care about older browsers, add prefixed versions at your own risks */
+            }
+
+            /*
+              Repeating the background mostly makes sense in the <body>. Otherwise, people usually want the image and preferably its center (not the top-right corner)
+            */
+            *:not(body) {
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+
+            /*
+              Makes the hidden attribute works even when an element is styled display: flex
+              http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
+            */
+            [hidden] {
+                display: none !important;
+            }
+
+
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+
+            /*
+              In applications, there can be lists but HTML lists have bullet points and a bunch of useless styling attributes 
+            */
+            ul, ol, menu {
+                margin: 0;
+                padding: 0;
+
+            }
+
+            ul, menu {
+                list-style: none;
+            }
+
+            li {
+                margin: 0;
+                padding: 0;
+            }
+
+
+
+            /*
+              fairly classic thing to do
+            */
+            .table-layout {
+                display: table;
+            }
+            .table-layout > * {
+                display: table-row;
+            }
+            .table-layout > * > *{
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            * {
+                border-collapse: collapse;
+            }
+        </style>
+        
+        <link rel="stylesheet" href="css/default.css">
+        
+        <title>Search data, then, now and eventually - longtermlaziness blog</title>    
+    </head>
+    
+    <body>
+        <header>
+            <h1><a href="/">Long term laziness</a></h1>
+            <h2>A blog by <a href="https://twitter.com/DavidBruant">David Bruant</a></h2>
+        </header>
+        <main>
+            <article><h1 id="search-data-then-now-and-eventually">Search data, then, now and eventually</h1>
+<p>A <a href="http://andreasgal.com/2015/03/30/data-is-at-the-heart-of-search-but-who-has-access-to-it/">strangely written post</a> by Andreas Gal, Mozilla CTO. In this post, there seems to be some disdain for privacy, which is surprising from someone that high-ranked at Mozilla.</p>
+<p>In this post, I'll write a summary, formulate a response and try to move the debate forward.</p>
+<p>Apologies in advance, there will be swearing in this post.</p>
+<h2 id="summary">Summary</h2>
+<p>In a <a href="http://andreasgal.com/2015/02/23/search-works-differently-than-you-may-think/">first post</a>, Andreas Gal explained that search engines aren't just crawling the web and use algorithms to rank them on sets of words. Search engines also observe which links users click on to figure out which of the proposed results is the most accurate. This data from users weighs a lot when providing answers for the same query to another user later. And it's only natural; at scale and on average, an answer which is good for someone is good for someone else. An answer which is rarely clicked on is rarely the answer people wanted, so no need to put it too high in search results.</p>
+<p>The <a href="http://andreasgal.com/2015/03/30/data-is-at-the-heart-of-search-but-who-has-access-to-it/">post I'm responding to</a> explains that this "crowdsourced" search data is crucial to building a search engine. It's also crucial to a search engine which would want to compete with Google. BUT! There is a virtuous circle for a search engine which is that if you start gathering this data, you provide better search results, so more users come, you have even better results, etc. And other search engines are somehow doomed to have worse results initially, attract less users, have less of this previous search data and is doomed to loose against Google (Andreas Gal says "vicious circle", but I'm a "glass half-full" type of person :-) ).</p>
+<p>Then, the post goes on listing ways search engines could gather data. Most of which have disappeared <a href="http://googleblog.blogspot.fr/2011/10/making-search-more-secure.html">when Google encrypted searches by default</a>
+The author of the post seems to regret that time. I do not.</p>
+<h3 id="encrypted-search">Encrypted search</h3>
+<p>It goes without saying, but apparently, even the Mozilla CTO needs a reminder: encrypted search is good for the user.
+From people searches, one can infer what they are going to buy, what worries or concerns them, who they like, who and what they want to know more about. From people searches, one can infer pretty much everything. That's how folks criminals get caught. Plaintext search was absurdly privacy intrusive for people.</p>
+<p>Regarding Google decision about encrypting search, the <strong>only</strong> thing that is reasonable to regret is that it didn't happen sooner.</p>
+<p>Let's discuss various points in the post:</p>
+<h4 id="small-search-engines-could-partner-with-isps">Small search engines could partner with ISPs</h4>
+<blockquote>
+<p>Search engines with small user bases can acquire search traffic by working with large Internet Service providers (also called ISPs, think Comcast, Verizon, etc.) to capture searches that go from users’ browsers to competing search engines. This is one option that was available in the past to Google’s competitors such as Yahoo and Bing as they attempted to become competitive with Google’s results.</p>
+</blockquote>
+<p>I'm sorry, what? WTF!
+One thing that outraged everyone in Edward Snowden revelation was the mass surveillance. And one of the things the NSA is doing is that: "capture searches that go from users’ browsers to () search engines.". This is literally tracking people.
+In France right now everyone is on deck fighting against the government that is trying to impose "black boxes" (that's the term they use, literally) to ISPs so the government can spy on everyone and we're told by Mozilla that "hey, your ISP should leak your search data so competitors to Google can emerge!"</p>
+<p>"This is one option that was available in the past"
+Sure it was. It was also amazingly damaging for the users. This "option" was happening without any user consent. That was a terrible option and I am thankful to Google to have removed it.</p>
+<h4 id="small-search-engines-could-partner-with-top-content-websites">Small search engines could partner with top content websites</h4>
+<blockquote>
+<p>An alternative to working with ISPs is to work with popular content sites to track where visitors are coming from. In Web lingo this is called a “referer header.” When a user clicks on a link, the browser tells the target site where the user was before (what site “referred” the user). If the user was referred by a search result page, that address contains the query string, making it possible to associate the original search with the result link. Because the vast majority of Web traffic goes to a few thousand top sites, it is possible to reconstruct a pretty good model of what people frequently search for and what results they follow.</p>
+</blockquote>
+<p>"track"; at least we're being honest here.</p>
+<p>The referer header is terrible for privacy. You can go <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/evaluation.htm#sec_6_3_4_2">as far back as Roy Fielding's thesis</a> (presented in 2000) to be warned about its dangers for privacy.
+It is terrible enough <a href="https://mozillians.org/en-US/u/briansmith/">Brian Smith</a> (who works on Firefox) is working on <a href="https://briansmith.org/referrer-01.html">a plan to ruin it</a> as much as possible <strong>at the browser level</strong>. Yes, in Firefox!</p>
+<p>If I want to see some content website, I don't necessarily want them to know how I came to them. Very much like if I go to a grossery store, maybe I don't want to tell them where I live and the route I took to get there. This information has no reason to be granted without my opt-in. The fact that it's been so is a mistake that is being slowly repaired.</p>
+<p>Note that apparently, this information is still available to websites, but <strong>in aggregates</strong> assuming <a href="https://support.google.com/webmasters/answer/35252?hl=en">they accept Google trackers on their site</a>. But in a way, it's only fair. Google has a privileged relationship to the user, why should all websites have access to this relationship? Did the user opt-in to give that information to all websites?</p>
+<h4 id="conclusion-on-encrypted-search">Conclusion on encrypted search</h4>
+<p>It's good for the user. Search engine competitors cannot see my searches data? Good! I do not want them to! I do not want anyone to see my searches beyond the search engine I choose! Wannabe search engines included!</p>
+<p>They want my search data? They should have to ask people and not try to track them, spy on them via partnership with ISPs or top web sites!</p>
+<p>For fuck sake, why do I even have to write this? Let's quote the Mozilla Manifesto:</p>
+<blockquote>
+<p>Individuals’ security and privacy on the Internet are fundamental and must not be treated as optional.</p>
+</blockquote>
+<p>...not even for competitors to Google to emerge.</p>
+<p><strong>Privacy is not optional.</strong></p>
+<h3 id="the-last-source-of-large-volume-of-queries">The last source of large volume of queries</h3>
+<blockquote>
+<p>These days, the search box in the browser is essentially the last remaining place where Google’s competitors can access a large volume of search queries. In 2011, Google famously accused Microsoft’s Bing search engine of doing exactly that: logging Google search traffic in Microsoft’s own Internet Explorer browser in order to improve the quality of Bing results. Having almost tripled the market share of Chrome since then, this is something Google has to worry much less about in the future. Its competitors will not be able to use Chrome’s search box to obtain data the way Microsoft did with Internet Explorer in the past.</p>
+</blockquote>
+<p>Google enforces their monopoly on search via their browser which is increasing market share. So sad... Mozilla should really work on a web browser competing with Chrome! ... oh wait! </p>
+<p>I really hate myself for being that sarcastic, but I don't get the point of bitching about Google monopoly and the various way they enforce it. Observing and lamenting won't be enough.</p>
+<p>It's also largely late and inappropriate to complain about Google monopoly on search thanks to search data given Mozilla has been massively sending such data by contract for at least 6 years and still is in most countries.</p>
+<h2 id="moving-the-ball-forward-how-to-get-search-data">Moving the ball forward: how to get search data</h2>
+<p>Search data is privileged data between the search engine and the user searching. Any way to acquire such data that would be privacy intrusive should be out of question (if nothing else per the Mozilla Manifesto if anyone cares at all about what it means).</p>
+<h3 id="web-browser-search-box-">Web browser search box?</h3>
+<p>I guess that could be an option. Obviously, it takes a browser with sufficient market share to have enough search box data. For obvious reasons, it's highly unlikely Microsoft, Google or <a href="https://browser.yandex.com/">Yandex</a> will play at this game. We're left with Firefox, Apple and Opera. On mobile, people search too. The mobile search data is controlled by the OS itself as well as the browser. Apple has a major role there too. Let's hope FirefoxOS will get there soon enough. But Apple has made super clear they <a href="http://www.apple.com/privacy/">don't want their business to be about sharing/selling data</a>, so it'd be hard to get them on board.</p>
+<p>Assuming user opt-in, Firefox could gather search data and then share this data with search engines. The data could be shared in a privacy preserving manner via <a href="http://en.wikipedia.org/wiki/Differential_privacy">differencial privacy</a>. As it turns out, the evil monopolistic Google <a href="http://googleonlinesecurity.blogspot.fr/2014/10/learning-statistics-with-privacy-aided.html">open sourced software to do exactly this</a>.</p>
+<h2 id="beyond-search-as-we-know-it">Beyond search as we know it</h2>
+<p>The problem of search data isn't so much that Google owns it all and other search engines don't, it's that users have so little awareness of their existence and even less control over them (cannot choose to share them even within your community, etc.)</p>
+<h3 id="distributed-search-engines">Distributed search engines</h3>
+<p>That's <a href="http://en.wikipedia.org/wiki/Distributed_search_engine">a thing</a>. I've never seen under my radar a solution that looked attractive enough (and even less used "crowdsourced" search data?), but am looking forward to being convinced.</p>
+<p>In a distributed search engine, each person has an index and search is performed on other people computers. So the "no monopoly" part is clear. The accuracy and performance story remains to be proven.</p>
+<h3 id="combining-the-browser-search-box-and-distributed-search-engine">Combining the browser search box and distributed search engine</h3>
+<p>Beyond just sharing the raw data, a web browser could "network" its users. "Unionize" them, maybe, to take a word I <a href="https://brendaneich.com/2014/04/the-next-mission/">read somewhere else</a>. The idea of "unionizing" would take the web browser (or OS) to a different level. It wouldn't just be a <em>user</em> agent, but more a <em>community</em> agent.</p>
+<p>Today, a web browser is a fairly individualistic software. Your browser history, bookmarks, searches are your own and that's it. These elements are hard if not impossible to share given how browsers are architected. These items are saved for the purpose of syncing across device, but with the assumption the devices all belong to the same individual.</p>
+<p>One interesting experiment would be for a browser to add a layer on top of search engines. Don't just drive searches to one (or several?) search engine, but ask a database of knowledge shared within a community. Contribute back the search data to the community database.</p>
+<p>Unfortunately, given Mozilla's current business model regarding Firefox, it's unlikely this is going to be tried by them.
+Sounds doable via an addon, though.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Bitching about Google monopoly is worthless.</p>
+<p>Privacy is more important than the emergence of competing search engines.</p>
+<p>If one cares to think beyond the current search engine paradigm, there might be solutions. But given how Mozilla survives today, it's unlikely they'll shoot themselves in the foot. Addon, though?</p>
+<hr>
+<div class="details">
+    <div>
+        <span>on</span>
+        <span>2015-04-06</span>
+    </div>
+    <div>
+        <span>by</span>
+        <span>David Bruant</span>
+    </div>
+</div></article>
+        </main>
+        <footer>
+            <p>
+                on <a href="https://twitter.com/DavidBruant">Twitter</a>,
+                on <a href="https://github.com/DavidBruant">Github</a>.
+            </p>
+            <p>
+                <a href="https://github.com/DavidBruant/davidbruant.github.io">Sources of this handcrafted blog can be found on github</a>
+            </p>
+        </footer>
+    </body>
+</html>

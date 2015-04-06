@@ -316,6 +316,9 @@
         "writing-date": "2014-01-28",
         "meta": {
             "description": "TODO"
+        },
+        "data": {
+            "author": "David Bruant"
         }
     },
     "commandline-less static website.md": {
@@ -323,6 +326,20 @@
         "writing-date": "YYYY-MM-DD",
         "meta": {
             "description": "TODO"
+        },
+        "data": {
+            "author": "David Bruant"
+        }
+    },
+    "search-data-then-now-and-eventually.md": {
+        "title": "Search data, then, now and eventually",
+        "writing-date": "2015-04-06",
+        "meta": {
+            "description": "Response to Andreas Gal and explorations of what could come after search engines as we know them."
+        },
+        "data": {
+            "author": "David Bruant"
         }
     }
+
 }

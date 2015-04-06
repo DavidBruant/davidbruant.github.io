@@ -69,7 +69,7 @@ var articlesMetadataP = new Promise(function(resolve, reject){
 
 var metadataTemplate = {
     "title": "TODO",
-    "writing date": "YYYY-MM-DD",
+    "writing-date": "YYYY-MM-DD",
     "meta": {
         "description": "TODO"
     },
