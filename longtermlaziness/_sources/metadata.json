@@ -1,4 +1,13 @@
 {
+    
+    "index.md": {
+        "title": "Welcome!",
+        "writing-date": "YYYY-MM-DD",
+        "meta": {
+            "description": "Long term laziness - a blog by David Bruant"
+        },
+        "data": {}
+    },
     "2010-10-10-participating-to-the-first-mozilla-doc-sprint.md": {
         "title": "Participating to the first Mozilla DocSprint",
         "writing-date": "2010-10-10",
