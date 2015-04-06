@@ -105,7 +105,7 @@ In a distributed search engine, each person has an index and search is performed
 
 ### Combining the browser search box and distributed search engine
 
-Beyond just sharing the raw data, a web browser could "network" its users. "Unionize" them, maybe, to take a word I [read somewhere else](https://brendaneich.com/2014/04/the-next-mission/). The idea of "unionizing" would take the web browser (or OS) to a different level. It wouldn't just be a *user* agent, but more a *community* agent.
+Beyond just sharing the raw data, a web browser could "network" its users. "Unionize" them, maybe, to take a word I [read somewhere else](https://brendaneich.com/2014/04/the-next-mission/) about a year ago. The idea of "unionizing" would take the web browser (or OS) to a different level. It wouldn't just be a *user* agent, but more a *community* agent.
 
 Today, a web browser is a fairly individualistic software. Your browser history, bookmarks, searches are your own and that's it. These elements are hard if not impossible to share given how browsers are architected. These items are saved for the purpose of syncing across device, but with the assumption the devices all belong to the same individual.
 
@@ -117,7 +117,7 @@ Sounds doable via an addon, though.
 
 ## Conclusion
 
-Bitching about Google monopoly is worthless.
+Bitching about Google monopoly thanks to search data is worthless and a bit ironic given Mozilla has lived on money gathered via forwarding such data to Google.
 
 Privacy is more important than the emergence of competing search engines.
 
