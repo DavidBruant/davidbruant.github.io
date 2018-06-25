@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ECMAScript Regrets</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# ECMAScript Regrets
+
+## David Bruant - 27 juin 2018 - Ekino BEST #4
+
+---
+
+# Agenda
+
+1. Standards web, ton univers impitoyable
+2. Exemples de regret dans ECMAScript
+3. Les autres regrets (HTML, CSS, DOM, etc.)
+
+---
+
+# Standards web, ton univers impitoyable
+
+## Le fantasme
+
+<img height=300 src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Moses041.jpg/800px-Moses041.jpg" alt="Moïse recevant le Décalogue">
+
+Par The Yorck Project (<span style="white-space:nowrap">2002</span>) 10.000 Meisterwerke der Malerei (DVD-ROM), distributed by <a href="//commons.wikimedia.org/wiki/Commons:10,000_paintings_from_Directmedia" title="Commons:10,000 paintings from Directmedia">DIRECTMEDIA</a> Publishing GmbH. <a href="https://fr.wikipedia.org/wiki/International_Standard_Book_Number" class="extiw" title="fr:International Standard Book Number">ISBN</a>&nbsp;: <a href="//commons.wikimedia.org/wiki/Special:BookSources/3936122202" title="Special:BookSources/3936122202">3936122202</a>., Domaine public, <a href="https://commons.wikimedia.org/w/index.php?curid=2411717">Lien</a>
+
+---
+
+# Standards web, ton univers impitoyable
+
+## Le fantasme
+
+1 - Les personnes qui font les standards (**spec writers**) les écrivent parfaitement (sans ambiguïté, sans comportement indéfini)
+
+2 - Les personnes qui implémentent les standards (ingénieur.e.s des navigateurs web = **implementors**) suivent à la lettre les standards et codent sans bugs
+
+3 - Les dévs web (**authors**) codent d'après le standard sans avoir vraiment besoin de tester sur différents navigateurs
+
+4 - Les utilisateurs (**users**) kiffent notre travail sur n'importe quel appareil
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité (début - ~2010)
+
+6 - Un **implementor** invente une fonctionnalité/API (JavaScript, SSL, XMLHttpRequest, etc.) qui permet de rendre les sites webs plus cools
+
+1 - Des **authors** s'en saisissent parce que c'est cool et font des sites qui en dépendent
+
+3 - Les **users** trouvent que c'est cool, effectivement
+
+5 - Les **autres implementors** constatent que c'est cool, font du *reverse engineering* pour copier la fonctionnalité/API telle quelle et faire que ces sites cools fonctionnent pour eux aussi
+
+2 - Y'a des bugs d'implémentation, les **authors** inventent des trucs genre jQuery pour s'en abstraire
+
+11 - Les **spec writers** documentent ce qui a lieu chez les **implementors**
+
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité (~2010 - aujourd'hui)
+
+1 - **spec writers** = **implementors**
+
+2 - Illes se mettent d'accord sur quoi implémenter, implémentent dans des versions qui permettent aux **authors** de tester (Firefox Developer Edition, Chrome Canary, flags, etc.)
+
+3 - Le *brouillon de spec* évolue en fonction des *feedbacks* des **implementors** et **authors**
+
+<3
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité - contexte
+
+**L'objectif d'un navigateur, c'est d'avoir le plus grand nombre d'utilisateurs** (part de marché)
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité - "don't break the web"
+
+`isNaN('yo') === true` 
+
+Ahahah ! N'importe quoi !
+
+Vazy, corrige-moi le standard et les navigateurs, stp, lol !
+
+...
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité - "don't break the web"
+
+<img height=300 src="https://upload.wikimedia.org/wikipedia/commons/8/86/Guernica_Rathaus_PF.jpg" alt="Guernica, Picasso">
+
+(les sites web qui dépendaient de `isNaN('yo') === true`)
+
+---
+
+# Standards web, ton univers impitoyable
+
+## La réalité - "don't break the web"
+
+... donc on ne peut pas "corriger" une mauvaise API
+
+... les mauvaises API sont là pour rester aussi longtemps que le web
+
+Ces choses nulles du langage qui ne seront jamais corrigées sont ce que j'appelle des **"regrets"**
+
+(minute de silence pour l'effet dramatique)
+
+---
+
+# Exemple de regret ECMAScript : `NaN`
+
+```js
+NaN === NaN // false - wtf!
+
+isNaN(NaN)  // true
+isNaN(24)   // false
+isNaN('yo') // true - wtf!??
+```
+
+## Solution ECMAScript 6/2015 : `Number.isNaN`
+
+```js
+Number.isNaN(NaN)  // true
+Number.isNaN(24)   // false
+Number.isNaN('yo') // false !
+```
+
+---
+
+# Exemple de regret ECMAScript : `this` dynamique
+
+## Avant
+
+```js
+'use strict';
+function Person() {
+    // The Person() constructor defines `this` as an instance of itself.
+    this.age = 0;
+
+    setInterval(function growUp() {
+        this.age++; // throws 'cannot find property age of undefined'
+    }, 1000);
+}
+
+const p = new Person();
+```
+
+---
+
+# Exemple de regret ECMAScript : `this` dynamique
+
+## Solution ECMAScript 6/2015 : arrow functions
+
+```js
+'use strict';
+function Person() {
+    // The Person() constructor defines `this` as an instance of itself.
+    this.age = 0;
+
+    setInterval(() => {
+        this.age++; // works as expected
+    }, 1000);
+}
+
+const p = new Person();
+```
+
+---
+
+# Exemple de regret ECMAScript : `if(!'yo' in obj)`
+
+```js
+const obj = { a: 1, b: 7 };
+
+if(!'yo' in obj)
+    console.log('not yo')
+else 
+    console.log('yo') // wat!?
+
+// (!'yo' in obj) => (!true in obj) => (false in obj) => ('false' in obj)
+```
+
+## Solution
+
+1. Rajouter des parenthèses : `if(!('yo' in obj))`
+2. [Demander un coup de main à ESLint](https://eslint.org/docs/rules/no-unsafe-negation)
+
+---
+
+# Autres regrets ECMAScript
+
+- constructeur de `Array`
+- `var` qui est *function-scoped*
+- `typeof null === 'object'`
+- `__proto__`
+- `==` et ses conversions implicites
+
+---
+
+# HTML Regrets, CSS Regrets, DOM Regrets, etc.
+
+
+
+---
+
+
+---
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
