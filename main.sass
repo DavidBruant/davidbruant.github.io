@@ -1,0 +1,51 @@
+---
+---
+
+@import basic
+@import mixins
+
+$body: white
+$padding: 33%
+$anchor: false
+$nav: #181818
+$headline: #06f
+$description: white
+$odd: white
+$even: #222
+
+body
+    +body_background($body, $padding)
+    > header, > footer
+        background: $nav
+        color: reduce($nav, 100%)
+    > div
+        background: $description
+        color: reduce($description, 100%)
+
+body > header h1
+    font-weight: bold
+
+h1, h2, h3, h4, h5, h6 
+    font-family: "Gentium Basic", serif
+    letter-spacing: 2px
+    header &
+        text-transform: uppercase
+
+
+body > div:first-of-type
+    background: $headline
+    color: reduce($headline, 100%)
+    h1
+        padding-top: 1em
+        padding-bottom: 1em
+
+nav ul
+    margin: 0
+
+article:nth-of-type(even)
+    +article_background($even, $anchor)
+
+article:nth-of-type(odd)
+    +article_background($odd, $anchor)
+
+

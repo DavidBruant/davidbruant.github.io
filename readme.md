@@ -1,38 +1,8 @@
-My static website
-===
-
-I currently have Wordpress blogs which aren't quite easy to work with, aren't flexible enough, don't provide good analytics.
-Making a static website.
-
-Making a [static blog generator](http://www.jeffknupp.com/blog/2014/03/31/why-my-blog-uses-my-homegrown-python-static-site-generator/) mostly for fun.
-
-
-## TODO
-
-### Before release
-
-* Add JSON metadata per article
-** writing date
-** meta description
-** title
-* Add Google Analytics (and warning in &lt;footer>)
-* Add old articles (and add a note on all Wordpress articles)
-* rough "archives"/list page
-
-### After first release
-
-* Keep the sources in the repo (`_sources` directory). In the sent HTML, add a link to the source files
-* Add an `about` page
-* Make a list of article in main page
-* 404 tries a Google Search within the blog
-* Twitter cards
-* Facebook sharing metadata thingy
-* Ajouter date de dernière modification basée sur commits Git
-* Ajouter remerciements aux contributeurs sur cet article (~"git blame")
-* Set up a watcher so that when base.html or one of the .md files changes, the html files are re-generated
-* Add a[href="#"] for h1/h2/h3, etc. when there is an id.
+Mon site web - my website
 
 # Licence
 
-Code is shared under the MIT licence
-Content is shared under the CC-BY licence
+Tout contenu produit par David Bruant ou contribution à ce repo est sous licence Creative Commons Zero
+Les autres contenus, leur auteur et leur licence seront indiqués au cas par cas
+
+Thème [Jekyll](https://jekyllrb.com/) [Contrast](http://niklasbuschmann.github.io/contrast) par [Niklas Buschmann](http://github.com/niklasbuschmann), licence MIT

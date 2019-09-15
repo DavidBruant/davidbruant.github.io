@@ -1,0 +1,23 @@
+title: "writings"
+author: "David Bruant"
+description: "Really cool blog about ... something"
+#subheading: "Really cool blog about ... something"
+more: "read more"
+url: "https://davidbruant.github.io/"
+baseurl: "/writings" # comment out if in root directory
+
+permalink: /:title
+published: true
+
+links:
+  - github: "https://github.com/DavidBruant/"
+  - twitter: "https://twitter.com/DavidBruant/"
+
+
+excerpt_separator: "\n\n\n" # excerpt ends after two blank lines
+defaults: [
+    {scope: {path: ""}, values: {layout: "default"}}, 
+    {scope: {path: "", type: "posts"}, 
+    values: {comments: true}}
+]
+gems: [jekyll-feed] # include feed plugin (supported by gh-pages)

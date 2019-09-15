@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="same-origin">
+
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
+    <link href="{{ "/main.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    {% feed_meta %}
+  </head>
+  <body>
+    <header>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% if site.style.headline %}<div><h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1></div>{% endif %}
+    {% if site.subheading %}<div>{{ site.subheading }}</div>{% endif %}
+
+    <article>
+      <header>
+        <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+        {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+        {% endif %}
+      </header>
+      <div>
+{{ content }}
+      </div>
+    </article>
+
+    <footer>
+      <span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.author}}{% endif %}</a></span>
+      <span>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>{% endfor %}{% endfor %}</span>
+      <span>&copy; {{ site.time | date: "%Y" }}</span>
+    </footer>
+  </body>
+</html>

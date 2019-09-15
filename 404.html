@@ -1,21 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        
-        <style> 
-            *{
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
+---
+layout: default
+---
+
+<article>
+	<header>
+        	<h1>This is not the page you were looking for</h1>
+    </header>
+    <main>
+        <p>Hey, but you know what, it's ok :-) 
+        <p>Maybe it's a broken link. Let's try to search the website to find the page you were looking for.
+
+        <script>
+            "use strict";
+
+            {
+                const pathname = location.pathname;
+                const pathnameParts = pathname
+                    .replace(/\.html$/, '')
+                    .replace(/\W/g, ' ');
+                const q = encodeURIComponent(pathnameParts)
+
+                console.log('pathname', pathname, pathnameParts, q);
+
+                const API_KEY = 'AIzaSyDxRljSe59Hya8fAIn6S0HrGkxVpD7_62k';
+                const cx = '013632130632699023108:t6hrpzccoqq';
+
+                const searchResultsP = fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${cx}&q=${q}`)
+                .then(r => r.json());
+
+                function SearchResult(item){
+                    const li = document.createElement('li')
+
+                    const a = document.createElement('a');
+                    a.href = item.link;
+                    a.textContent = item.title;
+
+                    li.appendChild(a);
+                    return li;
+                }
+
+                document.addEventListener('DOMContentLoaded', e => {
+                    const ol = document.querySelector('ol');
+
+                    function render(results){
+                        ol.innerHTML = '';
+                        
+                        const validResults = results.items && results.items
+                        .filter(i => i.kind === 'customsearch#result' && i.link !== location.href)
+
+                        if(!validResults || (validResults && validResults.length === 0)){
+                            ol.textContent = 'Sorry, no relevant search result found'
+                        }
+                        else{
+                            validResults.forEach(i => {
+                                ol.appendChild(SearchResult(i));
+                            })
+                        }
+                    }
+
+                    searchResultsP.then(results => {
+                        console.log('search results', results);
+
+                        render(results);
+                    })
+                    .catch(err => console.error('google CSE error', err))
+                });
             }
-        </style>
-        
-        <title> TITLE </title>    
-    </head>
-    
-    <body>
-        
-        <p>This is not the page you're looking for</p>
-        
-    </body>
-</html>
+        </script>
+
+        <ol></ol>
+          
+        <footer>Search performed by <a href="https://cse.google.com/">Google Custom Search Engine</a></footer>
+    </main>
+</article>
+
