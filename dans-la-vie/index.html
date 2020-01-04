@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Qu'est-ce que tu fais dans la vie ?">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #fafafa;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+    }
+
+    h1, h2{
+        text-align: center;
+    }
+
+    h2{
+        color: #777;
+    }
+
+  </style>
+  <title>Qu'est-ce que tu fais dans la vie ?</title>
+</head>
+<body>
+  <header>
+    <h1>Qu'est-ce que tu fais dans la vie ?</h1>
+    <h2>wait for it...</h2>
+  </header>
+
+  <script>
+    // Choisir aléatoirement une activité
+    var activité = [
+        `je m'ennuie`,
+        `je nage`,
+        `j'attends`,
+        `du JavaScript`,
+        `je travaille sur le consentement`,
+        `je travaille sur un jeu qui aide les couples à parler sexualité`,
+        `je travaille sur la transparence des finances de l'administration française`,
+        `je lis des textes de loi`,
+        `des infusions`,
+        `des siestes`,
+        `je me repose`,
+        `je suis disponible pour mes ami.e.s`,
+        `je file des coups de main`,
+    ]
+    var indice = Math.floor(activité.length*Math.random())
+    var affichée = activité[indice];
+
+    document.querySelector('h2').textContent=affichée
+  </script>
+</body>
+</html>
