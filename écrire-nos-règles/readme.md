@@ -6,9 +6,3 @@
 1. [L'utilité des règles](utilité-des-règles.md)
 1. [Les règles pour changer les règles](les-règles-pour-changer-les-règles.md)
 1. [Une alternative aux règles](une-autre-base.md)
-
-## Vrac 
-
-- le cas étrange des développeurs logiciels - code is law
-- qui définit les règles ?
-- deux approches pour définir des règles : domination ou collaboratif
