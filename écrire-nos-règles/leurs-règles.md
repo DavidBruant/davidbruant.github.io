@@ -2,7 +2,7 @@
 
 ## Les règles définies par les autres et qui s'appliquent à soi
 
-Règlement, règles du jeu, constitution, codes, lois, statuts, charte, pacte d'associé, contrat de travail, convention collective, règlement interieur, contrat
+Règlement, règles du jeu, constitution, codes, lois, statuts, règlement de co-propriété, charte, pacte d'associé, contrat de travail, code of conduct, convention collective, règlement interieur, contrat, code de la route
 J'en oublie sûrement
 
 Dans chaque cas, il s'agit d'un ensemble de "règles" qui s'appliquent à un groupe de personnes dans un contexte (territoire, temps de jeu, pour une durée déterminée, etc.)
