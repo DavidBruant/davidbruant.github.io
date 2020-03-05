@@ -1,3 +1,7 @@
+---
+title: Faire un budget prévisionnel
+---
+
 # Faire un budget prévisionnel
 
 ## Salut :-)
