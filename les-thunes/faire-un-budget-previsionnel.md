@@ -18,11 +18,11 @@ je créé cette page en espérant qu'elle te sera utile
 
 vu que c'est relou, vazy, viens on parle plutôt de comment tu te sens, on décortique :
 
-<label><input type=checkbox> Tu te sens pas compétent.e/légitime pour faire un budget</label><br>
-<label><input type=checkbox> T'as peur que ça signifie que le projet ne pourra pas/plus se faire ?</label><br>
-<label><input type=checkbox> T'as de mal faire et que ça mette le projet en danger ?</label><br>
-<label>Une autre raison pour laquelle c'est relou cette histoire de budget ? <input type=text></label><br>
-<label>Encore une autre ? <input type=text></label><br>
+<label><input type="checkbox"/> Tu te sens pas compétent.e/légitime pour faire un budget</label><br>
+<label><input type="checkbox"/> T'as peur que ça signifie que le projet ne pourra pas/plus se faire ?</label><br>
+<label><input type="checkbox"/> T'as de mal faire et que ça mette le projet en danger ?</label><br>
+<label>Une autre raison pour laquelle c'est relou cette histoire de budget ? <input type="text"/></label><br>
+<label>Encore une autre ? <input type="text"/></label><br>
 
 (psst psst, tu peux cliquer/remplir, ça n'a aucune conséquence)
 
