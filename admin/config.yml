@@ -3,3 +3,11 @@ backend:
   branch: master
 
 media_folder: "images"
+
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "."
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
