@@ -13,7 +13,7 @@ et c'est sûrement comme ça que tu t'en retrouvé.e sur cette page
 ## Bienvenue :-)
 
 J'ai l'impression que c'est très chiant de faire un budget pour beaucoup de gens. Je suis passé par là et j'ai découvert que c'est moins pénible pour moi que pour d'autres, alors j'ai souvent filé des coups de mains à des gens sur ce sujet
-je créé cette page en espérant qu'elle te sera utile
+je créé cette page en espérant qu'elle te sera utile\
 *[en espérant, qu'au fond de tes yeux ternes, tu puisses y voir un petit brin d'herbe](https://www.youtube.com/watch?v=VZmhy69tNVw)*
 
 vu que c'est relou, vazy, viens on parle plutôt de comment tu te sens, on décortique :
@@ -60,7 +60,7 @@ Quand on va évaluer des montants, on va essayer de **trouver des montants à 5-
 
 Aussi, mieux vaut **prévoir de manière pessimiste**. Ptèt que les ingrédients des cookies, ça sera plutôt 180€. MAIS. ptèt qu'on va découvrir que le verre doseur est cassé et qu'il faudra les remplacer. Ou ptèt qu'on va découvrir que y'aura beaucoup de personnes intolérantes au gluten et donc faudra acheter une farine sans gluten, un peu plus cher. Mieux vaut prévoir un peu large pour ne pas être surpris le jour J.
 
-Aussi, il n'est pas important de tout lister. C'est ok de garder la liste des dépenses et/ou recettes incomplètes. De mettre une catégorie "autre" vague pour anticiper
+Aussi, **il n'est pas important de tout lister**. C'est ok de garder la liste des dépenses et/ou recettes incomplètes. De mettre une catégorie "autre" vague pour anticiper
 
 
 
