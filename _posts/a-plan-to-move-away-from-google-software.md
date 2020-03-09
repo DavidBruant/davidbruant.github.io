@@ -14,3 +14,6 @@ Moving away from these softwares is hard because of a couple of reasons:
 
 These two problems can be solved separately:
 - create a backuping software
+- creating editing software for various file formats
+
+Maybe first step is a mirroring tool that copies files from Google to a controlled software
