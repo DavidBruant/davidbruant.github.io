@@ -4,7 +4,6 @@ description: "Really cool blog about ... something"
 #subheading: "Really cool blog about ... something"
 more: "read more"
 url: "https://davidbruant.github.io/"
-baseurl: "/writings" # comment out if in root directory
 
 permalink: /:title
 published: true
