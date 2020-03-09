@@ -3,9 +3,8 @@ author: "David Bruant"
 description: "Really cool blog about ... something"
 #subheading: "Really cool blog about ... something"
 more: "read more"
-url: "https://davidbruant.github.io/"
+url: "https://davidbruant.github.io"
 
-permalink: /:title
 published: true
 
 links:
