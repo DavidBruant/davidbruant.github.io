@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+<script>
+const endowEval = (() => {
+    const yo = 27
+
+    return function endowEval(code, endowment){
+        with(endowment){
+            (() => {
+                'use strict';
+                ('indirect', eval)(code);
+            })()
+        }
+    }
+})()
+
+const env = new Proxy({[Symbol.unscopables]: {}}, {
+    get(target, key, receiver){
+        console.log('get', key)
+        if(key === Symbol.unscopables)
+            return {}
+        else
+            return globalThis[key]
+    },
+    has(target, key) {
+        console.log('has', key)
+        return key in globalThis;
+    }
+})
+
+endowEval(`console.log(typeof yo)`, env)
+
+
+</script>
