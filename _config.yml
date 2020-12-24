@@ -7,10 +7,6 @@ url: "https://davidbruant.github.io"
 
 published: true
 
-links:
-  - github: "https://github.com/DavidBruant/"
-  - twitter: "https://twitter.com/DavidBruant/"
-
 
 excerpt_separator: "\n\n\n" # excerpt ends after two blank lines
 defaults: [
@@ -19,3 +15,6 @@ defaults: [
     values: {comments: true}}
 ]
 gems: [jekyll-feed] # include feed plugin (supported by gh-pages)
+
+optional_front_matter: 
+  remove_originals: false
