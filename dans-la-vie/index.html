@@ -18,6 +18,14 @@
     h2{
         color: #777;
     }
+    
+    button{
+        padding: 1rem;
+        background-color: white;
+        color: black;
+        border: 1px solid purple;
+        border-radius: 1rem;
+    }
 
   </style>
   <title>Ce que je fais dans la vie</title>
@@ -26,6 +34,8 @@
   <header>
     <h1>Ce que je fais dans la vie</h1>
     <h2>wait for it...</h2>
+    
+    <button>une autre réponse !</button>
   </header>
 
   <script>
@@ -55,6 +65,14 @@
     var affichée = activité[indice];
 
     document.querySelector('h2').textContent=affichée
+    
+    document.querySelector('button').addEventListener('click', e => {
+      var indice = Math.floor(activité.length*Math.random())
+      var affichée = activité[indice];
+
+      document.querySelector('h2').textContent=affichée
+    })
+    
   </script>
 </body>
 </html>
