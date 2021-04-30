@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      
       background: #fafafa;
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
@@ -20,6 +24,8 @@
     }
     
     h1, h2{
+        margin: 0;
+        padding: 1rem 0;
         text-align: center;
     }
 
@@ -29,10 +35,15 @@
     
     button{
         padding: 1rem;
-        background-color: white;
+        background-color: transparent;
         color: black;
         border: 1px solid purple;
         border-radius: 1rem;
+      
+        font-size: 1.2rem;
+      
+        max-width: 40rem;
+        height: 10rem;
     }
     
   </style>
@@ -44,7 +55,7 @@
     <h2>wait for it...</h2>
     
     <button>une autre réponse !</button>
-  <main>
+  </main>
 
   <script>
     // Choisir aléatoirement une activité
