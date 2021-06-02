@@ -5,55 +5,107 @@
   <meta name="description" content="Qu'est-ce que tu fais dans la vie ?">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    html, body{
+    
+      border: 0;
+      margin: 0;
+      padding: 0;
+      
+      height: 100%;
+    }
+    
     body {
+      
       background: #fafafa;
       color: #333;
       font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
     }
 
+    main{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      
+      min-height: 100%;
+      
+      padding: 0 10px;
+    }
+    
     h1, h2{
+        margin: 0;
+        padding: 1rem 0;
         text-align: center;
     }
 
     h2{
         color: #777;
     }
-
+    
+    button{
+        background-color: transparent;
+      
+        font-size: 1.2rem;
+        color: black;
+      
+        border: 1px solid purple;
+        border-radius: 1rem;
+        padding: 1rem;
+        flex: 1;
+      
+        max-width: 40rem;
+        max-height: 70vh;
+      
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
   </style>
   <title>Ce que je fais dans la vie</title>
 </head>
 <body>
-  <header>
+  <main>
     <h1>Ce que je fais dans la vie</h1>
     <h2>wait for it...</h2>
-  </header>
+    
+    <button>une autre réponse !</button>
+  </main>
 
   <script>
     // Choisir aléatoirement une activité
     var activité = [
-        `j'attends`,
-        `du JavaScript`,
         `je travaille sur le consentement`,
         `je travaille sur un jeu qui aide les couples à parler sexualité`,
         `je travaille sur la transparence des finances de l'administration française`,
         `je lis des textes de loi`,
         `des infusions`,
         `des siestes`,
-        `je me repose`,
         `je suis disponible pour mes ami.e.s`,
         `je file des coups de main`,
         `je répare mes pantalons à la machine à coudre`,
         `j'écoute`,
-        `j'écoute des podcasts`,
+        `j'écoute le podcast YESSS`,
+        `j'écoute le podcast Émotions`,
+        `j'écoute le podcast Minority Money Podcast`,
         `je regarde des séries`,
+        `du JavaScript`,
         `j'adore le chocolat et les champignons`,
-        `des allers-retours entre le concret et l'abstrait`,
-        `des budgets qui libèrent`
+        `des budgets qui libèrent`,
+        `je créé une mutuelle qui protège pour de vrai contre le chômage`,
+        `j'essaye de pratiquer la justice restaurative`
     ]
     var indice = Math.floor(activité.length*Math.random())
     var affichée = activité[indice];
 
     document.querySelector('h2').textContent=affichée
+    
+    document.querySelector('button').addEventListener('click', e => {
+      var indice = Math.floor(activité.length*Math.random())
+      var affichée = activité[indice];
+
+      document.querySelector('h2').textContent=affichée
+    })
+    
   </script>
 </body>
 </html>
