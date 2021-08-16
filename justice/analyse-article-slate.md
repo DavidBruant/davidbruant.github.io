@@ -1,21 +1,25 @@
 # Analyse d'une affaire de viol 
 
+**⚠️ Avertissement de contenu : dans cet article, je vais parler de manière assez directe de violences entre personnes, notamment de violences sexuelles**
+
+Cet article fait partie d'un ensemble qui commence [ici](./index)
+
 Je vais analyser une série de 5 articles publiés sur Slate et [qui commencent par ici](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1). Dans ces articles, une femme est victime de viol et raconte son parcours. Elle est française, ça se passe en Australie
+
+Je ressens beaucoup de gratitude et de reconnaissance envers cette femme qui partage un témoignage dense et détaillé de son expérience personnelle 
 
 En résumé, une femme rencontre et couche avec un gars qui s'appelle Luis. Elle s'endort. Quelques heures plus tard, elle est réveillée et découvre que le frère de Luis (plus tard nommé "le mexicain") est en train de la violer.
 Le détective qui mène l'enquête s'appelle Brandon, le procureur général (l'avocat de la "victime") s'appelle Ken
 
 Il s'agit d'un récit où ça se "finit bien" au sens où cette femme est prise au sérieux par la police, par tout le système de justice et à la fin, le violeur est condamné
 
-Et la lecture de ce récit m'a quand même laissé un petit goût amer. Ouais ouais, victoire, mais la victoire est fragile, basée sur une séquence d'une poignée de coups de chances, sur une connaissance assez fine du système de justice.
-Je suis heureux que cette femme aie pu passer à autre chose, et dans le l'ombre de son histoire je vois un système assez hostile aux victimes. Et si je me réjouis pour cette femme en particulier, je suis soucieux de ce que son histoire raconte pour les autres victimes
+Et la lecture de ce récit m'a quand même laissé un petit goût amer. C'est une victoire, mais la victoire est fragile, basée sur une séquence d'une poignée de coups de chances, sur une connaissance assez fine du système de justice qui, à mon avis, ne devrait pas être nécessaire à se reconstruire après une telle épreuve
+Je suis heureux que cette femme aie pu se reconstruire et passer à autre chose, et dans le l'ombre de son histoire je vois un système de justice assez hostile aux victimes. Et si je me réjouis pour cette femme en particulier, je suis soucieux de ce que son histoire raconte pour les autres victimes
 
-Dans mon analyse, je m'intéresse aux interactions entre la victime et le système judiciaire. Il s'agit du système judiciaire australien et je crois que la plus grosse partie de l'analyse se transpose directement au contexte français
+Dans mon analyse, je m'intéresse aux interactions entre la victime et le système judiciaire. Il s'agit du système judiciaire australien et je crois que la plus grosse partie de l'analyse se transpose au contexte français et de beaucoup de pays avec un système de justice similaire
 Je vais me concentrer particulièrement sur les besoins de la victime et la manière dont le système judiciaire y répond ou pas
 
 Cette analyse a pour objectif de nourrir une réflexion sur comment faire émerger de meilleures pratiques de justice et un meilleur système de justice
-
-Cette analyse fait référence à [un autre article qui parle du fonctionneemnt de notre système de justice](./index.md)
 
 
 

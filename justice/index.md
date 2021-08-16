@@ -1,8 +1,10 @@
 # Une autre justice - description du problème
 
+**⚠️ Avertissement de contenu : dans cet article, je vais parler de manière assez directe de violences entre personnes, notamment de violences sexuelles**
+
 C'est venu lentement, par plusieurs endroits initialement disjoints
 
-et puis j'ai commencé à relier les bouts entre eux, je crois que c'était juste après avoir vu la vidéo intitulée  ["Justice (part 1)" de Contrapoints](Lien TODO) :
+et puis j'ai commencé à relier les bouts entre eux, je crois que c'était juste après avoir vu la vidéo intitulée  ["Justice (part 1)" de Contrapoints](https://www.youtube.com/watch?v=smQsfNw_7V4) :
 je suis insatisfait par le système de justice tel que je le connais
 
 il y a des petits cailloux dans la chaussures, genre quand dans une association une personne dit "on ne peut pas faire ça à cause des assurances"
@@ -18,7 +20,10 @@ Les féministes dénoncent les limites et manquements du système de justice, de
 et rien ne change
 ou si peu, si lentement
 
-je suis insatisfait par le système de justice tel que je le connais parce qu'il ne prend pas bien en compte les victimes, ne répond pas vraiment à leur besoin, ou alors par accident
+je suis insatisfait par le système de justice tel que je le connais parce qu'il ne prend pas bien en compte les victimes, ne répond pas vraiment à leurs besoins, ou alors par accident
+
+pour la suite, je vais me concentrer spécifiquement sur les questions des viols et des incestes, car je crois que c'est dans ces situations que les manquements du système de justice produisent les effets les plus graves
+je crois aussi que s'il y avait une solution pour ce sujet-là, cette solution serait sûrement une bonne base pour tous les autres sujets
 
 dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-lieux.md), [une analyse sur un cas concret](./analyse-article-slate.md), [une proposition alternative qui me parait plus juste]() et [une esquisse du chemin entre l'état actuel et cette alternative]()
 
