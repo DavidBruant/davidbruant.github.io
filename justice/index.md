@@ -25,7 +25,10 @@ je suis insatisfait par le système de justice tel que je le connais parce qu'il
 pour la suite, je vais me concentrer spécifiquement sur les questions des viols et des incestes, car je crois que c'est dans ces situations que les manquements du système de justice produisent les effets les plus graves\
 je crois aussi que s'il y avait une solution pour ce sujet-là, cette solution serait sûrement une bonne base pour tous les autres sujets
 
-dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-lieux.md), [une analyse sur un cas concret](), [une proposition alternative qui me parait plus juste]() et [une esquisse du chemin entre l'état actuel et cette alternative]()
+dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-lieux.md), une analyse sur un cas concret (à venir), une proposition alternative qui me parait plus juste (à venir) et une esquisse du chemin entre l'état actuel et cette alternative (à venir) 
+
+
+<!--[une analyse sur un cas concret](), [une proposition alternative qui me parait plus juste]() et [une esquisse du chemin entre l'état actuel et cette alternative]()-->
 
 <!--
 
