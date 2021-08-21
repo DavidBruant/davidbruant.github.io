@@ -31,22 +31,6 @@ Enfin, nos systèmes de justice actuels seraient d'un courant **utilitariste**. 
 
 Même si la version utilitariste est celle qui est présentée, on est resté sur un vocabulaire de "justice pénale", de "code de procédure pénale" et ["pénal", ça vient du mot "peine"](https://fr.wiktionary.org/wiki/p%C3%A9nal). Le but d'une justice pénale, c'est d'infliger une peine, la partie "utile" n'est, sémantiquement, pas obligatoire
 
-<!--
-## Vision personnelle
-
-Il y a l'État
-et l'État, pour bien fonctionner, a besoin de l'ordre social
-et donc que les relations entre les personnes ne se passe pas de manière complètement catastrophique
-et donc il y a des lois et il y a des plaintes qui sont déposées et il y a des enquêtes qui sont menées et il y a des peines qui sont prononcées ; suffisamment pour que ça aille en moyenne, dans l'ensemble. Suffisamment pour le budget qui y est alloué
-
-mais l'objectif de l'État et de son système de Justice **n'est pas** que littéralement chaque personne de la société ressente un sentiment de justice, ressente que quand du mal lui est fait, l'institution de justice le reconnaisse
-
-en théorie, nous sommes "égaux en droits", en pratique, certaines personnes sont plus égales que d'autres
-et il n'y a aucune intention sincère d'améliorer la situation parce que ce qui est en place suffit
-
-en écrivant ces mots, je voudrais prendre les devants et clarifier que je critique un système et pas les individus. Je sais qu'il y a des personnes à l'intérieur de ce système qui se lève chaque matin avec des valeurs bien accrochées, avec une déontologie sans faille
-Et ces personnes sont rarement en position de pouvoir décider du montant et de l'allocation du budget de la police ou de la justice. Et donc, ce qu'elles font a un effet positif localement, mais ça ne produit pas des changements à un niveau global
--->
 
 ## Limites du système actuel
 
@@ -91,18 +75,10 @@ Est-ce qu'on peut créer un autre système de justice où personne n'est laissé
 
 Mon point de départ pour cette question, c'est de savoir ce qu'attendent les victimes
 
-TODO transition
-
-
-[analyse article Slate](./analyse-article-slate)
-
+À cet effet, ma prochaine étape est [d'analyser une série d'articles publiés sur Slate](). Il s'agit du récit d'une femme victime de viol qui raconte en détail notamment ses interactions avec le système de justice
 
 <!--
-
-> On prédit les crimes, pourquoi on prédit pas les victimes ?
-
-https://www.pasquinade.fr/video/internet-etc-spectacle-entier-avec-haroun
-
+[d'analyser une série d'articles publiés sur Slate](./analyse-article-slate)
 -->
 
 
