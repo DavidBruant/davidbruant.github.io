@@ -34,7 +34,7 @@ Même si la version utilitariste est celle qui est présentée, on est resté su
 
 ## Limites du système actuel
 
-Un système de justice étatique part de lois qui décrivent des situations dans la réalité que nous partageons. Pour savoir si une des loi a été transgressée, il est nécessaire d'étudier une situation pour comprendre si la loi a été baffouée. Sinon, le risque, c'est de punir à tort des personnes !
+Un système de justice étatique part de lois qui décrivent des situations dans la réalité que nous partageons. Pour savoir si une des loi a été transgressée, il est nécessaire d'étudier une situation pour comprendre si la loi a été baffouée. Sinon, le risque, c'est de punir à tort des personnes !\
 Le système de justice a le droit de punir et de frapper fort son marteau sur une personne coupable, mais sa légitimité vient de la confiance que les personnes ont dans le fait que le marteau "frappe juste". S'il frappe fort une personne innocente, ça devient très gênant pour l'entierté du système
 
 Il y a toute une procédure. On interroge des personnes, on vérifie si les récits sont convergeants, on cherche des preuves matérielles via la saisie d'objets, la prise de photos, la prise d'ADN, via les vidéos de surveillance, etc.
@@ -49,9 +49,9 @@ Je spoile la fin de ce sketch (en anglais) qui illustre très bien le problème 
 
 Une personne (Guy) se fait voler son chapeau, le Voleur accepte de discuter avec une autre personne qui joue le rôle de Juge. Le Juge menace le Voleur d'aller en prison, il répond qu'il rend le chapeau. Tout le monde a l'air content avec ce système et le sketch se termine sur cet échange :
 
-(Juge) : "donc tu ne peux plus faire des choses méchantes désormais, monsieur !"
-(Voleur) : "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne le découvrez pas"
-(Juge, hébété) : "oh... je crois que tu as trouvé une faille dans le système"
+(Juge) : "donc tu ne peux plus faire des choses méchantes désormais, monsieur !"\
+(Voleur) : "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne le découvrez pas"\
+(Juge, hébété) : "oh... je crois que tu as trouvé une faille dans le système"\
 (Guy) : "oh... je crois qu'on vient de créer un nouveau problème"
 
 Cet échange met en lumière un angle mort de notre système de justice : il est sans réponse quand la situation ne fait pas partie des circonstances qu'il sait gérer
@@ -63,12 +63,12 @@ Je vais essayer de verbaliser un non-dit commun de notre système de justice. Un
 ## Résumé et conclusion
 
 Si je résume l'histoire de notre système de justice organisé par l'État, ça donne un truc comme ça : 
-1) les systèmes de justice non-organisés, basé sur l'honneur, ça donnait des bains de sang multi-générationnels
-2) donc l'État, dans un même mouvement, [interdit de se faire justice soi-même](https://www.justice.gouv.fr/organisation-de-la-justice-10031/les-fondements-et-principes-10032/) et va prendre en charge l'organisation d'un système de justice qui permet punir sans bain de sang
-3) mais l'État, pour créer et maintenir la confiance dans son système, s'oblige à a) être "neutre" b) ne pas punir en cas de doute
+1. les systèmes de justice non-organisés, basé sur l'honneur, ça donnait des bains de sang multi-générationnels
+2. donc l'État, dans un même mouvement, [interdit de se faire justice soi-même](https://www.justice.gouv.fr/organisation-de-la-justice-10031/les-fondements-et-principes-10032/) et va prendre en charge l'organisation d'un système de justice qui permet punir sans bain de sang
+3. mais l'État, pour créer et maintenir la confiance dans son système, s'oblige à a) être "neutre" b) ne pas punir en cas de doute
 
-Avec une justice "neutre" organisée par l'État,
-on a perdu les bains de sang
+Avec une justice "neutre" organisée par l'État,\
+on a perdu les bains de sang\
 et on a perdu aussi le sentiment de justice chez pleins de victimes qui tombent dans le cas "le système de justice a peur de se tromper"
 
 Est-ce qu'on peut créer un autre système de justice où personne n'est laissé pour compte et où on continue d'éviter les bains de sang ?

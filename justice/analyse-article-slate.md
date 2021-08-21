@@ -2,13 +2,13 @@
 
 **⚠️ Avertissement de contenu : dans cet article, je vais parler de manière assez directe de violences entre personnes, notamment de violences sexuelles**
 
-Cet article fait partie d'un ensemble qui commence [ici](./index)
+Cet article fait partie d'un ensemble d'articles qui commence [ici](./index)
 
-Je vais analyser une série de 5 articles publiés sur Slate et [qui commencent par ici](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1). Dans ces articles, une femme est victime de viol et raconte son parcours. Elle est française, ça se passe en Australie
+Je vais analyser une série de 5 articles publiés sur Slate et [qui commencent par ici](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1). Dans ces articles, une femme est victime de viol et raconte son parcours.
 
 Je ressens beaucoup de gratitude et de reconnaissance envers cette femme qui partage un témoignage dense et détaillé de son expérience personnelle 
 
-En résumé, une femme rencontre et couche avec un gars qui s'appelle Luis. Elle s'endort. Quelques heures plus tard, elle est réveillée et découvre que le frère de Luis (plus tard nommé "le mexicain") est en train de la violer.
+En résumé, une femme française qui vit en Australie rencontre et couche avec un gars qui s'appelle Luis. Elle s'endort. Quelques heures plus tard, elle est réveillée et comprend que le frère de Luis (plus tard nommé "le mexicain") est en train de la violer.
 Le détective qui mène l'enquête s'appelle Brandon, le procureur général (l'avocat de la "victime") s'appelle Ken
 
 Il s'agit d'un récit où ça se "finit bien" au sens où cette femme est prise au sérieux par la police, par tout le système de justice et à la fin, le violeur est condamné
@@ -16,7 +16,7 @@ Il s'agit d'un récit où ça se "finit bien" au sens où cette femme est prise 
 Et la lecture de ce récit m'a quand même laissé un petit goût amer. C'est une victoire, mais la victoire est fragile, basée sur une séquence d'une poignée de coups de chances, sur une connaissance assez fine du système de justice qui, à mon avis, ne devrait pas être nécessaire à se reconstruire après une telle épreuve
 Je suis heureux que cette femme aie pu se reconstruire et passer à autre chose, et dans le l'ombre de son histoire je vois un système de justice assez hostile aux victimes. Et si je me réjouis pour cette femme en particulier, je suis soucieux de ce que son histoire raconte pour les autres victimes
 
-Dans mon analyse, je m'intéresse aux interactions entre la victime et le système judiciaire. Il s'agit du système judiciaire australien et je crois que la plus grosse partie de l'analyse se transpose au contexte français et de beaucoup de pays avec un système de justice similaire
+Dans mon analyse, je m'intéresse uniquement aux interactions entre la victime et le système judiciaire. Il s'agit du système judiciaire australien et je crois que la plus grosse partie de l'analyse se transpose au contexte français et de beaucoup de pays avec un système de justice similaire
 Je vais me concentrer particulièrement sur les besoins de la victime et la manière dont le système judiciaire y répond ou pas
 
 Cette analyse a pour objectif de nourrir une réflexion sur comment faire émerger de meilleures pratiques de justice et un meilleur système de justice
@@ -38,8 +38,6 @@ Pour qu'une victime de viol soit bien accueillie par le système de justice, ça
 
 Pas le droit à l'erreur, à l'imprécision, à la faiblesse, à la vulnérabilité, la victime de viol doit être "solide", sinon le système de justice la rejette
 
-Je trouve que la barre est très très haute, un système pas du tout accueillant, un système qui impose aux victimes d'internaliser ses propres codes et rejette les victimes si elles les connaissent mal ou font un faux-pas
-
 
 > J'arrive au commissariat. Un flic m'accueille et me demande ce que je veux. Je lui dis: «Je me suis fait violer, est ce que je peux parler à une flic meuf?» Il me dit ok. Il revient deux minutes après, il me dit: «Je suis désolé, pour le moment il n'y a pas de fille. Mais si tu veux tu peux commencer à me raconter.» Et là en fait, je sors cash: «En fait je m'en fous, je m'en contre-cale, fille ou mec, c'est la même histoire, donc très bien allons-y.»
 
@@ -56,8 +54,6 @@ Elle raconte son histoire une dizaine de fois, et elle est écoutée, c'est cool
 Et personne, littéralement personne, ne lui demande ce qu'elle veut, ce qu'on elle a besoin elle, à ce moment là
 Le système judiciaire est un train. Elle est rentrée dans un wagon, ça passe par toutes les gares, elle suit le process. Et personne ne lui demande ce dont elle a besoin elle. C'est les besoins du système qui prennent priorité
 
-Et peut-être que ce dont elle avait besoin, c'était exactement ça et tant mieux alors. Le récit ne le dit pas
-
 
 > Ils m'amenaient de l'eau, des mouchoirs. Ils étaient hyper pro et savaient par exemple que je ne devais pas aller aux toilettes, parce que ça pourrait enlever des traces ADN et du coup fausser les résultats. (Sur ce point, détail technique, je sais maintenant qu'en fait tu peux aller aux toilettes en attendant l'examen pour te prélever l'ADN, il faut juste ne pas s'essuyer pour ne pas effacer les traces –j'espère pas que ça vous arrive un jour, mais dans le doute, vous êtes prévenu·es.)
 
@@ -68,32 +64,11 @@ Cet épisode est vécu par la victime comme "ils étaient hyper pro" et tant mie
 Et je suis soucieux que ça puisse ne pas être le vécu de toutes les victimes
 
 
-> Arrivée à l'hosto (très bonne expérience d'arriver aux urgences escortée par deux flics, je peux vous garantir qu'on attend beaucoup moins)
-
-Et donc, en contraste, forcément, très mauvaise expérience quand on est victime de viol et qu'on arrive aux urgences sans être escortée par deux flics
-On est crue et prise au sérieux que s'il y a deux hommes en uniforme pour soutenir l'histoire
-
-
-> Elle me regarde et elle me dit: «I am really sorry for what happened.» Et ça peut paraître bidon, mais tous les gens qui m'ont dit ça cette nuit-là avaient quand même l'air de vraiment y croire, qu'ils étaient sorry et que c'était vraiment pas cool. Et ça m'apaisait un peu.
-
-Tout le monde est *really sorry* et c'est apaisant pour la victime et coup de chance
-
-Et personne ne lui demande ce dont elle a besoin, 
-l'apaisement est peut-être encore un coup de chance
-
-
 > Mon portable n'avait plus de batterie et s'était éteint un peu après être arrivée au premier commissariat. Donc j'avais juste eu le temps de prévenir ma copine Gisèle qui était à Bali. Comme elle n'arrivait plus à m'avoir ensuite, elle a prévenu ma copine Audrey, qui m'a appelée au moment même où je branchais mon téléphone et qui a débarqué direct pour s'occuper de moi. J'en reparlerai un peu plus tard, mais putain, quand il t'arrive une merde comme ça, tes potes tu les savoures. Je dis pas que je les savourais pas déjà avant. Mais là tu savoures puissance 10.000.
 
 Ce paragraphe contient un morceau de ce dont la victime avait besoin. Du soutien de ses copines, notamment
 
 "Mon portable n'avait plus de batterie et s'était éteint un peu après être arrivée au premier commissariat". Et personne au commissariat n'a proposé de recharger le téléphone apparemment. Les mouchoirs et le verre d'eau font partie de la procédure, mais permettre à la victime de se reconnecter avec ses ami.e.s, pas trop
-
-
-> Et la semaine qui a suivi, j'ai été une nouvelle fois bluffée par le professionnalisme et l'attention des flics et de l'hôpital. 
-
-le mot "bluffée" ici, c'est de la surprise
-J'imagine que la victime s'attendais à un système plus hostile, qui prend moins soin
-Elle a conscience d'avoir de la "chance", que le parcours ne se passe pas aussi bien que ça pour d'autres
 
 
 > Un coup de fil de Brendon le détective pour m'assurer que j'allais bien. Un autre d'une fille de l'hôpital qui me demande si ça va, si je suis bien entourée, etc. Et un autre coup de fil d'une nana du SAC (Sexual Assault Center) qui me dit que si je veux, je peux avoir une councelor, une psychologue, qui va s'occuper de moi, que c'est gratuit, je peux venir quand je veux. Je dis ok. Moi de toute manière, quand c'est gratuit, j'y vais toujours. Et un coup de fil de la psy en question pour prendre rendez-vous, et qui me demande aussi comment ça va. Je lui explique, ça va pas trop mal mais j'ai une partie de mon cerveau qui est restée bloquée, je sais pas trop quoi faire. Et là elle m'a dit un truc qui m'a fait switcher, elle m'a dit: «It's in the past now. You are safe.» Et je me suis dit: «Putain mais grave! C'est fini.» (Bon au final, on va pas se mentir, c'était un peu plus tricky que ça.)
@@ -441,3 +416,39 @@ On doit faire mieux
 
 ou a minima essayer
 
+
+## Conclusion
+
+Si j'essaye de résumer, dans cette affaire, les attentes et besoins de la victime, c'est : 
+- juste après le viol
+    - parler à une femme en priorité au commissariat
+    - raconter son histoire et être crue
+    - du soutien de ses amies juste après le viol
+    - de "professionalisme" de la part des personnes qui s'occupent d'elle et qu'elle ne connait pas
+- dans les jours/semaines qui suivent
+    - soutien psychologique professionel
+        - entendre «It's in the past now. You are safe.»
+    - que l'ensemble des conséquences (procédure judiciaire, soutien psy etc.) ne lui coûte pas trop cher financièrement, idéalement rien du tout (au sens de ne même pas avancer les frais)
+
+
+
+Et ce que le système de justice propose, c'est : 
+- une procédure qui doit être connue finement par la victime pour qu'elle soit prise en compte
+    - aller dans un commissariat juste après le viol
+    - ne pas se laver pour ne pas effacer les traces ADN utiles à la procédure
+    - ne pas aller au toilettes (au final, aller au toilettes, c'est possible, c'est s'essuyer qui ne l'est pas, mais ça la victime l'apprend plus tard)
+    - avoir la présence d'esprit de noter certaines informations-clef juste après le viol (adresse exacte)
+
+-
+-
+
+
+
+
+<!--
+- annoncer l'intention
+- en conclusion
+    - recap ce que la victime souhaite
+    - recap ce que la justice fournit
+
+-->
