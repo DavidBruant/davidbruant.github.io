@@ -23,7 +23,7 @@ Cette analyse a pour objectif de nourrir une réflexion sur comment faire émerg
 
 
 
-## Analyse de la [partie 1](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1)
+## Analyse de l'[épisode 1](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1)
 
 > Je referme la porte. Il faut que je me tire. Je récupère mes affaires, mon sac.
 
