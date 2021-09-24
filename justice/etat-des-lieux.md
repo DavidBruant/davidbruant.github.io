@@ -75,7 +75,7 @@ Est-ce qu'on peut créer un autre système de justice où personne n'est laissé
 
 Mon point de départ pour cette question, c'est de savoir ce qu'attendent les victimes
 
-À cet effet, ma prochaine étape est [d'analyser une série d'articles publiés sur Slate](). Il s'agit du récit d'une femme victime de viol qui raconte en détail notamment ses interactions avec le système de justice
+À cet effet, ma prochaine étape est [d'analyser une série d'articles publiés sur Slate](./analyse-article-slate.md). Il s'agit du récit d'une femme victime de viol qui raconte en détail notamment ses interactions avec le système de justice
 
 <!--
 [d'analyser une série d'articles publiés sur Slate](./analyse-article-slate)

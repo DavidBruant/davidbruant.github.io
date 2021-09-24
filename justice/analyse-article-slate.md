@@ -87,7 +87,7 @@ Cette information est racontée de manière assez neutre par la victime qui raco
 Attend, c'est qui la victime du viol ? La société ? What!
 Et elle, elle est le *témoin* de ce crime ?
 
-C'était dans un lit où il n'y avait qu'elle et le violeur et elle est témoin ?
+C'était dans un lit où il n'y avait qu'elle et le violeur et elle est *témoin* ?
 
 Ces mots-là sont les meilleurs que le système de justice a à proposer à la victime ? "Tu es témoin d'un crime contre la société". On marche sur la tête !
 
@@ -108,7 +108,7 @@ On retrouve un peu la même chose dans le [droit français au 16ème siècle](ht
 > L’usage du terme de rapt pour désigner le viol des filles non mariées de même que celui d’adultère pour les femmes mariées tend à renforcer l’idée que la victime pour les juristes n’est pas la femme dont le corps a été violé mais son possesseur dont le droit a été bafoué.
 
 On est passé de "la victime du viol est l'homme qui possède la femme" à "la victime du viol est la société"
-Ptèt que c'est un pas en avant, mais on n'est pas encore à "la victime du viol est la femme violée"
+Je ne considère pas ça comme un pas en avant. J'ai hâte du moment où le système de justice dira seulement "la victime du viol est la femme violée"
 
 Je ferme la parenthèse et revient à l'analyse du récit
 
@@ -124,10 +124,10 @@ Là, c'est un peu la première fois où la victime voudrait aller dans une direc
 
 > Point numéro deux, depuis le début de cette histoire, je me suis toujours dit que j'irai jusqu'au bout du procès à condition d'avoir suffisamment de preuves pour que ce ne soit pas uniquement parole contre parole. 
 
-Plus haut, je faisais référence à un sketch qui contient la phrase "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne le découvrez pas" et on arrive au cœur d'une limite du système de justice tel qu'il existe en France ou en Australie. Dans un cas de viol, c'est souvent "parole contre parole"
+[Précédemment](./etat-des-lieux), je faisais référence à un sketch qui contient la phrase "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne le découvrez pas" et on arrive au cœur d'une limite du système de justice tel qu'il existe en France ou en Australie. Dans un cas de viol, c'est souvent "parole contre parole"
 
 Le violeur, ayant peur d'aller en prison, va mentir
-La victime, souhaitant une forme de reconnaissance, va dire la vérité
+La victime, souhaitant *a minima* une forme de reconnaissance, va dire la vérité
 
 Parole contre parole
 
@@ -137,9 +137,9 @@ Le système de justice n'aidera la victime qu'à la condition qu'elle se conform
 
 Tout ceci est parfaitement internalisé par la victime et ça lui permet de naviguer dans le système de justice jusqu'à obtenir une victoire
 
-mais les règles du jeu sont pourries
+mais les règles du jeu sont pourries dans leur conception
 
-Les règles du jeu du système de justice favorisent la parole du violeur par-dessus la parole de la victime
+*De facto*, les règles du jeu du système de justice favorisent la parole du violeur par-dessus la parole de la victime
 
 
 > Je lui explique mon problème, je ne peux pas comprendre que Luis n'ait pas été arrêté alors que ça crève les yeux que le mec, s'il n'est pas complice, a au moins essayé de camoufler ce que son frère a fait. Il me répond que oui, en effet ça crève les yeux, mais d'un point de vue judiciaire, on n'a rien pour prouver qu'il savait. On ne peut pas prouver qu'il savait ce que son frère venait de te faire. C'est du bon sens, on est bien d'accord, mais c'est impossible à prouver. C'est pour ça qu'on ne l'a pas arrêté.
@@ -156,7 +156,6 @@ Dans la procédure judiciaire, elle est témoin, donc on lui cache des infos vol
 
 
 ## Analyse de [l'épisode 3](http://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-3)
-
 
 > Comme expliqué plus tôt, le procès dans lequel je me suis embarquée était un procès pénal, dans lequel j'étais considérée comme témoin d'un crime commis contre la société et non pas comme une victime. Ce procès était par définition centré sur des faits uniquement. Jamais on ne m'a laissé l'occasion d'expliquer ce que j'avais ressenti en tant que victime, et quel impact ce crime avait eu sur moi. En demandant aux victimes d'écrire ce Victim Impact Statement, on leur donne l'opportunité de décrire les conséquences du crime sur leur vie. Ce VIS, je l'ai écrit quelques jours après l'annonce du verdict
 
@@ -176,7 +175,7 @@ Elle est témoin. Un témoin, y'a pas besoin d'en prendre soin. On te demandera 
 
 La théorie du système de justice, c'est "il y a des lois et si tu enfreins les lois, alors tu es puni"
 
-L'angle mort de cette théorie, c'est que le système a peur de punir des innocents
+Dans l'angle mort de cette théorie, le système a peur de punir une personne qui pourrait être innocente
 
 Et donc, la réalité du système ça devient un jeu avec des règles subtiles. Et Luis et son frère savent jouer à ce jeu
 
@@ -226,14 +225,15 @@ Encore une fois, une expression directe de ce que la victime veut. Elle veut que
 
 Parce que le procès est une pièce de théâtre où il n'y a pas la place pour qu'elle exprime et obtienne qu'il la regarde quand il raconte sa version
 
+
 > Et puis il y a cette toute petite voix au fond de moi qui me dit: «Mais meuf, si ça se trouve ce qu'il raconte c'est vrai, et c'est juste que tu ne t'en souviens pas. T'as été somnambule, fin de l'histoire. Et maintenant t'as un pauvre mec en face de toi, qui se bat contre une erreur judiciaire.» Ce n'est ni la première ni la dernière fois dans cette histoire que j'entends cette petite voix de la culpabilité.
 
-(je pose ce morceau-là pour la chronologie et je le reprendrai plus tard)
+(je pose ce morceau-là pour garder la chronologie et je le reprendrai plus tard)
 
 
 > J'ai trouvé qu'il avait été extrêmement mal conseillé. Je ne comprends pas à quel moment son avocat s'est dit que sa version tenait debout et qu'il pouvait tenter le coup. À quel moment personne ne lui a dit: «En fait, grosso modo, ton cas est sans issue, personne n'y croit, donc plutôt que de t'enfoncer dans ton mensonge devant tout le monde, juge, jurés, parents, passe aux aveux, reconnais les faits, libère-toi de cette version merdique, ta sentence sera divisée par deux et ce sera plus facile pour tout le monde. Pour la nana que t'as violée, qui sera soulagée de t'entendre reconnaître la vérité, pour tes parents, à qui tu n'infligeras pas un récit aux détails sexuels abjects, accessoirement pour le système judiciaire qui pourra se concentrer sur d'autres affaires. Et pour toi, pour arrêter de te mentir à toi-même. T'as déconné, t'assumes.»
 
-La victime imagine ici ce que l'avocat aurait pu conseillé au violeur. Et je trouve ce morceau intéressant : "Pour la nana que t'as violée, qui sera soulagée de t'entendre reconnaître la vérité"
+La victime imagine ici ce que l'avocat aurait pu conseiller au violeur. Et je trouve ce morceau intéressant : "Pour la nana que t'as violée, qui sera soulagée de t'entendre reconnaître la vérité"
 
 C'est un peu indirecte, mais là aussi, la victime exprime ce qu'elle aimerait, elle. Elle aimerait qu'il reconnaisse **auprès d'elle** ce qu'il lui a fait. Ça la "soulagerait" (enfin... elle imagine que l'avocat imaginerait que ça la soulagerait, mais bon, je choisis de faire ce raccourci...).
 
@@ -265,8 +265,8 @@ et bonne nouvelle, ça s'aligne bien avec ce que le système de justice propose 
 
 > Je suis comme prisonnière de ce tribunal. Je ne peux pas ne pas y penser. Je repense aux quarante-huit dernières heures, je pèse le pour, le contre, je me demande si le verdict sera rendu demain ou la semaine prochaine, auquel cas je serai en sursis pendant tout le week-end, et peut-être même plus longtemps. 
 
-"prisonnière", "sursis"
-c'est ça que propose un procès. Il y a des procédures parce que la justice a peur de se tromper
+"prisonnière", "sursis"\
+c'est ça que propose un procès. Il y a des procédures parce que la justice a peur de se tromper\
 et côté victime, le ressenti avant le verdict, c'est "prisonnière", "sursis"
 
 
@@ -277,9 +277,9 @@ Une expression de ce que la victime souhaite ("il est quand même pas près de r
 
 > La seule chose qui m'angoisse si le mec est acquitté c'est que, vu son comportement, je sais qu'au moment du verdict il va se retourner vers moi et me lâcher un vieux sourire en mode «t'as vu je t'ai bien niquée, et une deuxième fois». 
 
-Le jeu du procès se joue dans ce qui est dit pendant le procès
-et aussi dans les jeux de regard dans la salle
-Il y aura une personne qui gagne et une personne qui perd
+Le jeu du procès se joue dans ce qui est dit pendant le procès\
+et aussi dans les jeux de regard dans la salle\
+Il y aura une personne qui gagne et une personne qui perd\
 Un procès, c'est un jeu compététif, pas un jeu collaboratif
 
 Un procès, ça peut permettre à un violeur de "niquer une deuxième fois" sa victime
@@ -295,7 +295,7 @@ Un procès, ça peut permettre à un violeur de "niquer une deuxième fois" sa v
 
 Ce n'est pas écrit explicitement, donc je vais prendre le risque d'interpréter : le besoin de la victime, c'était une reconnaissance "par la société" en présence du violeur, d'une manière que le violeur ne peut pas nier
 
-et le système de justice n'a pas été capable de créer ce moment avant quinze mois
+et le système de justice n'a pas été capable de créer ce moment avant quinze mois\
 et à tout moment, ptèt que le système de justice allait la priver de ce moment de reconnaissance pour des raisons complètement internes à ce système
 
 
@@ -307,7 +307,7 @@ et à tout moment, ptèt que le système de justice allait la priver de ce momen
 
 > Ça, c'était en théorie. Dans la réalité, c'était extrêmement dur de voir le Mexicain à l'annonce du verdict. Bien sûr que j'ai gagné, que la société a gagné, et je me réjouis de voir que la justice existe, protège les victimes et déclare un violeur coupable. En revanche, je ne me réjouis pas d'envoyer quelqu'un en prison. Je ne me réjouis pas de la situation, de voir un mec de 26 ans se prendre la tête dans les mains, de voir sa maman hurler de douleur, de voir une famille se désintégrer en direct. De l'avoir vu s'enfermer dans un mensonge abject, devant un tribunal au grand complet, devant sa famille, devant sa victime.
 
-Je la trouve horrible cette question «Es-tu prête à envoyer quelqu'un en prison?»
+Je la trouve horrible cette question «Es-tu prête à envoyer quelqu'un en prison?»\
 Comme si c'était la victime qui choisissait activement de l'envoyer en prison
 
 C'est l'État qui maintient le système de justice tel qu'il existe, qui n'a pas grand chose de mieux à proposer que d'envoyer les violeurs en prison. Ce ne sont pas les victimes qui "envoient" les violeurs en prison, c'est le système de justice. Les victimes font ce qu'elles peuvent dans un environnement hostile pour faire face aux conséquences d'une situation où on leur a été très hostile
@@ -345,7 +345,7 @@ et pourtant, elle ressent d'autres émotions, plus négative, moins agréables
 
 Je suis reconnaissant auprès de cette femme pour ces mots parce que je trouve qu'ils mettent bien en lumière la différence entre l'unique proposition du système de justice qui prétend être la meilleure pour les victimes et la réalité qui n'est est beaucoup plus nuancée que ça
 
-Je trouverais intéressant que le système de justice se remette en question en se basant sur ces récits, ces ressentis de victime. Commencer par ce dont la victime a besoin. Et construire une procédure adaptée plutôt que d'appliquer un train procédural inflexible. J'y reviendrai
+Je trouverais intéressant que le système de justice se remette en question en se basant sur ces récits, ces ressentis de victime. Commencer par ce dont la victime a besoin. Et construire une procédure adaptée plutôt que d'appliquer un train procédural inflexible. J'y reviendrai dans un autre article
 
 
 > J'ai tellement attendu ce procès que je n'arrive pas à réaliser que ça y est, il est derrière moi. C'est fini. Au début, je suis presque déçue de l'effet que ça me fait. Je suis juste crevée. Satisfaite du verdict, heureuse d'être allée au bout de cette affaire, mais dégommée physiquement et mentalement.
@@ -429,26 +429,42 @@ Si j'essaye de résumer, dans cette affaire, les attentes et besoins de la victi
     - soutien psychologique professionel
         - entendre «It's in the past now. You are safe.»
     - que l'ensemble des conséquences (procédure judiciaire, soutien psy etc.) ne lui coûte pas trop cher financièrement, idéalement rien du tout (au sens de ne même pas avancer les frais)
+    - être reconnue comme victime
+- dans l'ensemble
+    - que la culpabilité du frère **et de Luis** soit reconnue
+    - la reconnaissance de son statut de victime
+    - "raconter cette histoire de manière officielle, devant un juge, des avocats, des jurés, devant le Mexicain"
+    - qu'une personne de confiance extérieure (ou plusieurs) corrobore son histoire
+    - que le violeur la regarde quand il raconte sa version
+    - que le violeur reconnaisse ce qu'il lui a fait
+    - que son action aie des conséquences sur la société au-delà de son procès
+    - que le violeur ne recommence pas
+    - passer à autre chose
 
 
 
 Et ce que le système de justice propose, c'est : 
-- une procédure qui doit être connue finement par la victime pour qu'elle soit prise en compte
-    - aller dans un commissariat juste après le viol
-    - ne pas se laver pour ne pas effacer les traces ADN utiles à la procédure
-    - ne pas aller au toilettes (au final, aller au toilettes, c'est possible, c'est s'essuyer qui ne l'est pas, mais ça la victime l'apprend plus tard)
-    - avoir la présence d'esprit de noter certaines informations-clef juste après le viol (adresse exacte)
+- une procédure 
+    - qui se concentre sur l'auteur et pas la victime
+    - qui doit être connue finement par la victime pour qu'elle soit prise en compte
+        - aller dans un commissariat juste après le viol
+        - ne pas se laver pour ne pas effacer les traces ADN utiles à la procédure
+        - ne pas aller au toilettes (au final, aller au toilettes, c'est possible, c'est s'essuyer qui ne l'est pas, mais ça la victime l'apprend plus tard)
+        - avoir la présence d'esprit de noter certaines informations-clef juste après le viol (adresse exacte)
+    - qui considère la société comme la *victime*. Et la victime du viol est considérée comme *témoin*
+    - pendant laquelle la victime du viol n'a pas accès aux éléments de l'enquête
+    - pendant laquelle personne ne demande à la victime ce qu'elle a ressenti en tant que victime (ça n'a lieu qu'après le procès via le "Victim Impact Statement")
+    - où les éléments importants sont ceux que le jeu de la procédure elle-même considère important en ignorant ce que la victime considère important
+- un procès au bout de quinze mois
+    - la reconnaissance du statut de victime **après** que le procès arrive à cette conclusion
+    - sauf élément supplémentaire, le procès sera à parole contre parole. Et le système de justice, de peur de se tromper, ira toujours par défaut du côté du violeur
+    - où la victime peut raconter son histoire comme elle l'a vécue
+    - le procès créé un contexte où le violeur va mentir pour maximiser ses chances de ne pas être puni
+    - du stress en l'attente du verdict
+    - une reconnaissance du statut de victime, une reconnaissance de culpabilité du frère (mais pas de Luis)
+    - une peine de prison pour le reconnu-coupable
+        - en ne proposant que ça, le reste de la société considère que c'est la victime qui "envoie" le violeur en prison
+- après-procès
+    - laisser la victime se démerder avec la culpabilité/tristesse des conséquences du système de justice
 
--
--
-
-
-
-
-<!--
-- annoncer l'intention
-- en conclusion
-    - recap ce que la victime souhaite
-    - recap ce que la justice fournit
-
--->
+Au final, la victime cicatrise, passe à autre chose, mais je garde le sentiment que c'est presque un accident. Et un accident fragile parce que ça pourrait très bien ne pas avoir lieu pour des raisons spécifiques à une procédure en-dehors du contrôle de la victime
