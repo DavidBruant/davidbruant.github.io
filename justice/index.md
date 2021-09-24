@@ -36,10 +36,10 @@ dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-l
 
 -->
 
-Ces articles contiennent une bonne dose de critique du système actuel et je voudrais prendre les devants et clarifier que je critique un système et pas les individus. Je sais qu'il y a des personnes à l'intérieur de ce système qui se lèvent chaque matin avec des valeurs bien accrochées, avec une déontologie sans faille\
+Ces articles contiennent une bonne dose de critique du système actuel et je voudrais prendre les devants et clarifier que je critique un système et pas les individus. Je sais qu'il y a des personnes à l'intérieur de ce système qui se lèvent chaque matin avec les mêmes valeur que les miennes, avec une déontologie sans faille\
 Et ces personnes sont subordonnées par salariat à leur employeur qui leur donne un périmètre d'action et leur demande de ne pas en sortir\
 Et ces personnes sont rarement en position de pouvoir décider du montant et de l'allocation du budget de la police ou de la justice. Et donc, ce qu'elles font a un effet positif localement, mais ça ne produit pas des changements à un niveau global\
-Je critique les allocations de budget et le découpage des périmètres des fiches de poste et les effets que ces choses-là ont sur les individus en bout de chaîne, mais pas les individus eux-mêmes
+Je critique la culture, les allocations de budget et le découpage des périmètres des fiches de poste et les effets que ces choses-là ont sur les individus en bout de chaîne, mais pas les individus eux-mêmes
 
 
 <!--
@@ -62,6 +62,10 @@ mais l'objectif de l'État et de son système de Justice **n'est pas** que litt�
 
 en théorie, nous sommes "égaux en droits", en pratique, certaines personnes sont plus égales que d'autres
 et il n'y a aucune intention sincère d'améliorer la situation parce que ce qui est en place suffit
+
+
+
+étymologie "infliger une peine" (~tristesse)
 
 
 
