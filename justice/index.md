@@ -7,7 +7,7 @@ C'est venu lentement, par plusieurs endroits initialement disjoints
 et puis j'ai commencé à relier les bouts entre eux, je crois que c'était juste après avoir vu la vidéo intitulée  ["Justice (part 1)" de Contrapoints](https://www.youtube.com/watch?v=smQsfNw_7V4) :\
 je suis insatisfait par le système de justice tel que je le connais
 
-il y a des petits cailloux dans la chaussures, genre quand dans une association une personne dit "on ne peut pas faire ça à cause des assurances"\
+il y a des petits cailloux dans la chaussure, genre quand dans une association une personne dit "on ne peut pas faire ça à cause des assurances"\
 ou quand une personne dit "on n'a pas le droit" (alors qu'elle n'a pas vérifié et qu'en fait, on a complètement le droit et ce qu'elle aurait pu dire avec plus de précision, c'est "j'ai peur de me tromper" ou "je n'ai pas envie de faire ça" selon les circonstances)
 
 il y a aussi ces histoires où la lecture stricte des lois désigne un coupable, mais le contexte plus large suggère que le problème n'est pas individuel. [Mais le système de justice avance, écrase, sans nuance](https://www.sudouest.fr/justice/bordeaux-prison-ferme-pour-un-vol-de-nourriture-3482422.php)
