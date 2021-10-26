@@ -1,8 +1,8 @@
 # Un autre système de justice
 
-cet article est un brouillon
+cet article est un brouillon et fait partie d'[une série](./index)
 
-il y a eu un moment où [la justice restaurative](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006071154/LEGISCTA000024458886) serait "la" solution [https://www.justicerestaurative.org/](https://www.justicerestaurative.org/)
+il y a eu un moment où je pensais que [la justice restaurative](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006071154/LEGISCTA000024458886) serait "la" solution [https://www.justicerestaurative.org/](https://www.justicerestaurative.org/)
 
 et puis j'ai découvert que ce qui était proposé à la fois va dans un sens qui me convient\
 et à la fois, ne va pas assez loin sur certains aspects
@@ -13,6 +13,20 @@ qui me convient mieux dans l'esprit, mais qui, d'où je pars, me parait plus dif
 Et par la même communauté de personnes qui parlent de justice transformatrice, un [pti toolkit de 600 pages](https://www.creative-interventions.org/toolkit/) qui me parle très très fort et que je n'ai pas encore fini de lire
 
 Anyway, ce sujet est en chantier pour moi, alors je n'ai pas encore quelque chose de plus cohérent à offrir que cette poignée de liens et bonne chance à vous si vous voulez apprendre sur le sujet
+
+Le podcast à soi a sorti un [épisode sur la justice restaurative](https://www.arteradio.com/son/61668798/que_faire_des_hommes_violents)
+
+
+Un truc qui me plait avec la justice restaurative, c'est qu'il donne une place aux victimes alors qu'elles sont quasi-oubliées du système pénal. La justice restaurative a aussi une vision étendue de la "victime". Pour un meurtre, on va considérer les proches de la personne tuée comme faisant partie des "victimes"
+
+Des trucs qui me plaisent moins avec la justice restaurative telle que je la comprends actuellement :
+- L'auteur n'est pas pensé plus largement que l'auteur au sens pénal
+- la justice restaurative en France se contraint au droit pénal, ce qui exclut notamment la plupart des conflits relevant du droit du travail, du droit administratif et du droit civil en général
+- par conséquent des deux points précédent, l'État ne sera jamais considéré comme auteur dans une procédure de justice restauratif, comme si l'État n'était jamais auteur de préjudices extra-pénaux
+
+La justice transformatrice a l'air d'adresser tous les points négatifs que j'identifie dans la justice restaurative
+
+
 
 
 

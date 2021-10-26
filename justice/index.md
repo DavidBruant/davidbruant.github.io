@@ -20,6 +20,10 @@ Les féministes dénoncent les limites et manquements du système de justice, de
 et rien ne change\
 ou si peu, si lentement
 
+<!--
+https://twitter.com/konbininews/status/1444259616632705025
+-->
+
 je suis insatisfait par le système de justice tel que je le connais parce qu'il ne prend pas bien en compte les victimes, ne répond pas vraiment à leurs besoins, ou alors par accident
 
 pour la suite, je vais me concentrer spécifiquement sur les questions des viols et des incestes, car je crois que c'est dans ces situations que les manquements du système de justice produisent les effets les plus graves\
