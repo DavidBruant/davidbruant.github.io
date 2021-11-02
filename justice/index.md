@@ -10,7 +10,7 @@ je suis insatisfait par le système de justice tel que je le connais
 il y a des petits cailloux dans la chaussures, genre quand dans une association une personne dit "on ne peut pas faire ça à cause des assurances"\
 ou quand une personne dit "on n'a pas le droit" (alors qu'elle n'a pas vérifié et qu'en fait, on a complètement le droit et ce qu'elle aurait pu dire avec plus de précision, c'est "j'ai peur de me tromper" ou "je n'ai pas envie de faire ça" selon les circonstances)
 
-il y a aussi ces histoires où la lecture stricte des lois désigne un coupable, mais le contexte plus large suggère que le problème n'est pas individuel. [Mais le système de justice avance, écrase, sans nuance](https://www.sudouest.fr/justice/bordeaux-prison-ferme-pour-un-vol-de-nourriture-3482422.php)
+il y a aussi ces histoires où la lecture stricte des lois désigne un coupable, mais le contexte plus large suggère que le problème n'est pas individuel. [Mais le système de justice avance, écrase, sans nuances](https://www.sudouest.fr/justice/bordeaux-prison-ferme-pour-un-vol-de-nourriture-3482422.php)
 
 et puis, il y a des choses qui m'ont impacté plus directement comme le droit du travail, le droit des contrats, le droit des marchés publics qui imposent des comportements que je trouve absurde et qui font perdre beaucoup de temps à tout le monde en apportant souvent aucune sécurité supplémentaire pour personne\
 le contrat se substitue à se parler, et surtout à s'écouter, et donc on perd beaucoup de temps à mal se comprendre
