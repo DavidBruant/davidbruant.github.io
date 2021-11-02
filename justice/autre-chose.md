@@ -22,7 +22,7 @@ Un truc qui me plait avec la justice restaurative, c'est qu'il donne une place a
 Des trucs qui me plaisent moins avec la justice restaurative telle que je la comprends actuellement :
 - L'auteur n'est pas pensé plus largement que l'auteur au sens pénal
 - la justice restaurative en France se contraint au droit pénal, ce qui exclut notamment la plupart des conflits relevant du droit du travail, du droit administratif et du droit civil en général
-- par conséquent des deux points précédent, l'État ne sera jamais considéré comme auteur dans une procédure de justice restauratif, comme si l'État n'était jamais auteur de préjudices extra-pénaux
+- par conséquent des deux points précédents, l'État ne sera jamais considéré comme auteur dans une procédure de justice restaurative, comme si l'État n'était jamais auteur de préjudices extra-pénaux
 
 La justice transformatrice a l'air d'adresser tous les points négatifs que j'identifie dans la justice restaurative
 
@@ -38,7 +38,7 @@ La justice transformatrice a l'air d'adresser tous les points négatifs que j'id
 Ce que j'écris ici, c'est mon idéal à moi\
 Je le partage pour info\
 par bien des aspects, les propositions ici sont radicales, leur combinaison encore plus ; elles sont aussi très différentes du système actuel\
-je n'ai jamais vécu dans ou entendu parlé d'un système de justice réel qui contient tous ces éléments et j'ai vécu ou entendu parlé de pleins d'expériences qui contiennent chacunes ces éléments
+je n'ai jamais vécu dans ou entendu parlé d'un système de justice réel qui contient tous ces éléments et j'ai vécu ou entendu parler de plein d'expériences qui contiennent chacunes ces éléments
 
 Ici, je pointe le doigt vers une étoile en ignorant complètement les questions pratiques comme la disponibilité des personnes ou les questions de budget ou d'oppressions systémiques. Le retour sur terre aura lieu dans l'article suivant
 
@@ -51,10 +51,10 @@ Je vais commencer par le parcours des victimes
 
 Un évènement désagréable, violent ou traumatisant commence par un choc
 
-Et ça serait cool que les premières personnes qui reçoivent une victime soient au courant de ça. Et disponibles pour le recevoir
+Et ça serait cool que les premières personnes qui reçoivent une victime soient au courant de ça. Et disponibles pour la recevoir
 
 Des fois, le premier besoin d'une victime c'est d'être écoutée\
-ptèt écoutée sur du factuel, mais ptèt écouté sur du vécu, de l'émotionnel\
+ptèt écoutée sur du factuel, mais ptèt écoutée sur du vécu, de l'émotionnel\
 ptèt seulement une présence, parfois une présence familière est plus rassurante\
 
 et des fois d'un endroit sécurisé pour pleurer, ptet pour crier\
