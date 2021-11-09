@@ -12,7 +12,7 @@ ou quand une personne dit "on n'a pas le droit" (alors qu'elle n'a pas vérifié
 
 il y a aussi ces histoires où la lecture stricte des lois désigne un coupable, mais le contexte plus large suggère que le problème n'est pas individuel. [Mais le système de justice avance, écrase, sans nuances](https://www.sudouest.fr/justice/bordeaux-prison-ferme-pour-un-vol-de-nourriture-3482422.php)
 
-et puis, il y a des choses qui m'ont impacté plus directement comme le droit du travail, le droit des contrats, le droit des marchés publics qui imposent des comportements que je trouve absurde et qui font perdre beaucoup de temps à tout le monde en apportant souvent aucune sécurité supplémentaire pour personne\
+et puis, il y a des choses qui m'ont impactées plus directement comme le droit du travail, le droit des contrats, le droit des marchés publics qui imposent des comportements que je trouve absurdes et qui font perdre beaucoup de temps à tout le monde en apportant souvent aucune sécurité supplémentaire pour personne\
 le contrat se substitue à se parler, et surtout à s'écouter, et donc on perd beaucoup de temps à mal se comprendre
 
 et puis il y a les choses plus graves comme les viols ou les incestes\
@@ -33,7 +33,7 @@ dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-l
 
 
 Ces articles contiennent une bonne dose de critique du système actuel et je voudrais prendre les devants et clarifier que je critique un système et pas les individus. Je sais qu'il y a des personnes à l'intérieur de ce système qui se lèvent chaque matin avec les mêmes valeur que les miennes, avec une déontologie sans faille\
-Et ces personnes sont subordonnées par salariat à leur employeur qui leur donne un périmètre d'action et leur demande de ne pas en sortir\
+Et ces personnes sont subordonnées par salariat à leurs employeurs qui leur donnent un périmètre d'action et leur demandent de ne pas en sortir\
 Et ces personnes sont rarement en position de pouvoir décider du montant et de l'allocation du budget de la police ou de la justice. Et donc, ce qu'elles font a un effet positif localement, mais ça ne produit pas des changements à un niveau global\
 Je critique la culture, les allocations de budget et le découpage des périmètres des fiches de poste et les effets que ces choses-là ont sur les individus en bout de chaîne, mais pas les individus eux-mêmes
 
@@ -51,7 +51,7 @@ https://www.pasquinade.fr/video/internet-etc-spectacle-entier-avec-haroun
 
 Il y a l'État
 et l'État, pour bien fonctionner, a besoin de l'ordre social
-et donc que les relations entre les personnes ne se passe pas de manière complètement catastrophique
+et donc que les relations entre les personnes ne se passent pas de manière complètement catastrophique
 et donc il y a des lois et il y a des plaintes qui sont déposées et il y a des enquêtes qui sont menées et il y a des peines qui sont prononcées ; suffisamment pour que ça aille en moyenne, dans l'ensemble. Suffisamment pour le budget qui y est alloué
 
 mais l'objectif de l'État et de son système de Justice **n'est pas** que littéralement chaque personne de la société ressente un sentiment de justice, ressente que quand du mal lui est fait, l'institution de justice le reconnaisse
