@@ -4,7 +4,7 @@
 
 Cet article fait partie d'un ensemble d'articles qui commence [ici](./index)
 
-Je vais analyser une série de 5 articles publiés sur Slate et [qui commencent par ici](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1). Dans ces articles, une femme est victime de viol et raconte son parcours.
+Je vais analyser une série de 5 articles publiés sur Slate et [qui commence par ici](https://www.slate.fr/societe/recit-temoignage-viol-sidney-justice/recit-temoignage-viol-sidney-justice-episode-1). Dans ces articles, une femme est victime de viol et raconte son parcours.
 
 Je ressens beaucoup de gratitude et de reconnaissance envers cette femme qui partage un témoignage dense et détaillé de son expérience personnelle 
 
@@ -14,7 +14,7 @@ Le détective qui mène l'enquête s'appelle Brandon, le procureur général (l'
 Il s'agit d'un récit où ça se "finit bien" au sens où cette femme est prise au sérieux par la police, par tout le système de justice et à la fin, le violeur est condamné
 
 Et la lecture de ce récit m'a quand même laissé un petit goût amer. C'est une victoire, mais la victoire est fragile, basée sur une séquence d'une poignée de coups de chances, sur une connaissance assez fine du système de justice qui, à mon avis, ne devrait pas être nécessaire à se reconstruire après une telle épreuve
-Je suis heureux que cette femme aie pu se reconstruire et passer à autre chose, et dans le l'ombre de son histoire je vois un système de justice assez hostile aux victimes. Et si je me réjouis pour cette femme en particulier, je suis soucieux de ce que son histoire raconte pour les autres victimes
+Je suis heureux que cette femme aie pu se reconstruire et passer à autre chose, et dans l'ombre de son histoire je vois un système de justice assez hostile aux victimes. Et si je me réjouis pour cette femme en particulier, je suis soucieux de ce que son histoire raconte pour les autres victimes
 
 Dans mon analyse, je m'intéresse uniquement aux interactions entre la victime et le système judiciaire. Il s'agit du système judiciaire australien et je crois que la plus grosse partie de l'analyse se transpose au contexte français et de beaucoup de pays avec un système de justice similaire
 Je vais me concentrer particulièrement sur les besoins de la victime et la manière dont le système judiciaire y répond ou pas
@@ -52,12 +52,12 @@ Heureusement, elle est "solide", "elle s'en fout". Mais si ça n'avait pas été
 Elle raconte son histoire une dizaine de fois, et elle est écoutée, c'est cool
 
 Et personne, littéralement personne, ne lui demande ce qu'elle veut, ce qu'on elle a besoin elle, à ce moment là
-Le système judiciaire est un train. Elle est rentrée dans un wagon, ça passe par toutes les gares, elle suit le process. Et personne ne lui demande ce dont elle a besoin elle. C'est les besoins du système qui prennent priorité
+Le système judiciaire est un train. Elle est rentrée dans un wagon, ça passe par toutes les gares, elle suit le process. Et personne ne lui demande ce dont elle a besoin elle. C'est les besoins du système qui prennent la priorité
 
 
 > Ils m'amenaient de l'eau, des mouchoirs. Ils étaient hyper pro et savaient par exemple que je ne devais pas aller aux toilettes, parce que ça pourrait enlever des traces ADN et du coup fausser les résultats. (Sur ce point, détail technique, je sais maintenant qu'en fait tu peux aller aux toilettes en attendant l'examen pour te prélever l'ADN, il faut juste ne pas s'essuyer pour ne pas effacer les traces –j'espère pas que ça vous arrive un jour, mais dans le doute, vous êtes prévenu·es.)
 
-Là encore, le système impose ses codes. Tu as besoin d'aller aux toilettes ? Tu n'y vas pas ! Ça pourrait compromettre notre procédure ! Nos besoins devant les tiens !
+Là encore, le système impose ses codes. Tu as besoin d'aller aux toilettes ? Tu n'y vas pas ! Ça pourrait compromettre notre procédure ! Nos besoins avant les tiens !
 ... et au final iels se trompaient, d'ailleurs 🤦
 
 Cet épisode est vécu par la victime comme "ils étaient hyper pro" et tant mieux pour elle
@@ -91,7 +91,7 @@ C'était dans un lit où il n'y avait qu'elle et le violeur et elle est *témoin
 
 Ces mots-là sont les meilleurs que le système de justice a à proposer à la victime ? "Tu es témoin d'un crime contre la société". On marche sur la tête !
 
-Je m'enrage et je me rends compte que je n'ai raconté que l'histoire partiellement. Dans un cas de viol en Australie, il y a deux procès possible. L'un "au pénal", l'autre "au civil". Au pénal, la victime, c'est la société, il n'y a pas à payer d'avocat parce que c'est "la société" qui le paye. Au civil, la victime, c'est... la victime et il faut qu'elle se paye un avocat. Donc il existe un moyen d'être considérée comme victime, mais c'est le procés payant. Dans le procés gratuit, la victime, c'est la société
+Je m'enrage et je me rends compte que je n'ai raconté que l'histoire partiellement. Dans un cas de viol en Australie, il y a deux procès possibles. L'un "au pénal", l'autre "au civil". Au pénal, la victime, c'est la société, il n'y a pas à payer d'avocat parce que c'est "la société" qui le paye. Au civil, la victime, c'est... la victime et il faut qu'elle se paye un avocat. Donc il existe un moyen d'être considérée comme victime, mais c'est le procés payant. Dans le procés gratuit, la victime, c'est la société
 
 Sur une échelle de 1 à patriarcat, je crois qu'on a cassé l'échelle
 
@@ -99,7 +99,7 @@ Sur une échelle de 1 à patriarcat, je crois qu'on a cassé l'échelle
 
 Je me permets une note historique sur la manière dont le droit a pris en compte le viol.
 
-En lisant ["Demarginalizing the Intersection of Race and Sex:A Black Feminist Critique of AntidiscriminationDoctrine, Feminist Theory and Antiracist Politics"](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1052&context=uclf) par Kimberle Crenshaw, je suis tombé sur cette phrase qui m'a intriguée :
+En lisant ["Demarginalizing the Intersection of Race and Sex:A Black Feminist Critique of AntidiscriminationDoctrine, Feminist Theory and Antiracist Politics"](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1052&context=uclf) par Kimberle Crenshaw, je suis tombé sur cette phrase qui m'a intrigué :
 
 > Early carnal knowledge statutes and rape laws are understood within this discourse to illustrate that the objective of rape statutes traditionally has not been to protect women from coercive intimacy but to protect and maintain a property-like interest in female chastity
 
@@ -124,7 +124,7 @@ Là, c'est un peu la première fois où la victime voudrait aller dans une direc
 
 > Point numéro deux, depuis le début de cette histoire, je me suis toujours dit que j'irai jusqu'au bout du procès à condition d'avoir suffisamment de preuves pour que ce ne soit pas uniquement parole contre parole. 
 
-[Précédemment](./etat-des-lieux), je faisais référence à un sketch qui contient la phrase "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne le découvrez pas" et on arrive au cœur d'une limite du système de justice tel qu'il existe en France ou en Australie. Dans un cas de viol, c'est souvent "parole contre parole"
+[Précédemment](./etat-des-lieux), je faisais référence à un sketch qui contient la phrase "... ou alors je peux continuer à faire des choses méchantes et m'assurer que vous ne les découvrirez pas" et on arrive au cœur d'une limite du système de justice tel qu'il existe en France ou en Australie. Dans un cas de viol, c'est souvent "parole contre parole"
 
 Le violeur, ayant peur d'aller en prison, va mentir
 La victime, souhaitant *a minima* une forme de reconnaissance, va dire la vérité
@@ -235,7 +235,7 @@ Parce que le procès est une pièce de théâtre où il n'y a pas la place pour 
 
 La victime imagine ici ce que l'avocat aurait pu conseiller au violeur. Et je trouve ce morceau intéressant : "Pour la nana que t'as violée, qui sera soulagée de t'entendre reconnaître la vérité"
 
-C'est un peu indirecte, mais là aussi, la victime exprime ce qu'elle aimerait, elle. Elle aimerait qu'il reconnaisse **auprès d'elle** ce qu'il lui a fait. Ça la "soulagerait" (enfin... elle imagine que l'avocat imaginerait que ça la soulagerait, mais bon, je choisis de faire ce raccourci...).
+C'est un peu indirect, mais là aussi, la victime exprime ce qu'elle aimerait, elle. Elle aimerait qu'il reconnaisse **auprès d'elle** ce qu'il lui a fait. Ça la "soulagerait" (enfin... elle imagine que l'avocat imaginerait que ça la soulagerait, mais bon, je choisis de faire ce raccourci...).
 
 Ce morceau-là n'arrivera pas
 
@@ -341,11 +341,11 @@ Et ces émotions-là, le système de la justice s'en cogne.
 
 Le système de justice a fourni une "victoire" et donc la seule émotion légitime devrait être la joie
 
-et pourtant, elle ressent d'autres émotions, plus négative, moins agréables
+et pourtant, elle ressent d'autres émotions, plus négatives, moins agréables
 
 Je suis reconnaissant auprès de cette femme pour ces mots parce que je trouve qu'ils mettent bien en lumière la différence entre l'unique proposition du système de justice qui prétend être la meilleure pour les victimes et la réalité qui n'est est beaucoup plus nuancée que ça
 
-Je trouverais intéressant que le système de justice se remette en question en se basant sur ces récits, ces ressentis de victime. Commencer par ce dont la victime a besoin. Et construire une procédure adaptée plutôt que d'appliquer un train procédural inflexible. J'y reviendrai dans un autre article
+Je trouverais intéressant que le système de justice se remette en question en se basant sur ces récits, ces ressentis des victimes. Commencer par ce dont la victime a besoin. Et construire une procédure adaptée plutôt que d'appliquer un train procédural inflexible. J'y reviendrai dans un autre article
 
 
 > J'ai tellement attendu ce procès que je n'arrive pas à réaliser que ça y est, il est derrière moi. C'est fini. Au début, je suis presque déçue de l'effet que ça me fait. Je suis juste crevée. Satisfaite du verdict, heureuse d'être allée au bout de cette affaire, mais dégommée physiquement et mentalement.
@@ -401,7 +401,7 @@ Je ressens beaucoup de reconnaissance pour ces mots parce que je trouve qu'ils m
 
 Si la victime se reconstruit et cicatrise grâce au procès, c'est presque un accident
 
-Ces mots mettent aussi en lumière le fait que l'unique chemin connu par la victime pour se reconstruire et cicatriser, c'est celui que propose le système de justice, un système qui propose à la victime un jet de dès très en sa défaveur
+Ces mots mettent aussi en lumière le fait que l'unique chemin connu par la victime pour se reconstruire et cicatriser, c'est celui que propose le système de justice, un système qui propose à la victime un jet de dés très en sa défaveur
 
 
 > Le sentiment que j'ai c'est qu'à l'issue d'un procès pour viol, il y a toujours quelqu'un qui part en prison. Si c'est pas le violeur, c'est la victime, et inversement. S'il est reconnu coupable, le violeur part (très vraisemblablement) en prison. S'il est acquitté, c'est la victime qui se retrouve prisonnière dans sa tête. Seule face à son agresseur, et surtout face à une société et un système judiciaire incapables de faire condamner un criminel et, par là même, de lui offrir un commencement de cicatrisation. Prisonnière d'un crime impuni.
@@ -449,7 +449,7 @@ Et ce que le système de justice propose, c'est :
     - qui doit être connue finement par la victime pour qu'elle soit prise en compte
         - aller dans un commissariat juste après le viol
         - ne pas se laver pour ne pas effacer les traces ADN utiles à la procédure
-        - ne pas aller au toilettes (au final, aller au toilettes, c'est possible, c'est s'essuyer qui ne l'est pas, mais ça la victime l'apprend plus tard)
+        - ne pas aller au toilettes (au final, aller aux toilettes, c'est possible, c'est s'essuyer qui ne l'est pas, mais ça la victime l'apprend plus tard)
         - avoir la présence d'esprit de noter certaines informations-clef juste après le viol (adresse exacte)
     - qui considère la société comme la *victime*. Et la victime du viol est considérée comme *témoin*
     - pendant laquelle la victime du viol n'a pas accès aux éléments de l'enquête
