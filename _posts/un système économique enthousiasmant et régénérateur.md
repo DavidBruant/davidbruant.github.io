@@ -29,6 +29,32 @@ Vu que je ne peux pas produire ma nourriture (et que je n'ai pas d'ami.e.s qui m
 
 
 
+## C'est quoi une économie ?
+
+Pour ici, je vais définir une économie (que je considère comme un raccourci de "un système économique") comme : y'a des **gens qui font des choses** et des fois, **des gens se partagent des choses** qu'iels ont fait
+En des termes plus sérieux, c'est ce qui est produit et ce qui est échangé
+
+Habituellement, l'économie s'intéresse surtout à ce qui est échangé, mais ce qui est produit pour être utilisé par soi-même directement m'intéresse aussi
+
+Si on produit sa propre nourriture, celle-ci n'entre pas dans le circuit économique de ce qui est échangé. Donc, par exemple, on ne paye pas de TVA dessus. Le prix de sa nourriture ne dépend pas non plus de l'inflation, mais seulement des facteurs météorologique, environnementaux et du travail qu'on y met\
+Pareil si on boit de l'eau issue de la pluie\
+Pareil si on fabrique ses propres vêtements\
+etc.
+
+
+### Échanger avec les autres à partir d'une écoute de soi
+
+On échange avec les autres pour obtenir ce que l'on n'a pas soi déjà
+
+Il y a des choses que l'on peut qualifier de "besoins" au sens où ils sont strictement nécessaire à la survie du corps (nourriture, eau, un habitat qui reste assez frais en été et assez chaud en hiver, etc.)\
+
+Et il y a des d'autres envies où on peut soit travailler à les produire, soit échanger avec d'autres
+
+Je vois un sujet sur ces besoins/envies. Travailler dessus pour comprendre quel besoin émotionnel est rempli par ces besoins/envies et être au clair sur l'échange que celà demande et la dépendance à l'autre que ce besoin/envie créé. Une dépendance n'est pas un problème en soi, mais il me parait sain d'être au clair sur ces dépendances et garder un œil sur quand ces dépendances deviennent malsaines, voire dangereuses\
+Ce travail permet d'obtenir une clarté sur quelle quantité de travail est nécessaire pour remplir telle envie ou tel besoin
+
+Je parle d'un travail qui se passe sans jugement et qui n'a pour objectif que de connecter soi avec le reste du monde ; être au clair sur la manière dont nos besoins/envies/désirs produisent une certaine quantité d'échanges
+
 
 
 ## Vrac
