@@ -250,9 +250,7 @@ Le capital peut augmenter par la création de nouvelles parts sociales à l'occa
 Le capital peut diminuer par l'annulation de parts sociales à l'occasion du rachat de parts sociales par la société.
 </blockquote>
 
-Si la société a un capital variable, elle doit le mettre dans ses statuts
-
-https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006146051/
+Si la société a un capital variable, [elle doit le mettre dans ses statuts](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006146051/)
 
 Je n'ai jamais rencontré de société à capital fixe. L'histoire que je me raconte, c'est que vu que le capital social est sensé être gage de confiance auprès des personnes qui prêtent de l'argent (souvent les banques) s'il est élevé. Ces personnes voudraient savoir si le capital qu'ils utilisent comme gage de confiance peut soudainement baisser. Si c'est écrit dans les statuts, alors, ils peuvent consulter les statuts pour s'en rendre compte
 
@@ -413,5 +411,6 @@ blockquote{
     font-size: 0.8em;
     padding-left: 1rem;
     line-height: 1.2rem;
+    padding-bottom: 0.5rem;
 }
 </style>
