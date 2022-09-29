@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="data:,">
+
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
+    
+    <link href="{{ '/style/main.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' crossorigin>
+    {% feed_meta %}
+
+    {%- include polyfills.html -%}
+
+    {%- include layout-page-styles.html -%}
+
+    {%- include layout-page-scripts.html -%}
+</head>

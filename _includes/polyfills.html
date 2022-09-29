@@ -1,0 +1,26 @@
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces5%2Ces6%2Ces7%2CString.prototype.replaceAll"></script>
+
+<script>
+  // adapted from https://github.com/ungap/promise-all-settled/blob/ed43b3d9bc2027789c4388aff198141b4feb8f04/esm/index.js (ISC licence)
+  if(!Promise.allSettled){
+    Promise.allSettled = function ($) {'use strict';
+      var self = this;
+      return self.all(
+        $.map(
+          function (value) {
+            return self.resolve(value).then(this.$, this._);
+          },
+          {
+            $: function (value) {
+              return {status: 'fulfilled', value: value};
+            },
+            _: function (reason) {
+              return {status: 'rejected', reason: reason};
+            }
+          }
+        )
+      );
+    };
+  }
+
+</script>

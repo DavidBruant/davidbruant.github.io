@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="same-origin">
-    <link rel="icon" href="data:,">
+{%- include head.html -%}
 
-    <meta name="author" content="{{ site.author }}">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-    <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
-    
-    <link href="{{ '/style/main.css' | relative_url }}" rel="stylesheet" type="text/css">
-    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' crossorigin>
-    {% feed_meta %}
-  </head>
-  <body>
-    <header>
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    </header>
-    {% if site.style.headline %}<div><h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1></div>{% endif %}
-    {% if site.subheading %}<div>{{ site.subheading }}</div>{% endif %}
+<body>
+
+    {%- include header.html -%}
 
     <article>
-      <header>
-        {% if page.date %}
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-        {% endif %}
-      </header>
-      <div>
-        {{ content }}
-      </div>
+        <header>
+            {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {% endif %}
+        </header>
+        <div>
+            {{ content }}
+        </div>
     </article>
 
-    <footer>
-      <span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.author}}{% endif %}</a></span>
-      <span>{% for link_hash in site.links %}{% for link in link_hash %}<a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>{% endfor %}{% endfor %}</span>
-      <span>CC0 1.0</span>
-    </footer>
-  </body>
+    {%- include footer.html -%}
+
+</body>
+
 </html>
