@@ -26,7 +26,7 @@ Si celà devenait pertinent, nous pouvons [changer la forme de la société](htt
 
 #### Forme du contrat
 
-Les statuts sont souvent des documents lourds et indigestes pour les personnes non-professionnelles du Droit. Toutefois, il ne s'agit pas d'une obilgation légale. En effet, {l'article 1102 du Code Civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040782) nous apprend que :
+Les statuts sont souvent des documents lourds et indigestes pour les personnes non-professionnelles du Droit. Toutefois, il ne s'agit pas d'une obilgation légale. En effet, [l'article 1102 du Code Civil](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040782) nous apprend que :
 > Chacun est libre de contracter ou de ne pas contracter, de choisir son cocontractant et de déterminer le contenu et la forme du contrat dans les limites fixées par la loi. 
 
 **libre de déterminer le contenu et la forme du contrat**
@@ -72,14 +72,14 @@ Ce qui a de la valeur à nos yeux, c'est l'expérience que nous vivons ensemble
 ## Statuts annotés
 
 
-```
+<blockquote>
 # Statuts
 
 Les soussigné.e.s,
 
-* <prénom nom>, né.e le <date de naissance>, à <lieu de naissance>, de nationalité <nationalité>, demeurant au <adresse postale>
-* <prénom nom>, né.e le <date de naissance>, à <lieu de naissance>, de nationalité <nationalité>, demeurant au <adresse postale>
-* <prénom nom>, né.e le <date de naissance>, à <lieu de naissance>, de nationalité <nationalité>, demeurant au <adresse postale>
+* &lt;prénom nom>, né.e le &lt;date de naissance>, à &lt;lieu de naissance>, de nationalité &lt;nationalité>, demeurant au &lt;adresse postale>
+* &lt;prénom nom>, né.e le &lt;date de naissance>, à &lt;lieu de naissance>, de nationalité &lt;nationalité>, demeurant au &lt;adresse postale>
+* &lt;prénom nom>, né.e le &lt;date de naissance>, à &lt;lieu de naissance>, de nationalité &lt;nationalité>, demeurant au &lt;adresse postale>
 
 
 ci-après dénommé.e.s, ensemble, "les associé.e.s".
@@ -87,7 +87,7 @@ ci-après dénommé.e.s, ensemble, "les associé.e.s".
 **Se mettent d'accord pour établir :**
 
 Les statuts d'une société civile immobilière devant exister entre eux et toute autre personne qui viendrait ultérieurement à acquérir la qualité d'associé.e.
-```
+</blockquote>
 
 Les statuts sont [un "contrat de société"](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444041) entre des personnes et donc, il est nécessaire de lister les personnes qui participent à ce [contrat](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032006712/#LEGISCTA000032006712). Il est nécessaire de les lister d'une manière non-ambiguë du point de vue de l'État
 
