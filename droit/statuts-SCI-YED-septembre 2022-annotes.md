@@ -216,7 +216,7 @@ Nous avons finalement fait un autre choix (capital à 100€), mais l'esprit res
 * &lt;prénom nom> apporte &lt;x en nombre>€ (&lt;x en lettres> euros) au capital en numéraire,
 * &lt;prénom nom> apporte &lt;x en nombre>€ (&lt;x en lettres> euros) au capital en numéraire,
 
-Soit la somme totale de <total en chiffres>€ (<total en lettres> euros)
+Soit la somme totale de &lt;total en chiffres>€ (&lt;total en lettres> euros)
 </blockquote>
 
 Pour une raison dont je ne me souviens plus, il est obligatoire de laisser les apports initiaux lors de la création dans les statuts pendant toute la durée de la société.
@@ -227,7 +227,7 @@ Pour une raison dont je ne me souviens plus, il est obligatoire de laisser les a
 <blockquote>
 ### Capital social actuel
 
-Le capital social est fixé à la somme de <total en chiffres>€ (<total en lettres> euros). Il est divisé en <x> (x) parts de 1€ (un euro) de valeur nominale chacune, attribuées aux associé.e.s en proportion de leurs apports, à savoir :
+Le capital social est fixé à la somme de &lt;total en chiffres>€ (&lt;total en lettres> euros). Il est divisé en &lt;x> (x) parts de 1€ (un euro) de valeur nominale chacune, attribuées aux associé.e.s en proportion de leurs apports, à savoir :
 * à &lt;prénom nom> : &lt;x en nombre> (&lt;x en lettres>) parts sociales, en pleine propriété en rémunération de son apport
 * à &lt;prénom nom> : &lt;x en nombre> (&lt;x en lettres>) parts sociales, en pleine propriété en rémunération de son apport
 * à &lt;prénom nom> : &lt;x en nombre> (&lt;x en lettres>) parts sociales, en pleine propriété en rémunération de son apport
