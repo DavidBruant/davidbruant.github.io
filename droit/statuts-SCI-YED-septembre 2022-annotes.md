@@ -166,19 +166,18 @@ Habituellement, le lien entre les sections se fait via l'utilisation de numéro 
 
 <blockquote>
 ### Silence d'un·e ou plusieurs associé·e·s
-    
-<!--
-PPP : dire que cest aussi pour laisser du temps à des personnes pour se décider
--->
 
 En cas de silence volontaire ou involontaire d'un·e ou plusieurs associé·e·s pendant une période décidée dans le journal de décision ou, à défaut, d'un mois, les autres associé·e·s peuvent décider d'exclure temporairement cet·te ou ces associé·e·s des prises de décisions. Cette exclusion prend fin dès que le silence est rompu.
 
 Cet article s'applique par exemple en cas de grave maladie, de longs voyages sans moyens de communication fiable ou de refus de participation aux prises de décisions.
 </blockquote>
 
-Le fait que les décisions ne soient valides qu'à l'unanimité peut créer une situation de blocage permanent si un·e associé·e est silencieuse·x par choix ou par contrainte (maladie, voyage, etc.) et donc ne participe pas aux décisions
+Prendre les décisions à l'unanimité permets que chaque personne puisse prendre le temps dont elle a besoin pour réfléchir, peser, faire connaître ses oppositions, propositions d'amélioration, etc.\
+Le rythme ne peut pas être dicté par une minorité qui organise des *Assemblées Générales* à son rythme et arrive, par la cadence à imposer ses décisions
 
-Cet article permet de débloquer cette situation pour permettre aux autres associé·e·s de quand même prendre des décisions en cas de silence prolongé
+Toutefois, le fait que les décisions ne soient valides qu'à l'unanimité peut aussi créer une situation de blocage permanent si un·e associé·e est silencieuse·x par choix ou par contrainte (maladie, voyage, etc.) et donc ne participe pas aux décisions
+
+Cet article permet trouver une équilibre entre laisser le temps aux personnes quand une décision se présente et ne pas bloquer le collectif. Le fait que la période soit décidée dans le journal de décisions est une invitation à ce que cette période soit décidée collectivement
 
 
 <blockquote>
