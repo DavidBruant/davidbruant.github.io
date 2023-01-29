@@ -41,6 +41,8 @@ Github : https://github.com/DavidBruant
 
  -->
 
+
+<!--
 ### Expériences spécifiquement légales
 
 #### 2012 - procédure prud'hommes
@@ -97,7 +99,7 @@ accompagnée par un conseiller syndical
 
 - Étude du droit civil et fiscal afin de comprendre les conséquences fiscales et sociales d'une solidarité économique. Étude notamment de la création de structures type mutuelle/assurance, Fonds de dotation, société civile et société en participation
 
-
+-->
 
 ### 2020 - 2023 : l'Échappée Belle
 
