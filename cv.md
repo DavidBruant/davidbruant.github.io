@@ -103,14 +103,13 @@ accompagnée par un conseiller syndical
 
 ### 2020 - 2023 : l'Échappée Belle
 
-Je suis parti de dtc innovation et ai co-fondé avec Maïtané Lenoir et Sabine Safi l'Échappée Belle.
-https://lechappeebelle.team/
-https://lechappeebelle.team/statuts
+Je suis parti de dtc innovation et ai co-fondé avec Maïtané Lenoir et Sabine Safi l'Échappée Belle.\
+<https://lechappeebelle.team/>\
+<https://lechappeebelle.team/statuts>
 
 La structure juridique et le fonctionnement au quotidien est assez proche de celui de dtc
 
-Un post de blog décrit nos explorations légales sur le statut juridique : https://github.com/lechappeebelle/association/blob/7925d4cdd704e6c08c54c7558d713965921d653a/travailler-ensemble-sans-subordination.md#travailler-ensemble-sans-subordination
-
+Un [post de blog](https://github.com/lechappeebelle/association/blob/7925d4cdd704e6c08c54c7558d713965921d653a/travailler-ensemble-sans-subordination.md#travailler-ensemble-sans-subordination) décrit nos explorations légales sur le statut juridique
 
 
 
@@ -118,9 +117,9 @@ Un post de blog décrit nos explorations légales sur le statut juridique : http
 
 J'ai co-fondé avec Clémentine Hahn et Thomas Parisot dtc innovation sous la forme d'une association loi 1901
 
-La construction de la structure juridique était une aventure en soi
-Article de blog : https://dtc-innovation.org/writings/2017/une-association
-Statuts de l'association : https://dtc-innovation.org/dna/statuts.html  
+La construction de la structure juridique était une aventure en soi\
+Article de blog : <https://dtc-innovation.org/writings/2017/une-association>\
+Statuts de l'association : <https://dtc-innovation.org/dna/statuts.html>
 
 
 ### 2019 - 2021 : Startups d'État avec la DINUM
@@ -139,7 +138,7 @@ Dans chacun des projets, j'ai appliqué la méthodologie Running Lean et été d
 
 Dans tous les cas, il s'agissait notamment de bien identifier le problème, mettre en place des indicateurs de réussite pertinents par rapport au problème et implémenter et tester des prototypes améliorés itérativement
 
-https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/
+Post de blog retour d'expérience sur un aspect précis du projet Lotocar : <https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/>
 
 
 
@@ -167,28 +166,28 @@ Outil pour catographier les initiatives d'innovations sociales
 
 J'ai notamment commencé par mettre en place un process de déploiement plus simple pour pouvoir déployer en confiance plus rapidement et donc avoir des retours utilisateurs plus rapides et plus réguliers
 
-En production : https://carrefourdesinnovationssociales.fr/
-Code source https://github.com/entrepreneur-interet-general/CIS-front
+- En production : <https://carrefourdesinnovationssociales.fr/>
+- Code source : <https://github.com/entrepreneur-interet-general/CIS-front>
 
 ### 2017 principalement et un peu 2018/2019 : Finances Gironde
 
-Nous avons créé pour le Conseil Départemental de la Gironde leur portail de transparence des finances.
-- En production : https://www.gironde.fr/un-budget-au-service-des-solidarites-humaine-et-territoriale
-- Code source : https://github.com/datalocale/dataviz-finances-gironde/
+Nous avons créé pour le Conseil Départemental de la Gironde leur portail de transparence des finances.\
+- En production : <https://www.gironde.fr/un-budget-au-service-des-solidarites-humaine-et-territoriale>
+- Code source : <https://github.com/datalocale/dataviz-finances-gironde/>
 
 Ce projet a aussi été l'occasion de créer des outils métiers pour permettre l'autonomie du CD33 dans la mise à jour du portail chaque année : 
-- En production : https://davidbruant.github.io/agregation-document-budgetaire/
-- Code source : https://github.com/DavidBruant/agregation-document-budgetaire/
+- En production : <https://davidbruant.github.io/agregation-document-budgetaire/>
+- Code source : <https://github.com/DavidBruant/agregation-document-budgetaire/>
 
 
 ## 2012 - 2016 - Conférencier
 
-- cascadia.js https://www.youtube.com/watch?v=7eNFQqMSxtU
-- FluentConf 2013 - GC.unmagic - https://www.youtube.com/watch?v=ADiF5UUKDCk
-- scotlandjs https://www.youtube.com/watch?v=6h0nGXmy_ow
-- tedx https://www.youtube.com/watch?v=Z7O3GteMQ8Y
-- dotjs : https://www.youtube.com/watch?v=-VxKnex6fhw
-- bdx.io https://www.youtube.com/watch?v=bOI4IoAmncU
+- cascadia.js - <https://www.youtube.com/watch?v=7eNFQqMSxtU>
+- FluentConf 2013 - GC.unmagic - <https://www.youtube.com/watch?v=ADiF5UUKDCk>
+- scotlandjs - <https://www.youtube.com/watch?v=6h0nGXmy_ow>
+- tedx - <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
+- dotjs - <https://www.youtube.com/watch?v=-VxKnex6fhw>
+- bdx.io - <https://www.youtube.com/watch?v=bOI4IoAmncU>
 
 
 
@@ -203,7 +202,7 @@ Au final, les 3 projets avec lesquels j'ai candidaté ont été retenu et ont ch
 En 2014, j'ai co-fondé [Ants](https://annuaire-entreprises.data.gouv.fr/entreprise/802500314), une SAS, en tant qu'associé minoritaire\
 Notre projet principale était 6element, un projet pour réduire le déchets qui arrivent en déchèterie en incitant les personnes qui préparent leur trajet en déchèterie à se débarasser autrement de leurs déchets (vente d'occasion, réparation, don, etc.)
 
-L'ensemble du code du projet est open source : https://github.com/6element/
+L'ensemble du code du projet est open source : <https://github.com/6element/>
 
 Via Ants, j'ai aussi travaillé sur divers projets pour des grosses entreprises. Nous avons fait notamment du Machine Learning et travaillé sur du code qui manipule du hardware avec divers capteurs. Nous déployions en production avec Docker et il y avait des composants React et un peu TypeScript
 
@@ -212,13 +211,13 @@ Via Ants, j'ai aussi travaillé sur divers projets pour des grosses entreprises.
 Un projet porté par l'Université de Bordeaux III\
 Il s'agit un peu de la même idée que Dijiwan (voir la section correspondante), mais avec une approche plus portée recherche
 
-Le code est open source : https://github.com/MyWebIntelligence/MyWebIntelligence
+Le code est open source : <https://github.com/MyWebIntelligence/MyWebIntelligence>
 
 
 ### Twitter Assistant
 
 Une petite extension navigateur qui permet de mieux comprendre un profil Twitter en un clin d'œil
-https://github.com/DavidBruant/Twitter-Assistant
+<https://github.com/DavidBruant/Twitter-Assistant>
 
 
 
@@ -268,7 +267,7 @@ Placer des chaises et des tables, notamment
 
 [Appel à projet](https://commonspace.wordpress.com/2010/05/07/mozshuttleworthfellowshi/)
 
-Ma proposition : https://www.youtube.com/watch?v=5VRdQU12rFk
+Ma proposition : <https://www.youtube.com/watch?v=5VRdQU12rFk>
 
 
 ### 2009-2010 - Organisation de la partie divertissement des 3 Sunday Supper (Internatial House UCSD)
