@@ -16,8 +16,8 @@ Notes d'éditions :
 ## Canaux de communication
 
 Adresse email : davidbruant@protonmail.com \
-Mastodon : https://eldritch.cafe/@davidbruant \
-Github : https://github.com/DavidBruant
+Mastodon : <https://eldritch.cafe/@davidbruant> \
+Github : <https://github.com/DavidBruant>
 
 
 ## Expériences
