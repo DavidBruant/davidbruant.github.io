@@ -118,8 +118,8 @@ Un [post de blog](https://github.com/lechappeebelle/association/blob/7925d4cdd70
 J'ai co-fondé avec Clémentine Hahn et Thomas Parisot dtc innovation sous la forme d'une association loi 1901
 
 La construction de la structure juridique était une aventure en soi\
-Article de blog : <https://dtc-innovation.org/writings/2017/une-association>\
-Statuts de l'association : <https://dtc-innovation.org/dna/statuts.html>
+Article de blog : <https://dtc-innovation.github.io/writings/2017/une-association>\
+Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 
 
 ### 2019 - 2021 : Startups d'État avec la DINUM
