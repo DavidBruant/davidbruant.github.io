@@ -10,7 +10,7 @@ des mots pour comprendre, des mots pour agir
 
 des trucs sur les individus aussi
 
-- [abondance et rareté](relations/individus/rarete-et-abondance)
+- [abondance et rareté](./individus/rarete-et-abondance)
 - triangle dramatique
 - dialogue
     - projection
