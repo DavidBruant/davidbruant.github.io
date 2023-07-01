@@ -2,9 +2,9 @@
 
 <style>
 @media print {
-    #header,
-    #footer,
-    #nav {
+    header,
+    footer,
+    nav {
         display: none !important;
     }
     
