@@ -107,7 +107,10 @@ Je suis parti de dtc innovation et ai co-fondé avec Maïtané Lenoir et Sabine 
 <https://lechappeebelle.team/>\
 <https://lechappeebelle.team/statuts>
 
+
 La structure juridique et le fonctionnement au quotidien est assez proche de celui de dtc
+
+La gestion comptable/administrative est collective. J'ai formé les autres membres sur ces aspects
 
 Un [post de blog](https://github.com/lechappeebelle/association/blob/7925d4cdd704e6c08c54c7558d713965921d653a/travailler-ensemble-sans-subordination.md#travailler-ensemble-sans-subordination) décrit nos explorations légales sur le statut juridique
 
@@ -118,6 +121,9 @@ Un [post de blog](https://github.com/lechappeebelle/association/blob/7925d4cdd70
 J'ai co-fondé avec Clémentine Hahn et Thomas Parisot dtc innovation sous la forme d'une association loi 1901
 
 La construction de la structure juridique était une aventure en soi\
+
+La gestion comptable/administrative était collective et j'en ai pris une grosse partie
+
 Article de blog : <https://dtc-innovation.github.io/writings/2017/une-association>\
 Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 
