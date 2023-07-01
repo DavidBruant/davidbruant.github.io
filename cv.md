@@ -1,5 +1,20 @@
 # CV - David Bruant
 
+<style>
+@media print {
+    #header,
+    #footer,
+    #nav {
+        display: none !important;
+    }
+    
+    article{
+        padding: 1rem 2rem;
+    }
+}
+
+</style>
+
 <!--
 
 Notes d'éditions :
