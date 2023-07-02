@@ -11,7 +11,7 @@ des mots pour comprendre, des mots pour agir
 des trucs sur les individus aussi
 
 - [abondance et rareté](./individus/rarete-et-abondance)
-- triangle dramatique
+- [triangle dramatique](./triangle-dramatique)
 - dialogue
     - projection
     - questions
@@ -33,5 +33,5 @@ des trucs sur les individus aussi
     - OSBD
     - parler de soi plutôt que de parler de l'autre
 - angles morts
-
+- locus de contrôle interne et externe
 
