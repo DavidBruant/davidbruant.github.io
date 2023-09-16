@@ -29,7 +29,7 @@ je suis insatisfait par le système de justice tel que je le connais parce qu'il
 pour la suite, je vais me concentrer spécifiquement sur les questions des viols et des incestes, car je crois que c'est dans ces situations que les manquements du système de justice produisent les effets les plus graves\
 je crois aussi que s'il y avait une solution pour ce sujet-là, cette solution serait sûrement une bonne base pour tous les autres sujets
 
-dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-lieux.md), [une analyse sur un cas concret](./analyse-article-slate.md), [une proposition alternative qui me parait plus juste et une esquisse du chemin entre l'état actuel et cette alternative](./autre-chose.md) (à venir) 
+dans une poignée d'articles suivants, je fais un [état des lieux](./etat-des-lieux), une [analyse sur un cas concret](./analyse-article-slate), je raconte [mon entrée dans le monde de la justice restaurative en France](./temoignage-jr), [une proposition alternative qui me parait plus juste et une esquisse du chemin entre l'état actuel et cette alternative](./autre-chose) (à venir) 
 
 
 Ces articles contiennent une bonne dose de critique du système actuel et je voudrais prendre les devants et clarifier que je critique un système et pas les individus. Je sais qu'il y a des personnes à l'intérieur de ce système qui se lèvent chaque matin avec les mêmes valeur que les miennes, avec une déontologie sans faille\
@@ -38,9 +38,11 @@ Et ces personnes sont rarement en position de pouvoir décider du montant et de 
 Je critique la culture, les allocations de budget et le découpage des périmètres des fiches de poste et les effets que ces choses-là ont sur les individus en bout de chaîne, mais pas les individus eux-mêmes
 
 
-<!--
-Je mets où l'histoire du droit du viol (et de qui est considéré victime) ?
 
+
+<!--
+
+Je mets où l'histoire du droit du viol (et de qui est considéré victime) ?
 
 > On prédit les crimes, pourquoi on prédit pas les victimes ?
 
@@ -58,7 +60,5 @@ mais l'objectif de l'État et de son système de Justice **n'est pas** que litt�
 
 en théorie, nous sommes "égaux en droits", en pratique, certaines personnes sont plus égales que d'autres
 et il n'y a aucune intention sincère d'améliorer la situation parce que ce qui est en place suffit
-
-
 
 -->
