@@ -40,12 +40,12 @@ Une personne peut se précipiter vers la chaise et s'asseoir en ignorant le dés
 Les deux personnes peuvent discuter et trouver un raison acceptable pour les deux pour qui va s'asseoir et sous quelles conditions\
 Ptèt évaluer qui a le plus de besoin de s'asseoir rapidement\
 Ptèt échanger toutes les 10 minutes\
-Ptèt inviter une 3ème personne qui va décider\
+Ptèt inviter une 3ème personne qui va décider
 
 Les deux personnes peuvent organiser une compétition et le.a gagnant.e va s'asseoir
 Ptèt décider à shi-fu-mi\
 Ptèt un combat physique\
-Ptèt la personne l'a mérité le plus (selon n'importe quelle définition de mérite)\
+Ptèt la personne l'a mérité le plus (selon n'importe quelle définition de mérite)
 
 
 
