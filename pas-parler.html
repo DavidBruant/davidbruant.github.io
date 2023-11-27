@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Qu'est-ce que tu fais dans la vie ?">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body{
+    
+      border: 0;
+      margin: 0;
+      padding: 0;
+      
+      height: 100%;
+    }
+    
+    body {
+      
+      background: #fafafa;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+    }
+
+    main{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      
+      min-height: 100%;
+      
+      padding: 0 10px;
+    }
+    
+    h1, h2{
+        margin: 0;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    h2{
+        color: #777;
+    }
+    
+    button{
+        background-color: transparent;
+      
+        font-size: 1.2rem;
+        color: black;
+      
+        border: 1px solid purple;
+        border-radius: 1rem;
+        padding: 1rem;
+        flex: 1;
+      
+        max-width: 40rem;
+        max-height: 70vh;
+      
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+  </style>
+  <title>Autre chose que parler</title>
+</head>
+<body>
+  <main>
+    <h1>Autre chose que parler</h1>
+    <h2>wait for it...</h2>
+    
+    <button>une autre réponse !</button>
+  </main>
+
+  <script>
+    // Choisir aléatoirement une activité
+    var activité = [
+        `jouer à shi fu mi`,
+        `jouer à 1000 sabords`,
+        `jouer à ...`,
+        `se tenir la main`,
+        `un massage`,
+        `un hug`,
+        `écouter les oiseaux ensemble`,
+        `écouter la pluie ensemble`,
+        `écouter un podcast ensemble`,
+        `écouter ...`,
+        `fabriquer un objet ensemble`,
+        `réparer un objet ensemble`,
+        `faire une balade`,
+        `faire une sieste`,
+    ]
+
+    var indice = Math.floor(activité.length*Math.random())
+    var affichée = activité[indice];
+
+    document.querySelector('h2').textContent=affichée
+    
+    document.querySelector('button').addEventListener('click', e => {
+      var indice = Math.floor(activité.length*Math.random())
+      var affichée = activité[indice];
+
+      document.querySelector('h2').textContent=affichée
+    })
+    
+  </script>
+</body>
+</html>
