@@ -11,7 +11,9 @@ des mots pour comprendre, des mots pour agir
 des trucs sur les individus aussi
 
 - [abondance et rareté](./individus/rarete-et-abondance)
+- [locus de contrôle interne et externe](./individus/locus-de-controle)
 - [triangle dramatique](./triangle-dramatique)
+- [désir, proposition et injonction](./desir-proposition-injonction.md)
 - dialogue
     - projection
     - questions
@@ -23,7 +25,7 @@ des trucs sur les individus aussi
     - construire la confiance
 - consentement
 - les attentes
-- conflit
+- [conflit](./le-confit-de-la-chaise-unique)
 - croyance
 - "la" vérité et "le" monde réel
 - l'écoute
@@ -33,5 +35,5 @@ des trucs sur les individus aussi
     - OSBD
     - parler de soi plutôt que de parler de l'autre
 - angles morts
-- locus de contrôle interne et externe
+
 
