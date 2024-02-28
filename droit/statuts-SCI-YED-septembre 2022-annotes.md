@@ -1,6 +1,6 @@
 # Statuts SCI YED annotés
 
-Cette page correspond au texte des [statuts](./statuts SCI YED.md) auxquels sont ajoutés des annotations diverses et variées pour expliquer à la fois les motivations et intentions derrière ce texte, partager des références légales et expliquer des choix
+Cette page correspond au texte des [statuts](./statuts-SCI-YED-septembre-2022.md) auxquels sont ajoutés des annotations diverses et variées pour expliquer à la fois les motivations et intentions derrière ce texte, partager des références légales et expliquer des choix
 
 Ces statuts ont été transmis aux greffes de Bordeaux en décembre 2022 et acceptés par ceux-ci. L'acceptation n'est pas une indication de la qualité des statuts ou même de leur légalité complète ou de leur interprétation devant un Tribunal. L'acceptation des greffes correspond plutôt au passage d'un premier contrôle léger de conformité légal
 
