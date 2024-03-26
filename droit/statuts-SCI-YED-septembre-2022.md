@@ -15,7 +15,7 @@ Les statuts d'une société civile immobilière devant exister entre eux et tout
 
 ## Nom
 
-<nom>
+&lt;nom>
 
 ## Forme
 
