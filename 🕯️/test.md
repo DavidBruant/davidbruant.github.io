@@ -1,3 +1,0 @@
-# Par ici,
-
-on teste
