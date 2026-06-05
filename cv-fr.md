@@ -1,4 +1,6 @@
-# CV - David Bruant
+---
+title: CV - David Bruant
+---
 
 <style>
 @media print {
