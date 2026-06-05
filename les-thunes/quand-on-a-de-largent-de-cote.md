@@ -1,5 +1,6 @@
 ---
 title: Quand on a de l'argent de côté
+in_menu: false
 ---
 
 Ça fait plusieurs fois que j'ai des discussions qui se ressemblent sur l'argent et donc j'en fais un article, un peu comme pense-bête pour moi-même, un peu dans l'espoir que ça serve à d'autres

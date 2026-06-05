@@ -1,4 +1,7 @@
-# Un autre système de justice
+---
+title: "Un autre système de justice"
+in_menu: false
+---
 
 cet article est un brouillon et fait partie d'[une série](./index)
 

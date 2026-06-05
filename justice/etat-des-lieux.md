@@ -1,4 +1,7 @@
-# Une autre justice - état des lieux
+---
+title: Une autre justice - état des lieux
+in_menu: false
+---
 
 [Le système de justice actuel ne me convient pas](./index)\
 Notamment dans son traitement des victimes

@@ -2,6 +2,7 @@
 title: Open web educators in schools
 author: David Bruant
 layout: page
+in_menu: false
 ---
 <p>The page is the detailed project proposal page for the <a href="https://raw.github.com/jlongster/mozilla.org/master/grants/education-fellowship.html">Mozilla and Shuttleworth joint fellowship</a> project proposal regarding open web education. It was written in May 2010.</p>
 <h2>The world as it is and as it will be if we succeed</h2>

@@ -1,4 +1,7 @@
-# Une autre justice - description du problème
+---
+title: Une autre justice - description du problème
+in_menu: false
+---
 
 **⚠️ Avertissement de contenu : dans cet article, je vais parler de manière assez directe de violences entre personnes, notamment de violences sexuelles**
 

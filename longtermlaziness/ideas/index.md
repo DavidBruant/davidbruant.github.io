@@ -2,6 +2,7 @@
 title: Ideas
 author: David Bruant
 layout: page
+in_menu: false
 ---
 ## What is this?
 

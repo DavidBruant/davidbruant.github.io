@@ -1,5 +1,6 @@
 ---
 title: Désir, proposition et injonction
+in_menu: false
 ---
 
 Je ressens du désir, des désirs, parfois

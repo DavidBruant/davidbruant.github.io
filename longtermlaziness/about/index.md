@@ -2,6 +2,7 @@
 title: About
 author: David Bruant
 layout: page
+in_menu: false
 ---
 Hi there!
 

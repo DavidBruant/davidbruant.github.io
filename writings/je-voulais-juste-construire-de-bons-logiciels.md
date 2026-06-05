@@ -1,5 +1,6 @@
 ---
 title: je voulais juste construire de bons logiciels
+in_menu: false
 ---
 
 Je suis passé par une prépa MPSI+MP\

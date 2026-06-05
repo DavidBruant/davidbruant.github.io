@@ -1,5 +1,6 @@
 ---
 title: Triangle dramatique
+in_menu: false
 ---
 
 Le [triangle dramatique](https://fr.wikipedia.org/wiki/Triangle_dramatique) est un outil d'analyse transactionnelle qui décrit un schéma relationnel habituel dans les histoires quand elle sont racontées

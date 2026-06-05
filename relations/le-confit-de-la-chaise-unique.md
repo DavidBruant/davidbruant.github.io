@@ -1,5 +1,6 @@
 ---
 title: Le conflit de la chaise unique
+in_menu: false
 ---
 
 Un jour, j'ai fait un stage de théâtre-clown avec possiblement [le meilleur prof](https://www.association-tedua.fr/) sur le sujet que j'aurais jamais l'occasion de rencontrer dans ma vie

@@ -2,6 +2,7 @@
 title: Individual Diversity speech
 author: David Bruant
 layout: page
+in_menu: false
 ---
 ## Sunday Supper &#8220;Individual Diversity&#8221; Speech
 

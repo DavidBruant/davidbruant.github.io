@@ -1,4 +1,7 @@
-# Essayer de rentrer dans le monde de la justice restaurative en France
+---
+title: Essayer de rentrer dans le monde de la justice restaurative en France
+in_menu: false
+---
 
 À un moment, je me suis dis naïvement que ptèt que beaucoup de choses que je faisais au quotidien c'était une forme de travail de justice. Et donc, ptèt ça valait le coup que je tente de découvrir ce monde de la justice restaurative qui propose une alternative à la justice punitive
 

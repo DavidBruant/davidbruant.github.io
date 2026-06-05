@@ -1,5 +1,6 @@
 ---
 title: Prix
+in_menu: false
 ---
 
 La société dans laquelle je vis utilise l'argent comme système d'échange en général

@@ -1,5 +1,6 @@
 ---
 title: Faire un budget prévisionnel
+in_menu: false
 ---
 
 # Faire un budget prévisionnel
