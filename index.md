@@ -7,8 +7,10 @@ The [source code is on Github](https://github.com/DavidBruant/davidbruant.github
 
 [Ce que je fais dans la vie](./dans-la-vie/)
 
+<!--
 ## Liste des pages, (bonne chance !)  :
 
 {% for page in site.pages %}
 - [{{ page.title }}]({{page.url}})
 {% endfor %}
+-->

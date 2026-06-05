@@ -1,5 +1,5 @@
 ---
-title: CV - David Bruant
+title: CV - David Bruant - développeur web
 in_menu: false
 ---
 
@@ -31,34 +31,12 @@ Notes d'éditions :
 
 -->
 
-## Canaux de communication
+## Me contacter
 
-Adresse email : davidbruant@protonmail.com \
-Mastodon : <https://eldritch.cafe/@davidbruant> \
-Github : <https://github.com/DavidBruant>
+[Email 💌](mailto:davidbruant@protonmail.com) | [Mastodon](https://eldritch.cafe/@davidbruant) | [Github](https://github.com/DavidBruant)
 
 
 ## Expériences
-
-
-<!--
-- freelance
-    - Doc Mozilla
-    - galérance
-- coding goûter
-    - réappropriation d'un principe créé chez /ut7
-- échoué Google
-- échoué Facebook
-- refusé Twitter
-- filé vite fait un coup de main à Matti là-dessus : https://www.youtube.com/watch?v=V_v89gVxPac&list=PLhQ0uCLmau9E7LCbA4LD47z-fcJxAlr8U
-- Rutabaga, pour me voir en débardeur : https://www.youtube.com/watch?v=vIV6MU4Yqek
-- running lean
-- agile
-
-'
-
- -->
-
 
 <!--
 ### Expériences spécifiquement légales
@@ -119,6 +97,22 @@ accompagnée par un conseiller syndical
 
 -->
 
+
+### **2019 – 2026** « Start’ups d’État » à la Direction Interministérielle du NUMérique (DINUM)
+
+#### **fin 2023 – début 2026** - Pitchou
+
+Outil qui simplifie la vie aux instructrices des DREAL qui s’occupent des dossiers dérogations espèces protégées (article Article L411-2 du Code de l’Environnement)\
+Sous la direction du Ministère de la Transition Écologique
+
+[Code](https://github.com/betagouv/pitchou/)
+
+**Contribution notable**&nbsp;: Créer un système de génération de documents .odt (traitement de texte LibreOffice) à partir de modèles .odt et notamment la [bibliothèque odfjs](https://github.com/odfjs/odfjs)
+
+
+<!--
+
+
 ### 2020 - 2023 : l'Échappée Belle
 
 Je suis parti de dtc innovation et ai co-fondé avec Maïtané Lenoir et Sabine Safi l'Échappée Belle.\
@@ -145,53 +139,54 @@ La gestion comptable/administrative était collective et j'en ai pris une grosse
 Article de blog : <https://dtc-innovation.github.io/writings/2017/une-association>\
 Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 
-
-### 2019 - 2021 : Startups d'État avec la DINUM
-
-Les "startups d'état" sont des projets innovants de service public, souvent numériques
-
-dtc innovation faisait notamment partie du groupement la Zone qui était attributaire du Marché Public - Accord Cadre pour travailler sur les startups d'État
-
-J'ai travaillé notamment sur les projets : 
-- [Lotocar](https://beta.gouv.fr/startups/lotocar.html)
-- [Recosanté](https://beta.gouv.fr/startups/recosante.html)
-- [UrbanVitaliz](https://github.com/betagouv/urbanvitaliz)
-- [Comobi](https://beta.gouv.fr/startups/comobi.html)
-
-Dans chacun des projets, j'ai appliqué la méthodologie Running Lean et été développeur web dans des proportions différentes
-
-Dans tous les cas, il s'agissait notamment de bien identifier le problème, mettre en place des indicateurs de réussite pertinents par rapport au problème et implémenter et tester des prototypes améliorés itérativement
-
-Post de blog retour d'expérience sur un aspect précis du projet Lotocar : <https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/>
+-->
 
 
+#### **2021 – 2022** - UrbanVitaliz
 
-### 2019 Mise en place et animations de rétrospectives chez Webians
-
-Webians est une petite agence web où les personnes voulaient apprendre à mieux travailler ensemble et je les y ai aidé via l'animation de retrospectives
-
-~ 10 sessions d'une demie-journée chacune
-
-
-### 2019 - Accompagnement Running Lean chez NaturalPad
-
-Accompagnement Running Lean en prévision du déploiement d'une solution prouvée cliniquement qui aide à réduire certains symptômes (difficulté à se lever/marcher) de la maladie de Parkinson
+Outil qui organise des fiches thématiques pour aider les service urbanismes des collectivités territoriales à revitaliser leurs friches (notamment pour aider à la politique du « Zéro Artificialisation Nette »)\
+Sous la direction du **CEREMA**\
+[Code](https://github.com/betagouv/urbanvitaliz)
 
 
+#### **2020 – 2021** - Recosanté
 
-### Audits à Radio France
+Application grand public aidant à mieux comprendre les dangers de santé lié à la qualité de l’air
+Sous la direction des **Ministère de la transition écologique** et **Ministère de la santé**
 
-Audit JavaScript et organisationnels à Radio France
+[Code](https://github.com/betagouv/recosante/)
 
 
-### fin 2018 - Carrefour des Innovations Sociales
+#### **2019 – 2020** - Lotocar + comobi
 
-Outil pour catographier les initiatives d'innovations sociales
+Service de covoiturage dans le Lot, déployable dans d’autres territoires (service désormais abandonné)
+Sous la direction de la Préfecture du Lot, puis de **l’ANCT**
 
-J'ai notamment commencé par mettre en place un process de déploiement plus simple pour pouvoir déployer en confiance plus rapidement et donc avoir des retours utilisateurs plus rapides et plus réguliers
+[Code initial](https://github.com/DavidBruant/lotocar) et [généralisation](https://github.com/betagouv/comobi)
 
-- En production : <https://carrefourdesinnovationssociales.fr/>
-- Code source : <https://github.com/entrepreneur-interet-general/CIS-front>
+**Contribution notable**&nbsp;: [Post de blog retour d'expérience sur le fait de coder peu](https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/)
+
+
+#### fin 2018 – début 2019 : Carrefour des innovations sociales
+
+Annuaire des innovations sociales
+
+Sous la direction de **l’ANCT**
+
+[Code](https://github.com/entrepreneur-interet-general/CIS-front)
+
+**Contribution notable** : [Prévenir du spam sur le formulaire d’inscription](https://github.com/entrepreneur-interet-general/CIS-front/issues/171#issuecomment-445222040)\
+**Contribution notable** : Mise en place de déploiement continu
+
+
+#### **2018** - Audit JavaScript à Radio France
+
+Audit JavaScript et organisationnels de 3 jours à Radio France&nbsp;:
+- audit de code, des repositories
+- audit architecture applicative
+- audit environnement de production
+- audit organisationnel
+
 
 ### 2017 principalement et un peu 2018/2019 : Finances Gironde
 
@@ -209,7 +204,7 @@ Ce projet a aussi été l'occasion de créer des outils métiers pour permettre 
 - cascadia.js - <https://www.youtube.com/watch?v=7eNFQqMSxtU>
 - FluentConf 2013 - GC.unmagic - <https://www.youtube.com/watch?v=ADiF5UUKDCk>
 - scotlandjs - <https://www.youtube.com/watch?v=6h0nGXmy_ow>
-- tedx - <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
+- TEDxBordeaux - <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
 - dotjs - <https://www.youtube.com/watch?v=-VxKnex6fhw>
 - bdx.io - <https://www.youtube.com/watch?v=bOI4IoAmncU>
 
