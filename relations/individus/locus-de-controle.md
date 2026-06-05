@@ -1,5 +1,6 @@
 ---
 title: Locus de contrôle
+in_menu: false
 ---
 
 Le [locus de contrôle](https://fr.wikipedia.org/wiki/Lieu_de_ma%C3%AEtrise) ou *lieu de maîtrise* est un concept de psychologie. Il décrit le degré selon lequel un individu croit pouvoir influencer et maîtriser les événements de sa vie. 

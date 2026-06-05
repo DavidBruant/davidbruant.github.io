@@ -1,4 +1,7 @@
-# Écrire nos règles - leurs règles
+---
+title: Écrire nos règles - leurs règles
+in_menu: false
+---
 
 ## Les règles définies par les autres et qui s'appliquent à soi
 

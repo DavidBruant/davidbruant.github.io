@@ -1,4 +1,7 @@
-# Société civile de vie commune
+---
+title: Société civile de vie commune
+in_menu: false
+---
 
 ## Problème
 

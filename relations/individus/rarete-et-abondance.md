@@ -1,5 +1,6 @@
 ---
 title: États d'esprit de rareté et d'abondance
+in_menu: false
 ---
 
 Il y a 2 états d'esprit qui s'opposent, la rareté et l'abondance

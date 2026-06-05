@@ -1,4 +1,7 @@
-# Créer une mutuelle
+---
+title: Créer une mutuelle
+in_menu: false
+---
 
 Au détour d'une lecture du [Code de la mutualité](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074067/2021-04-21/), je découvre [l'Article L111-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038589881)
 

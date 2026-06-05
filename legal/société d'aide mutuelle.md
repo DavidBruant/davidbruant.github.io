@@ -1,4 +1,7 @@
-# Société d'aide mutuelle
+---
+title: Société d'aide mutuelle
+in_menu: false
+---
 
 ## Problème
 

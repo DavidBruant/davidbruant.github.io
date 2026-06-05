@@ -1,4 +1,7 @@
-# Statuts SCI YED annotés
+---
+title: Statuts SCI YED annotés
+in_menu: false
+---
 
 Cette page correspond au texte des [statuts](./statuts-SCI-YED-septembre-2022.md) auxquels sont ajoutés des annotations diverses et variées pour expliquer à la fois les motivations et intentions derrière ce texte, partager des références légales et expliquer des choix
 

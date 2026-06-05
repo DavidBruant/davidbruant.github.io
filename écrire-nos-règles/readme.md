@@ -1,4 +1,7 @@
-# Écrire nos règles
+---
+title: Écrire nos règles
+in_menu: false
+---
 
 "Écrire nos règles" est une série d'articles qui explore l'activité d'écrire des règles au sein d'un groupe d'humain.e.s
 

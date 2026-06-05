@@ -1,4 +1,7 @@
-# Écrire nos règles - utilité des règles
+---
+title: Écrire nos règles - utilité des règles
+in_menu: false
+---
 
 À mon avis, les règles émergent pour répondre à l'envie de **conformer un groupe d'humain.e.s aux attentes de certaines personnes** qui établissent les règles. Il est aussi plausible que les règles **résolvent un problème de charge cognitive** : si les mêmes règles s'appliquent à tout le monde, ça réduit le besoin de retenir des cas particuliers
 Les règles permettent aussi aux personnes qui rentrent dans un groupe d'humain.e.s de **savoir ce qui est attendu d'elleux et des autres** uniquement en prenant connaissance des règles, sans avoir besoin de discussion

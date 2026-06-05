@@ -1,4 +1,7 @@
-# Une alternative aux règles
+---
+title: Une alternative aux règles
+in_menu: false
+---
 
 Au sein d'un groupe humain, une approche alternative à écrire des règles qui s'appliquent à tout le monde pourrait être que chaque personne documente ses attentes envers les autres
 

@@ -1,4 +1,7 @@
-# Les règles pour changer les règles
+---
+title: Les règles pour changer les règles
+in_menu: false
+---
 
 Les statuts d'une entreprise disent que tou.te.s les salarié.e.s doivent être payé.e.s le même salaire quelque que soit le métier, quelque soit le niveau d'expérience ou d'ancienneté
 Et ça a lieu pendant un temps

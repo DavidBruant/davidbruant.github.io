@@ -1,4 +1,7 @@
-# Bestiaire des entreprises 
+---
+title: Bestiaire des entreprises 
+in_menu: false
+---
 
 ou **des personnes physiques aux personnes morales, voyage dans une abstration du Droit français**\
 ou **c'est chiant ces histoires d'entreprise, j'y comprends rien !**\

@@ -1,4 +1,7 @@
-# Statuts
+---
+title: Statuts
+in_menu: false
+---
 
 Les soussigné.e.s,
 
