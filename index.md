@@ -1,5 +1,5 @@
 ---
-title: le site de David Bruant
+title: "Le site de David Bruant"
 ---
 
 I can be found on [Mastodon](https://eldritch.cafe/@davidbruant) and [Github](https://github.com/DavidBruant).
