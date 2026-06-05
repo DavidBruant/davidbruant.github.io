@@ -1,4 +1,7 @@
-# Intention
+---
+title: Intention
+in_menu: false
+---
 
 > Mouvement de l’âme par lequel on tend à quelque fin.
 > Volonté.
