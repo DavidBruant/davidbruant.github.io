@@ -1,4 +1,7 @@
-# 2100
+---
+title: "2100"
+in_menu: false
+---
 
 je commence à écrire fin 2022\
 je suis né en 1987 ; en 2100, j'aurai... 113 ans. Mais en vrai, je serai sûrement décédé avant ça

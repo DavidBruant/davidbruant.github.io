@@ -1,5 +1,6 @@
 ---
 title: CV - David Bruant
+in_menu: false
 ---
 
 <style>

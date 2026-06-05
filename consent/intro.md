@@ -1,4 +1,7 @@
-# Consent as a foundation to human interactions
+---
+title: "Consent as a foundation to human interactions"
+in_menu: false
+---
 
 ## Disclaimer
 
