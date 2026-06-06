@@ -16,6 +16,14 @@ in_menu: false
     }
 }
 
+h1{
+    font-size: 2.6rem;
+}
+
+h2{
+    margin-top: 2.5rem;
+}
+
 </style>
 
 <!--
@@ -109,6 +117,14 @@ Sous la direction du Ministère de la Transition Écologique
 
 **Contribution notable**&nbsp;: Créer un système de génération de documents .odt (traitement de texte LibreOffice) à partir de modèles .odt et notamment la [bibliothèque odfjs](https://github.com/odfjs/odfjs)
 
+**Technologies principales** : Svelte, fastify, Postgresql, GraphQL (API demarches numériques), Docker
+
+
+#### **2023** - Framalibre
+
+Refonte de [Framalibre](https://framalibre.org/), annuaire de logiciel libre de Framasoft, en se basant sur Jekyll avec les contenu
+
+**Technologies principales** : Jekyll/liquid, JavaScript, gitlab pages
 
 <!--
 
@@ -144,9 +160,13 @@ Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 
 #### **2021 – 2022** - UrbanVitaliz
 
-Outil qui organise des fiches thématiques pour aider les service urbanismes des collectivités territoriales à revitaliser leurs friches (notamment pour aider à la politique du « Zéro Artificialisation Nette »)\
-Sous la direction du **CEREMA**\
+Outil qui organise des fiches thématiques pour aider les service urbanismes des collectivités territoriales à revitaliser leurs friches (notamment pour aider à la politique du « Zéro Artificialisation Nette »)
+
+Sous la direction du **CEREMA**
+
 [Code](https://github.com/betagouv/urbanvitaliz)
+
+**Technologies principales** : Jekyll, gihtub pages, JavaScript
 
 
 #### **2020 – 2021** - Recosanté
@@ -157,6 +177,17 @@ Sous la direction des **Ministère de la transition écologique** et **Ministèr
 [Code](https://github.com/betagouv/recosante/)
 
 
+#### **2020 - présent** - Scribouilli
+
+Outil pour créer facilement des petits site webs à partir de fichiers markdown hébergés sur github/gitlab pages
+
+[Code](https://github.com/Scribouilli/scribouilli/) - [Démo](https://atelier.scribouilli.org/) - [Présentation](https://scribouilli.org/)
+
+**Technologies principales** : Github/Gitlab pages pour l'hébergement des sites, Svelte, isomorphic-git (git dans le navigateur) pour la rédaction de contenu
+
+
+
+
 #### **2019 – 2020** - Lotocar + comobi
 
 Service de covoiturage dans le Lot, déployable dans d’autres territoires (service désormais abandonné)
@@ -165,6 +196,8 @@ Sous la direction de la Préfecture du Lot, puis de **l’ANCT**
 [Code initial](https://github.com/DavidBruant/lotocar) et [généralisation](https://github.com/betagouv/comobi)
 
 **Contribution notable**&nbsp;: [Post de blog retour d'expérience sur le fait de coder peu](https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/)
+
+**Technologies principales** : Base de données Google Spreadsheet, Carte leaflet, JavaScript
 
 
 #### fin 2018 – début 2019 : Carrefour des innovations sociales
@@ -177,6 +210,10 @@ Sous la direction de **l’ANCT**
 
 **Contribution notable** : [Prévenir du spam sur le formulaire d’inscription](https://github.com/entrepreneur-interet-general/CIS-front/issues/171#issuecomment-445222040)\
 **Contribution notable** : Mise en place de déploiement continu
+
+
+**Technologies principales** : VueJS, Flask/Python, MongoDB
+
 
 
 #### **2018** - Audit JavaScript à Radio France
@@ -198,15 +235,25 @@ et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-pub
 
 **Contribution notable** : Inventer un [langage métier facile à utiliser pour sélectionner des lignes de compte](https://davidbruant.github.io/formule-doc-budg)
 
+**Technologies principales** : ReactJS, Node.js (outils de préparation de données)
 
-### **2012 - 2016** - Conférencier
 
-- Cascadia.js (anglais) - <https://www.youtube.com/watch?v=7eNFQqMSxtU>
-- FluentConf 2013 - GC.unmagic (anglais) - <https://www.youtube.com/watch?v=ADiF5UUKDCk>
-- Scotlandjs (anglais) - <https://www.youtube.com/watch?v=6h0nGXmy_ow>
-- TEDxBordeaux (français)- <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
-- Dotjs (français)- <https://www.youtube.com/watch?v=-VxKnex6fhw>
-- bdx.io (français)- <https://www.youtube.com/watch?v=bOI4IoAmncU>
+### **2016 – 2023** Statuts de structures collectives
+
+Rédaction initiale et collective de statuts d’association et SCI
+
+[Association dtc innovation](https://dtc-innovation.github.io/dna/statuts.html)\
+
+[Association l’Échappée Belle](https://lechappeebelle.team/statuts)
+
+[SCI Yed](https://davidbruant.github.io/droit/statuts-SCI-YED-septembre%202022-annotes.html)
+
+
+### **2015 – 2018** - Coding goûter et coding apéro
+
+Ateliers pour enfant (goûter) et adultes (apéro) qui veulent rentrer dans le code à leur rythme dans une ambiance inclusive et agréable
+
+Organisés au sein de l’association Aquinum à Bordeaux
 
 
 ### **2014 – 2016** - 6element
@@ -215,7 +262,8 @@ Projet financé par la Région Nouvelle-Aquitaine et le Conseil Départemental d
 
 [Code](https://github.com/6element)
 
-Nous avons notamment créé des capteurs Raspberry Pi installés en déchetterie qui communiquent avec un serveur par SMS avec un protocole binaire très dense
+**Technologies principales** : ReactJS, serveur Node.js express, base de données MongoDB, RaspeberryPi, Transfert de données en binaire par SMS
+
 
 <!--
 ### MyWebIntelligence
@@ -243,14 +291,44 @@ Contrat court avec Mozilla de documentation d’APIs de FirefoxOS
 Sur cette période, j’ai donné une trentaine de formations JavaScript niveau débutant ou avancé en inter et intra-entreprises à des groupes de 4-8 personnes
 
 
+
+### **2012 - 2016** - Conférencier
+
+- [Cascadia.js (anglais)](https://www.youtube.com/watch?v=7eNFQqMSxtU)
+- [FluentConf 2013 - GC.unmagic (anglais)](https://www.youtube.com/watch?v=ADiF5UUKDCk)
+- [Scotlandjs (anglais)](https://www.youtube.com/watch?v=6h0nGXmy_ow)
+- [TEDxBordeaux (français)](https://www.youtube.com/watch?v=Z7O3GteMQ8Y)
+- [Dotjs (français)](https://www.youtube.com/watch?v=-VxKnex6fhw)
+- [bdx.io (français)](https://www.youtube.com/watch?v=bOI4IoAmncU)
+
+
+### **2012 – 2018** - Contributions à MDN et aux standards du web
+
+Notamment aux standards HTML (WHATWG) et ECMAScript (ECMA TC39)
+
+Contributions à la documentation JavaScript/APIs web de MDN
+
+
 ### **2012** - Dijiwan
 
 Outil de génération de cartographies web thématiques
+
+**technologies principales** : Node.js (0.8), d3.js
 
 
 ### **2011** - début de thèse au LaBRI
 
 Thèse non-terminée d’ingénierie logicielle sur la mise à jour d’un logiciel quand une de ses dépendance change
+
+
+
+## Dernier diplôme
+
+### **2011** - diplôme d'ingénieur ENSEIRB-MATMECA spécialité informatique
+
+Inclut une année aux États-Unis à University of California, San Diego
+
+
 
 
 ### fin 2010 - ~2016 : contributions au web
@@ -266,16 +344,6 @@ J'ai participé aux mailing-lists es-discuss et celle du WHATWG pour discuter de
 J'ai notamment beaucoup aidé au design des `Proxy` et spécifiquement `Proxy.revocable`\
 J'ai aidé notamment à rendre parallélisable le rendu et l'éxecution des `iframe` au sein d'une page web (ce qui améliore la sécurité et la performance sur tous les navigateurs)\
 
-
-### Janvier - Octobre 2012 : Développeur web chez Dijiwan
-
-J'ai travaillé sur du front-end, du back-end (Node.js 0.8, base de donnée MongoDB) et de l'outillage
-
-Le projet consistait notamment à écrire un crawler qui construisait un graphe thématique de page web pour en ressortir des communautés
-
-J'étais en CDI et l'entreprise a arrêté de payer nos salaires sans prévenir en juillet 2012\
-Ça a fini en référé aux Prud'hommes\
-À cette occasion, j'ai beaucoup appris sur l'entrepreunariat et le Droit du Travail 
 
 
 
