@@ -33,7 +33,7 @@ Notes d'éditions :
 
 ## Me contacter
 
-[Email 💌](mailto:davidbruant@protonmail.com) | [Mastodon](https://eldritch.cafe/@davidbruant) | [Github](https://github.com/DavidBruant)
+[Email 💌](mailto:davidbruant@protonmail.com) - [Mastodon](https://eldritch.cafe/@davidbruant) - [Github](https://github.com/DavidBruant)
 
 
 ## Expériences
@@ -188,43 +188,36 @@ Audit JavaScript et organisationnels de 3 jours à Radio France&nbsp;:
 - audit organisationnel
 
 
-### 2017 principalement et un peu 2018/2019 : Finances Gironde
+### **2017 – 2018** - Transparence des finances du Département de la Gironde
 
-Nous avons créé pour le Conseil Départemental de la Gironde leur portail de transparence des finances.\
-- En production : <https://www.gironde.fr/un-budget-au-service-des-solidarites-humaine-et-territoriale>
-- Code source : <https://github.com/datalocale/dataviz-finances-gironde/>
+Data visualisation et navigation dans les données comptables du Conseil Départemental de la Gironde. [Code](https://github.com/datalocale/dataviz-finances-gironde)
 
-Ce projet a aussi été l'occasion de créer des outils métiers pour permettre l'autonomie du CD33 dans la mise à jour du portail chaque année : 
-- En production : <https://davidbruant.github.io/agregation-document-budgetaire/>
-- Code source : <https://github.com/DavidBruant/agregation-document-budgetaire/>
+Projet répliqué par la commune de Montreuil en 2021. [Code](https://github.com/dtc-innovation/dataviz-finances-montreuil) | [Démo](https://www.montreuil.fr/services-et-demarches/finances-et-marches-publics/explorer-les-comptes-de-la-ville#!/explorer/DEPENSE/FONCTIONNEMENT) 
 
+et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-public/datalab/dataviz-finances/dataviz-finances-bp) | [Démo](Démo) 
 
-## 2012 - 2016 - Conférencier
-
-- cascadia.js - <https://www.youtube.com/watch?v=7eNFQqMSxtU>
-- FluentConf 2013 - GC.unmagic - <https://www.youtube.com/watch?v=ADiF5UUKDCk>
-- scotlandjs - <https://www.youtube.com/watch?v=6h0nGXmy_ow>
-- TEDxBordeaux - <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
-- dotjs - <https://www.youtube.com/watch?v=-VxKnex6fhw>
-- bdx.io - <https://www.youtube.com/watch?v=bOI4IoAmncU>
+**Contribution notable** : Inventer un [langage métier facile à utiliser pour sélectionner des lignes de compte](https://davidbruant.github.io/formule-doc-budg)
 
 
+### **2012 - 2016** - Conférencier
 
-## 2014 - 2016 : Ants et les deux autres projets
+- Cascadia.js (anglais) - <https://www.youtube.com/watch?v=7eNFQqMSxtU>
+- FluentConf 2013 - GC.unmagic (anglais) - <https://www.youtube.com/watch?v=ADiF5UUKDCk>
+- Scotlandjs (anglais) - <https://www.youtube.com/watch?v=6h0nGXmy_ow>
+- TEDxBordeaux (français)- <https://www.youtube.com/watch?v=Z7O3GteMQ8Y>
+- Dotjs (français)- <https://www.youtube.com/watch?v=-VxKnex6fhw>
+- bdx.io (français)- <https://www.youtube.com/watch?v=bOI4IoAmncU>
 
-En 2014, j'ai participé à 3 réponses au même appel à projet **prototypes numériques** de la Région Nouvelle-Aquitaine. Je participais dans le contexte de 3 structures administratives différentes\
-Je me disais que si je ne remportais pas un seul de ces projets, je quittais le monde du dév parce que je commençais à fatiguer de ce milieu et de l'image que j'en avais\
-Au final, les 3 projets avec lesquels j'ai candidaté ont été retenu et ont chaucn reçu un financement
 
-### Ants et 6element
+### **2014 – 2016** - 6element
 
-En 2014, j'ai co-fondé [Ants](https://annuaire-entreprises.data.gouv.fr/entreprise/802500314), une SAS, en tant qu'associé minoritaire\
-Notre projet principale était 6element, un projet pour réduire le déchets qui arrivent en déchèterie en incitant les personnes qui préparent leur trajet en déchèterie à se débarasser autrement de leurs déchets (vente d'occasion, réparation, don, etc.)
+Projet financé par la Région Nouvelle-Aquitaine et le Conseil Départemental de la Gironde pour limiter l’encombrement en déchetterie
 
-L'ensemble du code du projet est open source : <https://github.com/6element/>
+[Code](https://github.com/6element)
 
-Via Ants, j'ai aussi travaillé sur divers projets pour des grosses entreprises. Nous avons fait notamment du Machine Learning et travaillé sur du code qui manipule du hardware avec divers capteurs. Nous déployions en production avec Docker et il y avait des composants React et un peu TypeScript
+Nous avons notamment créé des capteurs Raspberry Pi installés en déchetterie qui communiquent avec un serveur par SMS avec un protocole binaire très dense
 
+<!--
 ### MyWebIntelligence
 
 Un projet porté par l'Université de Bordeaux III\
@@ -238,17 +231,26 @@ Le code est open source : <https://github.com/MyWebIntelligence/MyWebIntelligenc
 Une petite extension navigateur qui permet de mieux comprendre un profil Twitter en un clin d'œil
 <https://github.com/DavidBruant/Twitter-Assistant>
 
+-->
+
+### **2013** - Documentation de FirefoxOS sur MDN
+
+Contrat court avec Mozilla de documentation d’APIs de FirefoxOS
 
 
-## 2012 - 2018 - formateur
+### **2013 – 2017** - Formations professionnelles
 
-Sur cette période, j'ai donné une trentaine de formations de 3 jours via [Human Coders](https://www.humancoders.com/), principalement JavaScript débutant et avancé. Chaque formation avait 3 à 8 participant.e.s
+Sur cette période, j’ai donné une trentaine de formations JavaScript niveau débutant ou avancé en inter et intra-entreprises à des groupes de 4-8 personnes
 
 
-### 2013 - 2014 : freelance
+### **2012** - Dijiwan
 
-Une mission "majeure" avec Mozilla pour documenter les APIs de FirefoxOS\
-Diverses petites missions de dev
+Outil de génération de cartographies web thématiques
+
+
+### **2011** - début de thèse au LaBRI
+
+Thèse non-terminée d’ingénierie logicielle sur la mise à jour d’un logiciel quand une de ses dépendance change
 
 
 ### fin 2010 - ~2016 : contributions au web
