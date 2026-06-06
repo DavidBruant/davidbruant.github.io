@@ -3,6 +3,19 @@ title: CV - David Bruant - développeur web
 in_menu: false
 ---
 
+<!--
+
+- [ ] Rajouter la boîte à outil
+- [ ] Rajouter les autres trucs
+- [ ] retours Romain
+
+
+
+-->
+
+
+
+
 <style>
 @media print {
     header,
@@ -124,7 +137,9 @@ Sous la direction du Ministère de la Transition Écologique
 
 Refonte de [Framalibre](https://framalibre.org/), annuaire de logiciel libre de Framasoft, en se basant sur Jekyll avec les contenu
 
-**Technologies principales** : Jekyll/liquid, JavaScript, gitlab pages
+[Code](https://framagit.org/framasoft/framalibre)
+
+**Technologies principales** : Jekyll/liquid, JavaScript, gitlab pages, API Gitlab
 
 <!--
 
@@ -169,12 +184,14 @@ Sous la direction du **CEREMA**
 **Technologies principales** : Jekyll, gihtub pages, JavaScript
 
 
+
 #### **2020 – 2021** - Recosanté
 
 Application grand public aidant à mieux comprendre les dangers de santé lié à la qualité de l’air
 Sous la direction des **Ministère de la transition écologique** et **Ministère de la santé**
 
 [Code](https://github.com/betagouv/recosante/)
+
 
 
 #### **2020 - présent** - Scribouilli
@@ -198,6 +215,7 @@ Sous la direction de la Préfecture du Lot, puis de **l’ANCT**
 **Contribution notable**&nbsp;: [Post de blog retour d'expérience sur le fait de coder peu](https://blog.beta.gouv.fr/articles/2020/04/27/coder-le-moins-possible/)
 
 **Technologies principales** : Base de données Google Spreadsheet, Carte leaflet, JavaScript
+
 
 
 #### fin 2018 – début 2019 : Carrefour des innovations sociales
@@ -242,7 +260,7 @@ et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-pub
 
 Rédaction initiale et collective de statuts d’association et SCI
 
-[Association dtc innovation](https://dtc-innovation.github.io/dna/statuts.html)\
+[Association dtc innovation](https://dtc-innovation.github.io/dna/statuts.html)
 
 [Association l’Échappée Belle](https://lechappeebelle.team/statuts)
 
