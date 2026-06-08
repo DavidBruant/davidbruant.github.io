@@ -9,11 +9,7 @@ in_menu: false
 - [ ] Rajouter les autres trucs
 - [ ] retours Romain
 
-
-
 -->
-
-
 
 
 <style>
@@ -342,28 +338,11 @@ Thèse non-terminée d’ingénierie logicielle sur la mise à jour d’un logic
 
 ## Dernier diplôme
 
-### **2011** - diplôme d'ingénieur ENSEIRB-MATMECA spécialité informatique
+### **2010** - diplôme d'ingénieur ENSEIRB-MATMECA spécialité informatique
 
 Inclut une année aux États-Unis à University of California, San Diego
 
-
-
-
-### fin 2010 - ~2016 : contributions au web
-
-#### Documentation
-
-J'ai partagé quelques contributions majeures à la documentation du MDN (Mozilla Developer Network). Ces contributions sont accessibles sous licence Creative Commons et j'ai eu l'agréable surprise de découvrir parfois que ce que j'ai écrit était parfois repris dans des réponses sur stackoverflow :-)
-
-
-#### Standards
-
-J'ai participé aux mailing-lists es-discuss et celle du WHATWG pour discuter de l'évolution de certaines fonctionnalités du web\
-J'ai notamment beaucoup aidé au design des `Proxy` et spécifiquement `Proxy.revocable`\
-J'ai aidé notamment à rendre parallélisable le rendu et l'éxecution des `iframe` au sein d'une page web (ce qui améliore la sécurité et la performance sur tous les navigateurs)\
-
-
-
+<!--
 
 ### Novembre 2010 : volontaire au Mozilla Drumbeat Festival à Barcelone
 
@@ -376,14 +355,88 @@ Placer des chaises et des tables, notamment
 
 Ma proposition : <https://www.youtube.com/watch?v=5VRdQU12rFk>
 
+-->
 
-### 2009-2010 - Organisation de la partie divertissement des 3 Sunday Supper (Internatial House UCSD)
+## Ma boîte à outils
 
-Diners de 200 personnes
+### Outils de travail collaboratif
 
-Logisitique de la partie divertissements (composition du programme, coordination des différent.e.s intervenant.e.s)
+#### Harmonie collective
 
-### Diplômes
+- Écouter
+- Justice transformatrice
+- Nommer les conflits
+- Communication non-violente
+- Exprimer ses émotions
 
-- Diplôme d'Ingénieur spécialité informatique 2009
-- Baccalauréat S - 2004
+
+
+
+
+#### Résoudre le bon problème
+
+Méthode *running lean*: 
+- identifier les personnes concernées
+- entretiens problèmes
+
+
+#### Apporter la bonne solution
+
+Méthode *running lean*: 
+- entretiens solutions (sur l'ensemble du produit ou sur un objectif spécifique)
+
+Métriques d'usage et d'impact (avec parcimonie)
+
+
+#### Organisation collective de l'équipe de production
+
+Outils issus de Scrum : Kanban, rétrospectives, daily standup, organisation en "sprint", démo
+
+Déploiement régulier, voire continu
+
+
+#### Organisation autour du code
+
+Git/Github/Gitlab pour, le stockage et la discussion autour du code
+
+TypeScript, Documentation, tests automatisés, revue de code, environnement reproductible (notamment avec Docker)
+
+Outils d'uniformisation du code: ESLint
+
+Pair/mob programming
+
+
+
+
+### Technologies de développement
+
+Je maitrise très bien les technologies ci-dessous\
+et m’adapte à des nouveaux contextes\
+et apprend avec plaisir et facilement
+
+**Web applicatif côté client**
+
+- HTML/CSS standard
+- JavaScript standard
+- Svelte
+- D3.js
+
+
+**Web côté serveur**
+
+- Node.js
+- Fastify
+
+
+**Base de données**
+
+- SQL (Postgresql)
+- ElasticSearch
+
+
+J’apprends actuellement le Rust : https://github.com/DavidBruant/procactivity
+
+
+
+
+
