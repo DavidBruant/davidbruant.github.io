@@ -33,6 +33,10 @@ h2{
     margin-top: 2.5rem;
 }
 
+ul{
+    list-style: '- ';
+}
+
 </style>
 
 <!--
