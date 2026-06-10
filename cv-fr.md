@@ -315,7 +315,7 @@ et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-pub
 <details>
 <summary>
 
-### **2016 – 2023** Statuts de structures collectives
+### **2016 – 2023** - Statuts de structures collectives
 
 </summary>
 
@@ -377,18 +377,36 @@ Une petite extension navigateur qui permet de mieux comprendre un profil Twitter
 
 -->
 
+<details>
+<summary>
+
 ### **2013** - Documentation de FirefoxOS sur MDN
+
+</summary>
 
 Contrat court avec Mozilla de documentation d’APIs de FirefoxOS
 
+</details>
+
+
+<details>
+<summary>
 
 ### **2013 – 2017** - Formations professionnelles
 
+</summary>
+
 Sur cette période, j’ai donné une trentaine de formations JavaScript niveau débutant ou avancé en inter et intra-entreprises à des groupes de 4-8 personnes
 
+</details>
 
+
+<details>
+<summary>
 
 ### **2012 - 2016** - Conférencier
+
+</summary>
 
 - [Cascadia.js (anglais)](https://www.youtube.com/watch?v=7eNFQqMSxtU)
 - [FluentConf 2013 - GC.unmagic (anglais)](https://www.youtube.com/watch?v=ADiF5UUKDCk)
@@ -397,6 +415,8 @@ Sur cette période, j’ai donné une trentaine de formations JavaScript niveau 
 - [Dotjs (français)](https://www.youtube.com/watch?v=-VxKnex6fhw)
 - [bdx.io (français)](https://www.youtube.com/watch?v=bOI4IoAmncU)
 
+</details>
+
 
 ### **2012 – 2018** - Contributions à MDN et aux standards du web
 
@@ -404,18 +424,30 @@ Notamment aux standards HTML (WHATWG) et ECMAScript (ECMA TC39)
 
 Contributions à la documentation JavaScript/APIs web de MDN
 
+<details>
+<summary>
 
 ### **2012** - Dijiwan
 
+</summary>
+
 Outil de génération de cartographies web thématiques
 
-**technologies principales** : Node.js (0.8), d3.js
+**technologies principales** : Node.js (0.8), d3.js, MongoDB, crawling web
 
+</details>
+
+
+<details>
+<summary>
 
 ### **2011** - début de thèse au LaBRI
 
+</summary>
+
 Thèse non-terminée d’ingénierie logicielle sur la mise à jour d’un logiciel quand une de ses dépendance change
 
+</details>
 
 
 ## Dernier diplôme
