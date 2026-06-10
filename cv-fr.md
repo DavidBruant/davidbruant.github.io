@@ -157,9 +157,9 @@ accompagnée par un conseiller syndical
 -->
 
 
-### **2019 – 2026** « Start’ups d’État » à la Direction Interministérielle du NUMérique (DINUM)
+### **2019 - 2026** « Start’ups d’État » à la Direction Interministérielle du NUMérique (DINUM)
 
-#### **fin 2023 – début 2026** - Pitchou
+#### **fin 2023 - début 2026** - Pitchou
 
 Outil qui simplifie la vie aux instructrices des DREAL qui s’occupent des dossiers dérogations espèces protégées (article Article L411-2 du Code de l’Environnement)\
 Sous la direction du Ministère de la Transition Écologique
@@ -213,7 +213,7 @@ Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 <details>
 <summary>
 
-#### **2021 – 2022** - UrbanVitaliz
+#### **2021 - 2022** - UrbanVitaliz
 
 </summary>
 
@@ -232,7 +232,7 @@ Sous la direction du **CEREMA**
 <details>
 <summary>
 
-#### **2020 – 2021** - Recosanté
+#### **2020 - 2021** - Recosanté
 
 </summary>
 
@@ -255,7 +255,7 @@ Outil pour créer facilement des petits site webs à partir de fichiers markdown
 
 
 
-#### **2019 – 2020** - Lotocar + comobi
+#### **2019 - 2020** - Lotocar + comobi
 
 Service de covoiturage dans le Lot, déployable dans d’autres territoires (service désormais abandonné)
 Sous la direction de la Préfecture du Lot, puis de **l’ANCT**
@@ -268,7 +268,7 @@ Sous la direction de la Préfecture du Lot, puis de **l’ANCT**
 
 
 
-#### fin 2018 – début 2019 : Carrefour des innovations sociales
+#### fin 2018 - début 2019 : Carrefour des innovations sociales
 
 Annuaire des innovations sociales
 
@@ -286,7 +286,7 @@ Sous la direction de **l’ANCT**
 <details>
 <summary>
 
-#### **2018** - Audit JavaScript à Radio France
+### **2018** - Audit JavaScript à Radio France
 
 </summary>
 
@@ -300,7 +300,7 @@ Audit JavaScript et organisationnels de 3 jours à Radio France&nbsp;:
 
 
 
-### **2017 – 2018** - Transparence des finances du Département de la Gironde
+### **2017 - 2018** - Transparence des finances du Département de la Gironde
 
 Data visualisation et navigation dans les données comptables du Conseil Départemental de la Gironde. [Code](https://github.com/datalocale/dataviz-finances-gironde)
 
@@ -315,7 +315,7 @@ et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-pub
 <details>
 <summary>
 
-### **2016 – 2023** - Statuts de structures collectives
+### **2016 - 2023** - Statuts de structures collectives
 
 </summary>
 
@@ -333,7 +333,7 @@ Rédaction initiale et collective de statuts d’association et SCI
 <details>
 <summary>
 
-### **2015 – 2018** - Coding goûter et coding apéro
+### **2015 - 2018** - Coding goûter et coding apéro
 
 </summary>
 
@@ -348,7 +348,7 @@ Organisés au sein de l’association Aquinum à Bordeaux
 <details>
 <summary>
 
-### **2014 – 2016** - 6element
+### **2014 - 2016** - 6element
 
 </summary>
 
@@ -392,7 +392,7 @@ Contrat court avec Mozilla de documentation d’APIs de FirefoxOS
 <details>
 <summary>
 
-### **2013 – 2017** - Formations professionnelles
+### **2013 - 2017** - Formations professionnelles
 
 </summary>
 
@@ -418,7 +418,7 @@ Sur cette période, j’ai donné une trentaine de formations JavaScript niveau 
 </details>
 
 
-### **2012 – 2018** - Contributions à MDN et aux standards du web
+### **2012 - 2018** - Contributions à MDN et aux standards du web
 
 Notamment aux standards HTML (WHATWG) et ECMAScript (ECMA TC39)
 
