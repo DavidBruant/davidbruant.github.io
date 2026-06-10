@@ -12,9 +12,7 @@ plugins:
 
 markdown: CommonMark
 commonmark:
-  options: ["FOOTNOTES"]
-    render:
-      unsafe: true
+  options: ["FOOTNOTES", "UNSAFE"]
   extensions: ["strikethrough", "autolink", "table"]
 
 theme: mimoza
