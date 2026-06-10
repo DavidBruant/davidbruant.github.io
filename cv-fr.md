@@ -171,14 +171,6 @@ Sous la direction du Ministère de la Transition Écologique
 **Technologies principales** : Svelte, fastify, Postgresql, GraphQL (API demarches numériques), Docker
 
 
-#### **2023** - Framalibre
-
-Refonte de [Framalibre](https://framalibre.org/), annuaire de logiciel libre de Framasoft, en se basant sur Jekyll avec les contenu
-
-[Code](https://framagit.org/framasoft/framalibre)
-
-**Technologies principales** : Jekyll/liquid, JavaScript, gitlab pages, API Gitlab
-
 <!--
 
 
@@ -281,6 +273,14 @@ Sous la direction de **l’ANCT**
 
 
 **Technologies principales** : VueJS, Flask/Python, MongoDB
+
+### **2023** - Framalibre
+
+Refonte de [Framalibre](https://framalibre.org/), annuaire de logiciel libre de Framasoft, en se basant sur Jekyll avec les contenu
+
+[Code](https://framagit.org/framasoft/framalibre)
+
+**Technologies principales** : Jekyll/liquid, JavaScript, gitlab pages, API Gitlab
 
 
 <details>
