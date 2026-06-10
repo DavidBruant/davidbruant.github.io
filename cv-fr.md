@@ -5,8 +5,8 @@ in_menu: false
 
 <!--
 
-- [ ] Rajouter la boîte à outil
-- [ ] Rajouter les autres trucs
+- [ ] liste podcast avec les images
+- [ ] c'est un peu long
 - [ ] retours Romain
 
 -->
@@ -181,7 +181,7 @@ Sous la direction du **CEREMA**
 
 [Code](https://github.com/betagouv/urbanvitaliz)
 
-**Technologies principales** : Jekyll, gihtub pages, JavaScript
+**Technologies principales** : Jekyll, github pages, JavaScript
 
 
 
@@ -363,7 +363,10 @@ Ma proposition : <https://www.youtube.com/watch?v=5VRdQU12rFk>
 
 ## Ma boîte à outils
 
+<details>
+<summary>
 ### Outils de travail collaboratif
+</summary>
 
 #### Harmonie collective
 
@@ -372,9 +375,6 @@ Ma proposition : <https://www.youtube.com/watch?v=5VRdQU12rFk>
 - Nommer les conflits
 - Communication non-violente
 - Exprimer ses émotions
-
-
-
 
 
 #### Résoudre le bon problème
@@ -409,7 +409,7 @@ Outils d'uniformisation du code: ESLint
 
 Pair/mob programming
 
-
+</details>
 
 
 ### Technologies de développement
@@ -444,10 +444,11 @@ J’apprends actuellement le Rust : https://github.com/DavidBruant/procactivity
 ### Langues
 
 **Français** - Langue natale
+
 **Anglais** - Niveau excellent écoute, parlé, lecture, écriture
 
 
-## Podcast préférés
+## Podcasts préférés
 
 
 | Un podcast à soi                    | https://www.arteradio.com/emission/un_podcast_soi   |
