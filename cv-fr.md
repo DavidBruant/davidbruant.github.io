@@ -365,7 +365,9 @@ Ma proposition : <https://www.youtube.com/watch?v=5VRdQU12rFk>
 
 <details>
 <summary>
+
 ### Outils de travail collaboratif
+
 </summary>
 
 #### Harmonie collective
