@@ -45,7 +45,7 @@ details {
 details > summary {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
 
     cursor: pointer;
 }
