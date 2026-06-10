@@ -61,8 +61,8 @@ details > summary::after {
     content: "Déplier →";
     white-space: pre;
     font-size: 0.8rem;
-    color: var(--border-action-high-blue-france);
-    border: 1px solid var(--border-action-high-blue-france);
+    color: var(--couleur-primaire);
+    border: 1px solid var(--couleur-primaire);
 }
 
 
