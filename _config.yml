@@ -10,10 +10,10 @@ collections:
 plugins:
   - jekyll-feed
 
-markdown: CommonMarkGhPages
+markdown: CommonMark
 commonmark:
-  options: ["UNSAFE", "SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  options: ["FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 
 theme: mimoza
 
