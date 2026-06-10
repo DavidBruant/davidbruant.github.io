@@ -26,23 +26,24 @@ ul{
     list-style: '- ';
 }
 
+details {
+    cursor: initial;
+}
+
+details > summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+details > summary::marker {
+    content: "";
+}
+
 @media not print {
-    details {
-        cursor: initial;
-    }
-
-
-    details > summary {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    details > summary::marker {
-        content: "";
-    }
 
     details > summary::after {
         padding: 0.2em 0.4em;
@@ -77,6 +78,16 @@ ul{
     article{
         padding: 1rem 2rem;
     }
+
+    details > summary::marker {
+        display: none;
+    }
+
+    ::details-content {
+        content-visibility: visible;
+        height: auto !important;
+    }
+
 }
 
 
