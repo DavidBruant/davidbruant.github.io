@@ -13,6 +13,8 @@ plugins:
 markdown: CommonMark
 commonmark:
   options: ["FOOTNOTES"]
+    render:
+      unsafe: true
   extensions: ["strikethrough", "autolink", "table"]
 
 theme: mimoza
