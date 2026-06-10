@@ -29,6 +29,9 @@ group :jekyll_plugins do
 
   # Generate default titles from headings
   gem "jekyll-titles-from-headings", "~> 0.5.3"
+  
+  # github markdown https://github.com/github/jekyll-commonmark-ghpages
+  gem 'jekyll-commonmark-ghpages'
 end
 
 group :development do

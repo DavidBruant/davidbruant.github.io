@@ -10,6 +10,8 @@ collections:
 plugins:
   - jekyll-feed
 
+markdown: CommonMarkGhPages
+
 theme: mimoza
 
 scribouilli: true
