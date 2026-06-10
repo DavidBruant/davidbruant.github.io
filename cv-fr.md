@@ -56,7 +56,7 @@ details > summary::marker {
 
 details > summary::after {
     padding: 0.2em 0.4em;
-    margin-left: 0.5em;
+    margin-left: 0.8em;
 
     content: "Déplier →";
     white-space: pre;
@@ -69,6 +69,11 @@ details > summary::after {
 details[open] > summary::after {
     content: "Replier ↓";
 }
+
+details > summary h1, details > summary h2, details > summary h3,  details > summary h4{
+    margin: 0;
+}
+
 
 </style>
 
