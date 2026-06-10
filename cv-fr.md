@@ -210,8 +210,12 @@ Statuts de l'association : <https://dtc-innovation.github.io/dna/statuts.html>
 
 -->
 
+<details>
+<summary>
 
 #### **2021 – 2022** - UrbanVitaliz
+
+</summary>
 
 Outil qui organise des fiches thématiques pour aider les service urbanismes des collectivités territoriales à revitaliser leurs friches (notamment pour aider à la politique du « Zéro Artificialisation Nette »)
 
@@ -221,15 +225,23 @@ Sous la direction du **CEREMA**
 
 **Technologies principales** : Jekyll, github pages, JavaScript
 
+</details>
 
+
+
+<details>
+<summary>
 
 #### **2020 – 2021** - Recosanté
+
+</summary>
 
 Application grand public aidant à mieux comprendre les dangers de santé lié à la qualité de l’air
 Sous la direction des **Ministère de la transition écologique** et **Ministère de la santé**
 
 [Code](https://github.com/betagouv/recosante/)
 
+</details>
 
 
 #### **2020 - présent** - Scribouilli
@@ -271,14 +283,21 @@ Sous la direction de **l’ANCT**
 **Technologies principales** : VueJS, Flask/Python, MongoDB
 
 
+<details>
+<summary>
 
 #### **2018** - Audit JavaScript à Radio France
+
+</summary>
 
 Audit JavaScript et organisationnels de 3 jours à Radio France&nbsp;:
 - audit de code, des repositories
 - audit architecture applicative
 - audit environnement de production
 - audit organisationnel
+
+</details>
+
 
 
 ### **2017 – 2018** - Transparence des finances du Département de la Gironde
@@ -293,8 +312,12 @@ et Bordeaux Métropole en 2023. [Code](https://gitlab.com/bordeaux-metropole-pub
 
 **Technologies principales** : ReactJS, Node.js (outils de préparation de données)
 
+<details>
+<summary>
 
 ### **2016 – 2023** Statuts de structures collectives
+
+</summary>
 
 Rédaction initiale et collective de statuts d’association et SCI
 
@@ -304,21 +327,38 @@ Rédaction initiale et collective de statuts d’association et SCI
 
 [SCI Yed](https://davidbruant.github.io/droit/statuts-SCI-YED-septembre%202022-annotes.html)
 
+</details>
+
+
+<details>
+<summary>
 
 ### **2015 – 2018** - Coding goûter et coding apéro
+
+</summary>
 
 Ateliers pour enfant (goûter) et adultes (apéro) qui veulent rentrer dans le code à leur rythme dans une ambiance inclusive et agréable
 
 Organisés au sein de l’association Aquinum à Bordeaux
 
 
+</details>
+
+
+<details>
+<summary>
+
 ### **2014 – 2016** - 6element
+
+</summary>
 
 Projet financé par la Région Nouvelle-Aquitaine et le Conseil Départemental de la Gironde pour limiter l’encombrement en déchetterie
 
 [Code](https://github.com/6element)
 
 **Technologies principales** : ReactJS, serveur Node.js express, base de données MongoDB, RaspeberryPi, Transfert de données en binaire par SMS
+
+</details>
 
 
 <!--
