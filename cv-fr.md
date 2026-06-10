@@ -13,17 +13,6 @@ in_menu: false
 
 
 <style>
-@media print {
-    header,
-    footer,
-    nav {
-        display: none !important;
-    }
-    
-    article{
-        padding: 1rem 2rem;
-    }
-}
 
 h1{
     font-size: 2.6rem;
@@ -37,41 +26,57 @@ ul{
     list-style: '- ';
 }
 
-details {
-    cursor: initial;
+@media not print {
+    details {
+        cursor: initial;
+    }
+
+
+    details > summary {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    details > summary::marker {
+        content: "";
+    }
+
+    details > summary::after {
+        padding: 0.2em 0.4em;
+        margin-left: 0.8em;
+
+        content: "Déplier →";
+        white-space: pre;
+        font-size: 0.8rem;
+        color: var(--couleur-primaire);
+        border: 1px solid var(--couleur-primaire);
+    }
+
+
+    details[open] > summary::after {
+        content: "Replier ↓";
+    }
+
+    details > summary h1, details > summary h2, details > summary h3,  details > summary h4{
+        margin: 0;
+    }
 }
 
 
-details > summary {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-    cursor: pointer;
-}
-
-details > summary::marker {
-    content: "";
-}
-
-details > summary::after {
-    padding: 0.2em 0.4em;
-    margin-left: 0.8em;
-
-    content: "Déplier →";
-    white-space: pre;
-    font-size: 0.8rem;
-    color: var(--couleur-primaire);
-    border: 1px solid var(--couleur-primaire);
-}
-
-
-details[open] > summary::after {
-    content: "Replier ↓";
-}
-
-details > summary h1, details > summary h2, details > summary h3,  details > summary h4{
-    margin: 0;
+@media print {
+    header,
+    footer,
+    nav {
+        display: none !important;
+    }
+    
+    article{
+        padding: 1rem 2rem;
+    }
 }
 
 
