@@ -555,7 +555,7 @@ et apprend avec plaisir et facilement
 - ElasticSearch
 
 
-J’apprends actuellement le Rust : https://github.com/DavidBruant/procactivity
+[J’apprends actuellement le Rust](https://github.com/DavidBruant/procactivity)
 
 
 ### Langues
@@ -567,9 +567,9 @@ J’apprends actuellement le Rust : https://github.com/DavidBruant/procactivity
 
 ## Podcasts préférés
 
+- [Un podcast à soi](https://www.arteradio.com/emission/un_podcast_soi)
+- [Darknet Diaries](https://darknetdiaries.com/)
+- [How to survive the end of the world](https://endoftheworldshow.org/)
+- [Gaïardes](https://shows.acast.com/gaiardes)
+- [The way out is In](https://plumvillage.org/podcasts/the-way-out-is-in)
 
-| Un podcast à soi                    | https://www.arteradio.com/emission/un_podcast_soi   |
-| Darknet Diaries                     | https://darknetdiaries.com/ 					    |
-| How to survive the end of the world | https://endoftheworldshow.org/ 		                |
-| Gaïardes                            | https://shows.acast.com/gaiardes 				    |
-| The way out is In                   | https://plumvillage.org/podcasts/the-way-out-is-in  |
